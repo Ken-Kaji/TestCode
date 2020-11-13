@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="ShapeView">
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="ShapeViewViewStyle" format="reference" />
+    </declare-styleable>
+</resources>
