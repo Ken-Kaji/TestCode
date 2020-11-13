@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
+        print("<ViewController::buttonTapped />")
+        self.performSegue(withIdentifier: "toMenuList", sender: nil)
     }
     
 
