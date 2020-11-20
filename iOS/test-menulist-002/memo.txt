@@ -1,0 +1,17 @@
+                    | .modalPresentationStyle
+                    | .popover | .custom | .automatic | .none | fullScreen | pageSheet | formSheet | .currentContext | .overFullScreen | .overCurrentContext |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+.none               | ○        | ×       | ×          | ×     | ×          | ×         | ×         | ×               | ×               | ×                   |
+.pageSheet          | ▲        | ×       | ×          | ×     | ×          | ×         | ×         | ×               | ×               | ×                   |
+.fullScreen         |
+.automatic          |
+.formSheet          |
+.currentContext     |
+.custom             |
+.overFullScreen     |
+.overCurrentContext |
+.popOver            |
+
+○: 吹き出し付きで表示される
+▲: モーダルスクリーンで表示される
+
