@@ -11,13 +11,13 @@ import UIKit
 /// 設定画面の中身
 ///
 /// この画面は普通の作りで特に変わったことはしてません
-class SettingsViewController: UIViewController {
+class DrawerViewController: UIViewController {
     
     var menuTexts: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("<SettingsViewController::viewDidLoad/>")
+        print("<DrawerViewController::viewDidLoad/>")
         menuTexts = [
             "Sample Menu 1",
             "Sample Menu 2",
@@ -27,26 +27,26 @@ class SettingsViewController: UIViewController {
     
     @IBAction func closeButtonTapped() {
         dismiss(animated: true) {
-        print("<SettingsViewController::closeButtonTapped/>")
+        print("<DrawerViewController::closeButtonTapped/>")
             
         }
     }
 }
 
-extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
+extension DrawerViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        print("<SettingsViewController::numberOfSections/>")
+        print("<DrawerViewController::numberOfSections/>")
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("<SettingsViewController::tableView/>")
+        print("<DrawerViewController::tableView/>")
         return menuTexts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("<SettingsViewController::tableView/>")
+        print("<DrawerViewController::tableView/>")
         let cellId = "CellId"
         var cellOpt = tableView.dequeueReusableCell(withIdentifier: cellId)
         if cellOpt == nil {
@@ -59,7 +59,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("<SettingsViewController::tableView/>")
+        print("<DrawerViewController::tableView/>")
         tableView.deselectRow(at: indexPath, animated: true)
         print("menu selected!")
     }

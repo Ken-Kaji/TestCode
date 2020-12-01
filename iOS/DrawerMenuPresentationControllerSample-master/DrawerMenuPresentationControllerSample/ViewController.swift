@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     @IBAction func didTapShowMenuButton() {
         print("<ViewController::didTapShowMenuButton/>")
-        let storyboad = UIStoryboard(name: "SettingsViewController", bundle: nil)
+        let storyboad = UIStoryboard(name: "DrawerViewController", bundle: nil)
         let settingsNavi = storyboad.instantiateInitialViewController() as! UINavigationController
         // 表示開始はモーダルと同じく present
         present(settingsNavi, animated: true, completion: nil)

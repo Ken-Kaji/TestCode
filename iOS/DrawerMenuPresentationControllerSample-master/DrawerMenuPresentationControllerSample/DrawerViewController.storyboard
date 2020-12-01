@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings View Controller-->
+        <!--Drawer View Controller-->
         <scene sceneID="L3d-Y5-QZi">
             <objects>
-                <viewController id="XqG-eE-b6W" customClass="SettingsViewController" customModule="DrawerMenuPresentationControllerSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XqG-eE-b6W" customClass="DrawerViewController" customModule="DrawerMenuPresentationControllerSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJI-uq-cdF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="471"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="787.5" y="175.35211267605635"/>
         </scene>
-        <!--Settings Navigation Controller-->
+        <!--Drawer Navigation Controller-->
         <scene sceneID="p86-lZ-zCA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6J-6b-Gdy" customClass="SettingsNavigationController" customModule="DrawerMenuPresentationControllerSample" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6J-6b-Gdy" customClass="DrawerNavigationController" customModule="DrawerMenuPresentationControllerSample" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yba-0O-lEb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -8,12 +8,12 @@
 
 import UIKit
 
-class SettingsNavigationController: UINavigationController {
+class DrawerNavigationController: UINavigationController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        print("<SettingsNavigationController::init/>")
+        print("<DrawerNavigationController::init/>")
         /// 表示のされかたをセット
         modalPresentationStyle = .custom
         transitioningDelegate = self
@@ -21,19 +21,19 @@ class SettingsNavigationController: UINavigationController {
 }
 
 /// どうやって表示するか
-extension SettingsNavigationController:  UIViewControllerTransitioningDelegate {
+extension DrawerNavigationController:  UIViewControllerTransitioningDelegate {
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        print("<SettingsNavigationController::presentationController/>")
+        print("<DrawerNavigationController::presentationController/>")
         return DrawerMenuPresentationController(presentedViewController: presented, presenting: presenting)
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        print("<SettingsNavigationController::animationController>")
+        print("<DrawerNavigationController::animationController>")
         return DrawerMenuTransition(type: .present)
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        print("<SettingsNavigationController::animationController/>")
+        print("<DrawerNavigationController::animationController/>")
         return DrawerMenuTransition(type: .dismiss)
     }
 }
