@@ -28,12 +28,12 @@ extension DrawerNavigationController:  UIViewControllerTransitioningDelegate {
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        print("<DrawerNavigationController::animationController>")
+        print("<DrawerNavigationController::animationController(forPresented)>")
         return DrawerMenuTransition(type: .present)
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        print("<DrawerNavigationController::animationController/>")
+        print("<DrawerNavigationController::animationController(forDismissed)/>")
         return DrawerMenuTransition(type: .dismiss)
     }
 }

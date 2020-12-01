@@ -14,7 +14,19 @@ import UIKit
 class DrawerViewController: UIViewController {
     
     var menuTexts: [String]!
-    
+
+    //NavigationBArを非表示にする
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+         print("<DrawerViewController::viewWillAppear/>")
+         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+     }
+     override func viewWillDisappear(_ animated: Bool) {
+         super.viewWillDisappear(animated)
+         print("<DrawerViewController::viewWillDisappear/>")
+         self.navigationController?.setNavigationBarHidden(false, animated: animated)
+     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print("<DrawerViewController::viewDidLoad/>")
@@ -61,6 +73,8 @@ extension DrawerViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("<DrawerViewController::tableView/>")
         tableView.deselectRow(at: indexPath, animated: true)
+        NotificationCenter.default.post(name: .drawerEvent, object: nil)
         print("menu selected!")
+        self.closeButtonTapped()
     }
 }

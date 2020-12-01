@@ -54,7 +54,7 @@ class DrawerMenuTransition: NSObject, UIViewControllerAnimatedTransitioning {
         
         let originalToViewTrans = toView.transform
         var newToViewTrans = originalToViewTrans
-        newToViewTrans = newToViewTrans.translatedBy(x: -containerView.bounds.width, y: 0)
+        newToViewTrans = newToViewTrans.translatedBy(x: containerView.bounds.width, y: 0)
         
         toView.transform = newToViewTrans
         toView.setNeedsLayout()
@@ -81,7 +81,7 @@ class DrawerMenuTransition: NSObject, UIViewControllerAnimatedTransitioning {
         
         let originalToViewTrans = fromView.transform
         var newFromViewTrans = originalToViewTrans
-        newFromViewTrans = newFromViewTrans.translatedBy(x: -containerView.bounds.width, y: 0)
+        newFromViewTrans = newFromViewTrans.translatedBy(x: containerView.bounds.width, y: 0)
         
         fromView.setNeedsLayout()
         

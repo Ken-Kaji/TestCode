@@ -70,8 +70,8 @@ class DrawerMenuPresentationController: UIPresentationController {
         guard let containerSize = containerView?.frame.size else {
             return CGRect.zero
         }
-        let width = containerSize.width * 0.85
-        return CGRect(x: 0, y: 0, width: width, height: containerSize.height)
+        let width = containerSize.width * 0.5 //0.85
+        return CGRect(x: containerSize.width * 0.5, y: 0, width: width, height: containerSize.height)
     }
     
     override func containerViewWillLayoutSubviews() {
