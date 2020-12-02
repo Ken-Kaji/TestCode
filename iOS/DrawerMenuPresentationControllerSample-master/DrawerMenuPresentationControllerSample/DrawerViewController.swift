@@ -12,8 +12,10 @@ import UIKit
 ///
 /// この画面は普通の作りで特に変わったことはしてません
 class DrawerViewController: UIViewController {
-    
     var menuTexts: [String]!
+    var menuImages: [UIImage]!
+    let cellReuseIdentifier = "DrawerViewCell"
+    var mTable: UITableView? = nil
 
     //NavigationBArを非表示にする
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +36,11 @@ class DrawerViewController: UIViewController {
             "Sample Menu 1",
             "Sample Menu 2",
             "Sample Menu 3"
+        ]
+        menuImages = [
+            UIImage(imageLiteralResourceName: "number3_1.png"),
+            UIImage(imageLiteralResourceName: "number3_2.png"),
+            UIImage(imageLiteralResourceName: "number3_3.png")
         ]
     }
     
@@ -59,15 +66,31 @@ extension DrawerViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("<DrawerViewController::tableView/>")
-        let cellId = "CellId"
-        var cellOpt = tableView.dequeueReusableCell(withIdentifier: cellId)
-        if cellOpt == nil {
-            cellOpt = UITableViewCell(style: .default, reuseIdentifier: cellId)
+        if true {
+            if mTable == nil {
+                mTable = tableView
+                mTable!.register(UINib(nibName:"DrawerCell", bundle: nil), forCellReuseIdentifier:cellReuseIdentifier)
+            }
+            //let cellId = "CellId"
+            let cellId = cellReuseIdentifier
+            var cellOpt = tableView.dequeueReusableCell(withIdentifier: cellId) as! DrawerCell
+            if cellOpt == nil {
+                cellOpt = DrawerCell()
+            }
+            cellOpt.icon?.image = menuImages[indexPath.row]
+            cellOpt.label?.text = menuTexts[indexPath.row]
+            return cellOpt
+        } else {
+            let cellId = "CellId"
+            var cellOpt = tableView.dequeueReusableCell(withIdentifier: cellId)
+            if cellOpt == nil {
+                cellOpt = UITableViewCell(style: .default, reuseIdentifier: cellId)
+            }
+            let cell = cellOpt!
+            let menu = menuTexts[indexPath.row]
+            cell.textLabel?.text = menu
+            return cell
         }
-        let cell = cellOpt!
-        let menu = menuTexts[indexPath.row]
-        cell.textLabel?.text = menu
-        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
