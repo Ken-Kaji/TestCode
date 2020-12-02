@@ -331,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K75PB9VKYT;
+				DEVELOPMENT_TEAM = ZAZYZ6SEUT;
 				INFOPLIST_FILE = DrawerMenuPresentationControllerSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -350,7 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K75PB9VKYT;
+				DEVELOPMENT_TEAM = R283GJ7935;
 				INFOPLIST_FILE = DrawerMenuPresentationControllerSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
