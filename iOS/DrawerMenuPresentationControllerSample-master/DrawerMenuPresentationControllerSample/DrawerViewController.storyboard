@@ -43,6 +43,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="320" height="471"/>
+                    <connections>
+                        <outlet property="mTableView" destination="wp0-Z8-eGz" id="KgB-RE-Kbc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHA-jL-JtW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

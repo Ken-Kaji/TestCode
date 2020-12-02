@@ -8,6 +8,17 @@
 
 import UIKit
 
+struct DrawerMenu {
+    var enable: Bool    //有効/無効フラグ
+    var text: String    //メニューに表示するテキスト
+    var image: String   //画像リソース名
+}
+
+enum CellSelectionType {
+    case notShow
+    case grayOut
+}
+
 /// 設定画面の中身
 ///
 /// この画面は普通の作りで特に変わったことはしてません
@@ -15,8 +26,49 @@ class DrawerViewController: UIViewController {
     var menuTexts: [String]!
     var menuImages: [UIImage]!
     let cellReuseIdentifier = "DrawerViewCell"
-    var mTable: UITableView? = nil
+    @IBOutlet weak var mTableView: UITableView!
+    let selectionType: CellSelectionType = .grayOut
+    
+    let menu:[DrawerMenu] = [
+        DrawerMenu(enable: true, text:  "Menu1", image:"number3_1.png"),
+        DrawerMenu(enable: false, text: "Menu2", image:"number3_2.png"),
+        DrawerMenu(enable: true, text:  "Menu3", image:"number3_3.png"),
+    ]
 
+    /// 有効なメニューの数を返す
+    private func getCountOfMenu() -> Int {
+        var retval = 0
+        if selectionType == .notShow {
+            for item in menu {
+                if item.enable == true {
+                    retval += 1
+                }
+            }
+            return retval
+        }
+        return menu.count
+    }
+    
+    /// index番目のメニューアイテムを返す
+    private func getItemOfIndex(_ index: Int) -> DrawerMenu? {
+        if index < 0 || index >= menu.count {
+            return nil
+        }
+        if selectionType == .notShow {
+            var count = 0
+            for item in menu {
+                if item.enable == true {
+                    if index == count {
+                        return item
+                    }
+                    count += 1
+                }
+            }
+            return nil
+        }
+        return menu[index]
+    }
+    
     //NavigationBArを非表示にする
     override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
@@ -32,16 +84,7 @@ class DrawerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("<DrawerViewController::viewDidLoad/>")
-        menuTexts = [
-            "Sample Menu 1",
-            "Sample Menu 2",
-            "Sample Menu 3"
-        ]
-        menuImages = [
-            UIImage(imageLiteralResourceName: "number3_1.png"),
-            UIImage(imageLiteralResourceName: "number3_2.png"),
-            UIImage(imageLiteralResourceName: "number3_3.png")
-        ]
+        mTableView.register(UINib(nibName:"DrawerCell", bundle: nil), forCellReuseIdentifier:cellReuseIdentifier)
     }
     
     @IBAction func closeButtonTapped() {
@@ -61,24 +104,35 @@ extension DrawerViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("<DrawerViewController::tableView/>")
-        return menuTexts.count
+        //return menuTexts.count
+        return getCountOfMenu()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("<DrawerViewController::tableView/>")
         if true {
-            if mTable == nil {
-                mTable = tableView
-                mTable!.register(UINib(nibName:"DrawerCell", bundle: nil), forCellReuseIdentifier:cellReuseIdentifier)
-            }
             //let cellId = "CellId"
             let cellId = cellReuseIdentifier
             var cellOpt = tableView.dequeueReusableCell(withIdentifier: cellId) as! DrawerCell
             if cellOpt == nil {
                 cellOpt = DrawerCell()
             }
-            cellOpt.icon?.image = menuImages[indexPath.row]
-            cellOpt.label?.text = menuTexts[indexPath.row]
+            let item = getItemOfIndex(indexPath.row)
+            if item != nil {
+                cellOpt.icon?.image = UIImage(imageLiteralResourceName: item!.image)
+                cellOpt.label?.text = item?.text
+                if selectionType == .grayOut {
+                    if item?.enable == true {
+                        cellOpt.selectionStyle = .default
+                    } else {
+                        cellOpt.selectionStyle = .none
+                        cellOpt.label?.textColor = .lightGray
+                    }
+                } else {
+                    cellOpt.selectionStyle = .default
+                }
+            }
+            
             return cellOpt
         } else {
             let cellId = "CellId"
@@ -100,4 +154,18 @@ extension DrawerViewController: UITableViewDelegate, UITableViewDataSource {
         print("menu selected!")
         self.closeButtonTapped()
     }
+
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if selectionType == .grayOut {
+            let item = getItemOfIndex(indexPath.row)
+            if item?.enable == true {
+                return indexPath
+            } else {
+                return nil
+            }
+        } else {
+            return indexPath
+        }
+    }
+
 }
