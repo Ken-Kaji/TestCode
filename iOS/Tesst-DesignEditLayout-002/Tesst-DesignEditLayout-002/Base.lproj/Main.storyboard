@@ -38,6 +38,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQg-TR-FGL">
                                                 <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YQg-TR-FGL" secondAttribute="height" multiplier="1:1" id="bgF-En-yBJ"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                         </subviews>
