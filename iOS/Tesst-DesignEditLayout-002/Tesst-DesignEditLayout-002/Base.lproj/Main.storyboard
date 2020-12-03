@@ -32,8 +32,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H83-It-yeI" secondAttribute="bottom" id="DfI-LJ-Ccp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vs6-Bw-I98" secondAttribute="trailing" id="QeR-wd-bR1"/>
+                            <constraint firstItem="H83-It-yeI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DfI-LJ-Ccp"/>
+                            <constraint firstItem="Vs6-Bw-I98" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QeR-wd-bR1"/>
                             <constraint firstItem="Vs6-Bw-I98" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aJh-26-wYk"/>
                             <constraint firstItem="H83-It-yeI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fhX-n3-M0H"/>
                             <constraint firstItem="Vs6-Bw-I98" firstAttribute="leading" secondItem="H83-It-yeI" secondAttribute="trailing" id="nRx-pc-vwG"/>
