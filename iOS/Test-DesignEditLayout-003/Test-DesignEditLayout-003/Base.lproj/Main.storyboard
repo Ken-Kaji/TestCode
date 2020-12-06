@@ -120,19 +120,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsg-26-1bD" userLabel="LineToolBarView">
-                                <rect key="frame" x="0.0" y="604.5" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MM-hi-hfc" userLabel="Fix LineToolView">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MM-hi-hfc" userLabel="Fix LineToolView">
                                         <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPY-g2-mLj" userLabel="LinePrintView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPY-g2-mLj" userLabel="LinePrintView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="CPY-g2-mLj" secondAttribute="height" multiplier="1:1" id="2Yu-qj-Ark"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-pb-qCq" userLabel="LineSaveView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-pb-qCq" userLabel="LineSaveView">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -141,39 +141,39 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUY-eo-ZVV" userLabel="VariableLineToolView">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUY-eo-ZVV" userLabel="VariableLineToolView">
+                                        <rect key="frame" x="0.0" y="0.0" width="313" height="62.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzG-l1-xAH" userLabel="LineTool1View">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzG-l1-xAH" userLabel="LineTool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="pzG-l1-xAH" secondAttribute="height" multiplier="1:1" id="8Wq-kl-Em5"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpq-xr-Uvl" userLabel="LineTool2View">
-                                                <rect key="frame" x="63" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hpq-xr-Uvl" userLabel="LineTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="63" height="62.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Hpq-xr-Uvl" secondAttribute="height" multiplier="1:1" id="i39-Bg-4DE"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VT8-le-lsk" userLabel="LineTool3View">
-                                                <rect key="frame" x="126" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VT8-le-lsk" userLabel="LineTool3View">
+                                                <rect key="frame" x="125.5" y="0.0" width="62.5" height="62.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="VT8-le-lsk" secondAttribute="height" multiplier="1:1" id="Sdr-c5-9if"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-VU-zrJ" userLabel="LineTool4View">
-                                                <rect key="frame" x="189" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-VU-zrJ" userLabel="LineTool4View">
+                                                <rect key="frame" x="188" y="0.0" width="62.5" height="62.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="dNe-VU-zrJ" secondAttribute="height" multiplier="1:1" id="UXy-tJ-f6i"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hf1-lt-WFB" userLabel="LineTool5View">
-                                                <rect key="frame" x="252" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf1-lt-WFB" userLabel="LineTool5View">
+                                                <rect key="frame" x="250.5" y="0.0" width="62.5" height="62.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Hf1-lt-WFB" secondAttribute="height" multiplier="1:1" id="e6V-O7-2x1"/>
@@ -181,15 +181,25 @@
                                             </view>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="pzG-l1-xAH" firstAttribute="top" secondItem="aUY-eo-ZVV" secondAttribute="top" id="ECm-lt-uPj"/>
                                             <constraint firstItem="pzG-l1-xAH" firstAttribute="leading" secondItem="aUY-eo-ZVV" secondAttribute="leading" id="g98-Dy-LSL"/>
+                                            <constraint firstItem="pzG-l1-xAH" firstAttribute="leading" secondItem="aUY-eo-ZVV" secondAttribute="leading" id="pck-XQ-53G"/>
                                             <constraint firstItem="pzG-l1-xAH" firstAttribute="bottom" secondItem="aUY-eo-ZVV" secondAttribute="bottom" id="w6h-th-vvF"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="7MM-hi-hfc" firstAttribute="top" secondItem="fsg-26-1bD" secondAttribute="top" id="BWO-B7-wZp"/>
+                                    <constraint firstItem="aUY-eo-ZVV" firstAttribute="top" secondItem="fsg-26-1bD" secondAttribute="top" id="Nek-ky-a2V"/>
+                                    <constraint firstItem="aUY-eo-ZVV" firstAttribute="bottom" secondItem="fsg-26-1bD" secondAttribute="bottom" id="TMr-ds-t7s"/>
+                                    <constraint firstItem="7MM-hi-hfc" firstAttribute="bottom" secondItem="fsg-26-1bD" secondAttribute="bottom" id="ipG-NO-lBI"/>
+                                    <constraint firstItem="aUY-eo-ZVV" firstAttribute="leading" secondItem="fsg-26-1bD" secondAttribute="leading" id="o6r-mU-kSF"/>
+                                    <constraint firstAttribute="trailing" secondItem="7MM-hi-hfc" secondAttribute="trailing" id="xpP-Jq-auI"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fB-O0-1Jv" userLabel="ImageToolBarView">
-                                <rect key="frame" x="0.0" y="604.5" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drg-nU-nY3" userLabel="FixImageToolView">
                                         <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
@@ -417,10 +427,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6wv-iP-lsp" secondAttribute="bottom" id="bZA-Ge-Nl2"/>
                             <constraint firstItem="MqR-Ft-GsC" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.167" id="bva-R6-ivp"/>
                             <constraint firstItem="fsg-26-1bD" firstAttribute="top" secondItem="MqR-Ft-GsC" secondAttribute="top" id="bz1-8Q-SZA"/>
-                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="top" secondItem="2fB-O0-1Jv" secondAttribute="bottom" id="dca-lF-RUH"/>
+                            <constraint firstItem="2fB-O0-1Jv" firstAttribute="bottom" secondItem="MqR-Ft-GsC" secondAttribute="bottom" id="dca-lF-RUH"/>
                             <constraint firstItem="fsg-26-1bD" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="eDn-2G-qqr"/>
                             <constraint firstItem="MqR-Ft-GsC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="egs-PK-r2n"/>
-                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="top" secondItem="fsg-26-1bD" secondAttribute="bottom" id="ey4-fW-a2Z"/>
+                            <constraint firstItem="fsg-26-1bD" firstAttribute="bottom" secondItem="MqR-Ft-GsC" secondAttribute="bottom" id="ey4-fW-a2Z"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jQs-a6-Vc3"/>
                             <constraint firstItem="fsg-26-1bD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kNm-iC-mkO"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="top" secondItem="MqR-Ft-GsC" secondAttribute="top" id="lRc-qa-xTW"/>
