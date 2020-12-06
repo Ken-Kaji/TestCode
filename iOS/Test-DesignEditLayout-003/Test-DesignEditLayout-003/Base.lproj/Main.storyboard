@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MqR-Ft-GsC" userLabel="IconCriteriaView">
+                                <rect key="frame" x="0.0" y="604.5" width="62.5" height="62.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MqR-Ft-GsC" secondAttribute="height" multiplier="1:1" id="ztc-Ll-Nsb"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wv-iP-lsp" userLabel="VerticalCriteriaView">
                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -30,7 +37,7 @@
                                     <constraint firstAttribute="height" id="XYR-v6-a7g"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-8Y-SB9" userLabel="MainToolBarView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-8Y-SB9" userLabel="MainToolBarView">
                                 <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baR-T2-Ilp" userLabel="FixMainToolView">
@@ -99,19 +106,315 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsg-26-1bD" userLabel="LineToolBarView">
+                                <rect key="frame" x="0.0" y="604.5" width="375" height="0.0"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MM-hi-hfc" userLabel="FixMainToolView">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPY-g2-mLj" userLabel="MainPrintView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="CPY-g2-mLj" secondAttribute="height" multiplier="1:1" id="2Yu-qj-Ark"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-pb-qCq" userLabel="MainSaveView">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="pMt-pb-qCq" secondAttribute="height" multiplier="1:1" id="HWG-Da-TKX"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUY-eo-ZVV" userLabel="VariableMainToolView">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzG-l1-xAH" userLabel="Tool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="pzG-l1-xAH" secondAttribute="height" multiplier="1:1" id="8Wq-kl-Em5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpq-xr-Uvl" userLabel="Tool2View">
+                                                <rect key="frame" x="63" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Hpq-xr-Uvl" secondAttribute="height" multiplier="1:1" id="i39-Bg-4DE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VT8-le-lsk" userLabel="Tool3View">
+                                                <rect key="frame" x="126" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="VT8-le-lsk" secondAttribute="height" multiplier="1:1" id="Sdr-c5-9if"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-VU-zrJ" userLabel="Tool4View">
+                                                <rect key="frame" x="189" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dNe-VU-zrJ" secondAttribute="height" multiplier="1:1" id="UXy-tJ-f6i"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hf1-lt-WFB" userLabel="Tool5View">
+                                                <rect key="frame" x="252" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Hf1-lt-WFB" secondAttribute="height" multiplier="1:1" id="e6V-O7-2x1"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pzG-l1-xAH" firstAttribute="leading" secondItem="aUY-eo-ZVV" secondAttribute="leading" id="g98-Dy-LSL"/>
+                                            <constraint firstItem="pzG-l1-xAH" firstAttribute="bottom" secondItem="aUY-eo-ZVV" secondAttribute="bottom" id="w6h-th-vvF"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fB-O0-1Jv" userLabel="ImageToolBarView">
+                                <rect key="frame" x="0.0" y="604.5" width="375" height="0.0"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drg-nU-nY3" userLabel="FixMainToolView">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cad-lO-7MP" userLabel="MainPrintView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cad-lO-7MP" secondAttribute="height" multiplier="1:1" id="JfF-TJ-8W9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U63-yK-xh9" userLabel="MainSaveView">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="U63-yK-xh9" secondAttribute="height" multiplier="1:1" id="A69-LJ-2mY"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bgm-Pn-0Db" userLabel="VariableMainToolView">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAV-Do-qQ6" userLabel="Tool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iAV-Do-qQ6" secondAttribute="height" multiplier="1:1" id="jnR-7w-J5u"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-N5-OFE" userLabel="Tool2View">
+                                                <rect key="frame" x="63" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="DcM-N5-OFE" secondAttribute="height" multiplier="1:1" id="CuJ-A2-I3H"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVV-jN-oY4" userLabel="Tool3View">
+                                                <rect key="frame" x="126" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="bVV-jN-oY4" secondAttribute="height" multiplier="1:1" id="bzg-cH-3AZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Grx-B7-LsB" userLabel="Tool4View">
+                                                <rect key="frame" x="189" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Grx-B7-LsB" secondAttribute="height" multiplier="1:1" id="HPg-D3-NZg"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RvA-Cz-hVr" userLabel="Tool5View">
+                                                <rect key="frame" x="252" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RvA-Cz-hVr" secondAttribute="height" multiplier="1:1" id="biO-fK-jT0"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iAV-Do-qQ6" firstAttribute="leading" secondItem="bgm-Pn-0Db" secondAttribute="leading" id="YxB-6i-7ns"/>
+                                            <constraint firstItem="iAV-Do-qQ6" firstAttribute="bottom" secondItem="bgm-Pn-0Db" secondAttribute="bottom" id="qAx-3K-7oq"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orH-82-bzD" userLabel="TextToolBarView">
+                                <rect key="frame" x="0.0" y="604.5" width="375" height="0.0"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHp-Ei-LKp" userLabel="FixMainToolView">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-a3-nx1" userLabel="MainPrintView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="vQh-a3-nx1" secondAttribute="height" multiplier="1:1" id="xe7-0i-HpM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGJ-gG-bFG" userLabel="MainSaveView">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JGJ-gG-bFG" secondAttribute="height" multiplier="1:1" id="KlC-Iy-Knf"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YfK-PA-ivC" userLabel="VariableMainToolView">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGB-Ju-xL9" userLabel="Tool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="SGB-Ju-xL9" secondAttribute="height" multiplier="1:1" id="Sh9-FM-BdF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RpG-DC-L32" userLabel="Tool2View">
+                                                <rect key="frame" x="63" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RpG-DC-L32" secondAttribute="height" multiplier="1:1" id="BCi-yA-xqZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oi1-2M-m4r" userLabel="Tool3View">
+                                                <rect key="frame" x="126" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="oi1-2M-m4r" secondAttribute="height" multiplier="1:1" id="t3s-yg-26C"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-HX-fcm" userLabel="Tool4View">
+                                                <rect key="frame" x="189" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="6hT-HX-fcm" secondAttribute="height" multiplier="1:1" id="tnz-aD-aRv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPo-bR-PZw" userLabel="Tool5View">
+                                                <rect key="frame" x="252" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ZPo-bR-PZw" secondAttribute="height" multiplier="1:1" id="dlz-lg-iBd"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SGB-Ju-xL9" firstAttribute="leading" secondItem="YfK-PA-ivC" secondAttribute="leading" id="6RP-cF-J7g"/>
+                                            <constraint firstItem="SGB-Ju-xL9" firstAttribute="bottom" secondItem="YfK-PA-ivC" secondAttribute="bottom" id="dJY-ta-7EL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvy-NH-Uy5" userLabel="ShapeToolBarView">
+                                <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihz-YO-Ktt" userLabel="FixMainToolView">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xqB-X3-Jec" userLabel="MainPrintView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xqB-X3-Jec" secondAttribute="height" multiplier="1:1" id="tI3-SL-qFK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qwf-fY-hRE" userLabel="MainSaveView">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Qwf-fY-hRE" secondAttribute="height" multiplier="1:1" id="Rmt-PK-2GP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxa-eN-Xuc" userLabel="VariableMainToolView">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJJ-kh-L4O" userLabel="Tool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fJJ-kh-L4O" secondAttribute="height" multiplier="1:1" id="IkE-Vg-8NG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPN-gO-5tq" userLabel="Tool2View">
+                                                <rect key="frame" x="63" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fPN-gO-5tq" secondAttribute="height" multiplier="1:1" id="6b1-RC-yuI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-Ol-mmG" userLabel="Tool3View">
+                                                <rect key="frame" x="126" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fmP-Ol-mmG" secondAttribute="height" multiplier="1:1" id="TIN-Tk-jkn"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JdG-OD-e2E" userLabel="Tool4View">
+                                                <rect key="frame" x="189" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JdG-OD-e2E" secondAttribute="height" multiplier="1:1" id="DFG-bd-zKb"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mb9-Nn-Gsl" userLabel="Tool5View">
+                                                <rect key="frame" x="252" y="0.0" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Mb9-Nn-Gsl" secondAttribute="height" multiplier="1:1" id="0oJ-FZ-CRc"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fJJ-kh-L4O" firstAttribute="leading" secondItem="uxa-eN-Xuc" secondAttribute="leading" id="io1-a5-pZK"/>
+                                            <constraint firstItem="fJJ-kh-L4O" firstAttribute="bottom" secondItem="uxa-eN-Xuc" secondAttribute="bottom" id="ixp-dc-DYL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Sn-bH-KOw" secondAttribute="trailing" id="1IW-Zv-GgE"/>
+                            <constraint firstItem="Pvy-NH-Uy5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1hr-Ce-hi1"/>
+                            <constraint firstItem="Pvy-NH-Uy5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1jl-oE-MXf"/>
+                            <constraint firstItem="2fB-O0-1Jv" firstAttribute="top" secondItem="orH-82-bzD" secondAttribute="top" id="2hg-Qs-xyw"/>
+                            <constraint firstItem="orH-82-bzD" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="4pb-kK-B94"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="9aM-0C-vKd"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HZN-Ln-5qi"/>
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KvF-oA-UDO"/>
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MQg-9y-CGE"/>
+                            <constraint firstItem="orH-82-bzD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nbd-ed-SQ5"/>
+                            <constraint firstItem="Pvy-NH-Uy5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Owg-Ui-7vy"/>
+                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="top" secondItem="orH-82-bzD" secondAttribute="bottom" id="QQ5-jZ-gWf"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SqE-59-5Ww"/>
+                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="V2D-Md-QIh"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ZSd-An-W8Q"/>
+                            <constraint firstItem="2fB-O0-1Jv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bN8-ru-gJv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6wv-iP-lsp" secondAttribute="bottom" id="bZA-Ge-Nl2"/>
+                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.167" id="bva-R6-ivp"/>
+                            <constraint firstItem="fsg-26-1bD" firstAttribute="top" secondItem="MqR-Ft-GsC" secondAttribute="top" id="bz1-8Q-SZA"/>
+                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="top" secondItem="2fB-O0-1Jv" secondAttribute="bottom" id="dca-lF-RUH"/>
+                            <constraint firstItem="fsg-26-1bD" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="eDn-2G-qqr"/>
+                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="egs-PK-r2n"/>
+                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="top" secondItem="fsg-26-1bD" secondAttribute="bottom" id="ey4-fW-a2Z"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jQs-a6-Vc3"/>
+                            <constraint firstItem="fsg-26-1bD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kNm-iC-mkO"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="top" secondItem="MqR-Ft-GsC" secondAttribute="top" id="lRc-qa-xTW"/>
                             <constraint firstItem="YUo-n8-6Wi" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.167" id="nle-kE-R5D"/>
+                            <constraint firstItem="2fB-O0-1Jv" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="leading" id="oJW-7T-GSs"/>
+                            <constraint firstItem="Pvy-NH-Uy5" firstAttribute="top" secondItem="4eh-8Y-SB9" secondAttribute="top" id="t7Z-7D-3QU"/>
+                            <constraint firstItem="orH-82-bzD" firstAttribute="top" secondItem="MqR-Ft-GsC" secondAttribute="top" id="zff-aw-nU7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
