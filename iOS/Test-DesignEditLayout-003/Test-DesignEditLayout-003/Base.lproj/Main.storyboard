@@ -166,22 +166,554 @@
                                     <constraint firstAttribute="bottom" secondItem="baR-T2-Ilp" secondAttribute="bottom" id="pmX-PF-VAr"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-Fm-7xa" userLabel="ShapeToolBarView">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n30-Nl-HMF" userLabel="FixShapeToolView">
+                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xF6-ZM-HCc" userLabel="ShapePrintView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw9-8f-vdR" userLabel="ShapePrintButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xF6-ZM-HCc" secondAttribute="height" multiplier="1:1" id="SwC-UT-sA0"/>
+                                                    <constraint firstItem="fw9-8f-vdR" firstAttribute="width" secondItem="xF6-ZM-HCc" secondAttribute="width" multiplier="0.9" id="Uzr-Dc-ID8"/>
+                                                    <constraint firstItem="fw9-8f-vdR" firstAttribute="centerX" secondItem="xF6-ZM-HCc" secondAttribute="centerX" id="YyV-9f-vC7"/>
+                                                    <constraint firstItem="fw9-8f-vdR" firstAttribute="height" secondItem="xF6-ZM-HCc" secondAttribute="height" multiplier="0.9" id="ah6-H6-HfE"/>
+                                                    <constraint firstItem="fw9-8f-vdR" firstAttribute="centerY" secondItem="xF6-ZM-HCc" secondAttribute="centerY" id="qEt-xD-nyx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q77-Yb-tZL" userLabel="ShapeSaveView">
+                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-Hd-Rbe" userLabel="ShapeSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="IAN-Hd-Rbe" firstAttribute="centerY" secondItem="q77-Yb-tZL" secondAttribute="centerY" id="7mu-wq-zN5"/>
+                                                    <constraint firstItem="IAN-Hd-Rbe" firstAttribute="width" secondItem="q77-Yb-tZL" secondAttribute="width" multiplier="0.9" id="8Wk-oR-fdk"/>
+                                                    <constraint firstItem="IAN-Hd-Rbe" firstAttribute="height" secondItem="q77-Yb-tZL" secondAttribute="height" multiplier="0.9" id="Eig-eE-nka"/>
+                                                    <constraint firstAttribute="width" secondItem="q77-Yb-tZL" secondAttribute="height" multiplier="1:1" id="P9u-NO-y2q"/>
+                                                    <constraint firstItem="IAN-Hd-Rbe" firstAttribute="centerX" secondItem="q77-Yb-tZL" secondAttribute="centerX" id="n24-jk-op2"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-Lw-dVK" userLabel="VariableShapeToolView">
+                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyM-8b-IKJ" userLabel="ShapeTool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-H4-ElQ" userLabel="ShapeTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="bbi-H4-ElQ" firstAttribute="centerX" secondItem="vyM-8b-IKJ" secondAttribute="centerX" id="1W4-63-skN"/>
+                                                    <constraint firstItem="bbi-H4-ElQ" firstAttribute="height" secondItem="vyM-8b-IKJ" secondAttribute="height" multiplier="0.9" id="L1K-cB-EH5"/>
+                                                    <constraint firstItem="bbi-H4-ElQ" firstAttribute="centerY" secondItem="vyM-8b-IKJ" secondAttribute="centerY" id="VX3-id-Hb2"/>
+                                                    <constraint firstItem="bbi-H4-ElQ" firstAttribute="width" secondItem="vyM-8b-IKJ" secondAttribute="width" multiplier="0.9" id="gcy-F5-7bR"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbt-Qe-WHU" userLabel="ShapeTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-KQ-LpS" userLabel="ShapeTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="HoI-KQ-LpS" firstAttribute="centerX" secondItem="Jbt-Qe-WHU" secondAttribute="centerX" id="NXF-2q-gjC"/>
+                                                    <constraint firstItem="HoI-KQ-LpS" firstAttribute="centerY" secondItem="Jbt-Qe-WHU" secondAttribute="centerY" id="Rc4-re-8mo"/>
+                                                    <constraint firstItem="HoI-KQ-LpS" firstAttribute="height" secondItem="Jbt-Qe-WHU" secondAttribute="height" multiplier="0.9" id="d0S-Rw-GBW"/>
+                                                    <constraint firstAttribute="width" secondItem="Jbt-Qe-WHU" secondAttribute="height" multiplier="1:1" id="ruM-Qx-U3s"/>
+                                                    <constraint firstItem="HoI-KQ-LpS" firstAttribute="width" secondItem="Jbt-Qe-WHU" secondAttribute="width" multiplier="0.9" id="xMw-PN-tVd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNP-vR-qgu" userLabel="ShapeTool3View">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-tH-clQ" userLabel="ShapeTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Pqa-tH-clQ" firstAttribute="height" secondItem="DNP-vR-qgu" secondAttribute="height" multiplier="0.9" id="BmS-WE-C59"/>
+                                                    <constraint firstItem="Pqa-tH-clQ" firstAttribute="centerX" secondItem="DNP-vR-qgu" secondAttribute="centerX" id="LJI-5N-fAk"/>
+                                                    <constraint firstItem="Pqa-tH-clQ" firstAttribute="width" secondItem="DNP-vR-qgu" secondAttribute="width" multiplier="0.9" id="aeo-Vc-dNz"/>
+                                                    <constraint firstAttribute="width" secondItem="DNP-vR-qgu" secondAttribute="height" multiplier="1:1" id="dce-E1-XLA"/>
+                                                    <constraint firstItem="Pqa-tH-clQ" firstAttribute="centerY" secondItem="DNP-vR-qgu" secondAttribute="centerY" id="o0H-P0-GsL"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTB-Qj-Vnv" userLabel="ShapeTool4View">
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-d0-5El" userLabel="ShapeTool4Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="bQ2-d0-5El" firstAttribute="height" secondItem="uTB-Qj-Vnv" secondAttribute="height" multiplier="0.9" id="0Ez-Tk-J7h"/>
+                                                    <constraint firstItem="bQ2-d0-5El" firstAttribute="centerY" secondItem="uTB-Qj-Vnv" secondAttribute="centerY" id="6AH-jy-Ztc"/>
+                                                    <constraint firstAttribute="width" secondItem="uTB-Qj-Vnv" secondAttribute="height" multiplier="1:1" id="6eC-WF-jHv"/>
+                                                    <constraint firstItem="bQ2-d0-5El" firstAttribute="centerX" secondItem="uTB-Qj-Vnv" secondAttribute="centerX" id="I9E-ev-FEq"/>
+                                                    <constraint firstItem="bQ2-d0-5El" firstAttribute="width" secondItem="uTB-Qj-Vnv" secondAttribute="width" multiplier="0.9" id="Y8P-8P-2Zz"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vyM-8b-IKJ" firstAttribute="leading" secondItem="oB1-Lw-dVK" secondAttribute="leading" id="RbO-ww-rhs"/>
+                                            <constraint firstItem="vyM-8b-IKJ" firstAttribute="bottom" secondItem="oB1-Lw-dVK" secondAttribute="bottom" id="V3b-DJ-7hz"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="oB1-Lw-dVK" firstAttribute="width" secondItem="TVT-Fm-7xa" secondAttribute="width" multiplier="0.666" id="2Qe-18-yWI"/>
+                                    <constraint firstAttribute="bottom" secondItem="n30-Nl-HMF" secondAttribute="bottom" id="7ci-LS-Sff"/>
+                                    <constraint firstItem="n30-Nl-HMF" firstAttribute="width" secondItem="TVT-Fm-7xa" secondAttribute="width" multiplier="0.332" id="Cub-iM-7HL"/>
+                                    <constraint firstItem="oB1-Lw-dVK" firstAttribute="leading" secondItem="TVT-Fm-7xa" secondAttribute="leading" id="Ig0-aT-keq"/>
+                                    <constraint firstAttribute="bottom" secondItem="oB1-Lw-dVK" secondAttribute="bottom" id="WXk-ME-gpa"/>
+                                    <constraint firstAttribute="trailing" secondItem="n30-Nl-HMF" secondAttribute="trailing" id="YOH-ba-Liz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-Xi-01X" userLabel="TextToolBarView">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjf-FU-GbV" userLabel="FixTextToolView">
+                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ox-qA-zTC" userLabel="TextPrintView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpH-4C-TUL" userLabel="TextPrintButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4Ox-qA-zTC" secondAttribute="height" multiplier="1:1" id="6zR-FK-b4m"/>
+                                                    <constraint firstItem="WpH-4C-TUL" firstAttribute="centerY" secondItem="4Ox-qA-zTC" secondAttribute="centerY" id="hdY-iA-Yti"/>
+                                                    <constraint firstItem="WpH-4C-TUL" firstAttribute="height" secondItem="4Ox-qA-zTC" secondAttribute="height" multiplier="0.9" id="p0F-yr-x6w"/>
+                                                    <constraint firstItem="WpH-4C-TUL" firstAttribute="width" secondItem="4Ox-qA-zTC" secondAttribute="width" multiplier="0.9" id="u9D-qk-CFG"/>
+                                                    <constraint firstItem="WpH-4C-TUL" firstAttribute="centerX" secondItem="4Ox-qA-zTC" secondAttribute="centerX" id="vS1-je-405"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8x9-Eh-gxI" userLabel="TextSaveView">
+                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-nf-vkY" userLabel="TextSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="oYY-nf-vkY" firstAttribute="centerX" secondItem="8x9-Eh-gxI" secondAttribute="centerX" id="Biq-GH-e6m"/>
+                                                    <constraint firstItem="oYY-nf-vkY" firstAttribute="width" secondItem="8x9-Eh-gxI" secondAttribute="width" multiplier="0.9" id="Tfg-1I-4ei"/>
+                                                    <constraint firstAttribute="width" secondItem="8x9-Eh-gxI" secondAttribute="height" multiplier="1:1" id="anE-qL-bGf"/>
+                                                    <constraint firstItem="oYY-nf-vkY" firstAttribute="centerY" secondItem="8x9-Eh-gxI" secondAttribute="centerY" id="eSd-GT-mbd"/>
+                                                    <constraint firstItem="oYY-nf-vkY" firstAttribute="height" secondItem="8x9-Eh-gxI" secondAttribute="height" multiplier="0.9" id="ziF-kl-NZX"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKv-Fk-oKz" userLabel="VariableTextToolView">
+                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-GD-Zo0" userLabel="TextTool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fp-pj-TqJ" userLabel="ShapeTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="9Fp-pj-TqJ" firstAttribute="centerY" secondItem="ZUQ-GD-Zo0" secondAttribute="centerY" id="9vS-EO-PcA"/>
+                                                    <constraint firstItem="9Fp-pj-TqJ" firstAttribute="height" secondItem="ZUQ-GD-Zo0" secondAttribute="height" multiplier="0.9" id="mqq-DZ-5pb"/>
+                                                    <constraint firstItem="9Fp-pj-TqJ" firstAttribute="width" secondItem="ZUQ-GD-Zo0" secondAttribute="width" multiplier="0.9" id="sjY-e9-QFL"/>
+                                                    <constraint firstItem="9Fp-pj-TqJ" firstAttribute="centerX" secondItem="ZUQ-GD-Zo0" secondAttribute="centerX" id="wB3-2c-lNZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsa-El-OAo" userLabel="TextTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-yK-Ysy" userLabel="ShapeTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ewk-yK-Ysy" firstAttribute="width" secondItem="tsa-El-OAo" secondAttribute="width" multiplier="0.9" id="YaL-mG-3Yv"/>
+                                                    <constraint firstAttribute="width" secondItem="tsa-El-OAo" secondAttribute="height" multiplier="1:1" id="fyi-PR-m7L"/>
+                                                    <constraint firstItem="Ewk-yK-Ysy" firstAttribute="height" secondItem="tsa-El-OAo" secondAttribute="height" multiplier="0.9" id="oFE-Cx-ntr"/>
+                                                    <constraint firstItem="Ewk-yK-Ysy" firstAttribute="centerY" secondItem="tsa-El-OAo" secondAttribute="centerY" id="v5w-gx-h2G"/>
+                                                    <constraint firstItem="Ewk-yK-Ysy" firstAttribute="centerX" secondItem="tsa-El-OAo" secondAttribute="centerX" id="xjU-VA-QoC"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lD-Sh-MF3" userLabel="TextTool3View">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-8J-wI0" userLabel="ShapeTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="WRq-8J-wI0" firstAttribute="width" secondItem="1lD-Sh-MF3" secondAttribute="width" multiplier="0.9" id="27A-RA-SUu"/>
+                                                    <constraint firstItem="WRq-8J-wI0" firstAttribute="height" secondItem="1lD-Sh-MF3" secondAttribute="height" multiplier="0.9" id="Jtv-04-ozq"/>
+                                                    <constraint firstItem="WRq-8J-wI0" firstAttribute="centerX" secondItem="1lD-Sh-MF3" secondAttribute="centerX" id="aOX-Fe-J0R"/>
+                                                    <constraint firstItem="WRq-8J-wI0" firstAttribute="centerY" secondItem="1lD-Sh-MF3" secondAttribute="centerY" id="bjG-eU-lO3"/>
+                                                    <constraint firstAttribute="width" secondItem="1lD-Sh-MF3" secondAttribute="height" multiplier="1:1" id="vtU-JD-2fk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llM-uU-SIr" userLabel="TextTool4View">
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-23-nbK" userLabel="ShapeTool4Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ynx-23-nbK" firstAttribute="width" secondItem="llM-uU-SIr" secondAttribute="width" multiplier="0.9" id="3Dj-Ae-7wq"/>
+                                                    <constraint firstItem="Ynx-23-nbK" firstAttribute="centerX" secondItem="llM-uU-SIr" secondAttribute="centerX" id="5z6-Pr-Da1"/>
+                                                    <constraint firstAttribute="width" secondItem="llM-uU-SIr" secondAttribute="height" multiplier="1:1" id="QlK-kC-npt"/>
+                                                    <constraint firstItem="Ynx-23-nbK" firstAttribute="height" secondItem="llM-uU-SIr" secondAttribute="height" multiplier="0.9" id="UqY-hl-M4E"/>
+                                                    <constraint firstItem="Ynx-23-nbK" firstAttribute="centerY" secondItem="llM-uU-SIr" secondAttribute="centerY" id="j8b-w2-hwH"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ZUQ-GD-Zo0" firstAttribute="leading" secondItem="qKv-Fk-oKz" secondAttribute="leading" id="6sv-XH-oMD"/>
+                                            <constraint firstItem="ZUQ-GD-Zo0" firstAttribute="bottom" secondItem="qKv-Fk-oKz" secondAttribute="bottom" id="IO1-6k-nkT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Yjf-FU-GbV" firstAttribute="width" secondItem="Fr6-Xi-01X" secondAttribute="width" multiplier="0.332" id="64b-60-blY"/>
+                                    <constraint firstItem="qKv-Fk-oKz" firstAttribute="width" secondItem="Fr6-Xi-01X" secondAttribute="width" multiplier="0.666" id="AMd-XV-M7K"/>
+                                    <constraint firstAttribute="bottom" secondItem="qKv-Fk-oKz" secondAttribute="bottom" id="T6M-rX-iKi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yjf-FU-GbV" secondAttribute="bottom" id="ULG-4X-J2v"/>
+                                    <constraint firstItem="qKv-Fk-oKz" firstAttribute="leading" secondItem="Fr6-Xi-01X" secondAttribute="leading" id="gZI-tS-Rdy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yjf-FU-GbV" secondAttribute="trailing" id="kPL-go-aGP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXW-O5-jKq" userLabel="ImageToolBarView">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qx-RQ-e94" userLabel="FixImageToolView">
+                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qig-li-JHA" userLabel="ImagePrintView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-CT-Owy" userLabel="ImagePrintButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="4Mh-CT-Owy" firstAttribute="centerX" secondItem="Qig-li-JHA" secondAttribute="centerX" id="3aQ-Et-VZJ"/>
+                                                    <constraint firstItem="4Mh-CT-Owy" firstAttribute="height" secondItem="Qig-li-JHA" secondAttribute="height" multiplier="0.9" id="9er-ln-lyB"/>
+                                                    <constraint firstItem="4Mh-CT-Owy" firstAttribute="width" secondItem="Qig-li-JHA" secondAttribute="width" multiplier="0.9" id="Rlv-M8-lOQ"/>
+                                                    <constraint firstAttribute="width" secondItem="Qig-li-JHA" secondAttribute="height" multiplier="1:1" id="qoE-y4-MwE"/>
+                                                    <constraint firstItem="4Mh-CT-Owy" firstAttribute="centerY" secondItem="Qig-li-JHA" secondAttribute="centerY" id="uZE-gD-bQ6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arp-7W-hZw" userLabel="ImageSaveView">
+                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-br-nRY" userLabel="ImageSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="wa9-br-nRY" firstAttribute="height" secondItem="Arp-7W-hZw" secondAttribute="height" multiplier="0.9" id="1xi-MP-Rdt"/>
+                                                    <constraint firstAttribute="width" secondItem="Arp-7W-hZw" secondAttribute="height" multiplier="1:1" id="2ao-28-R3M"/>
+                                                    <constraint firstItem="wa9-br-nRY" firstAttribute="centerX" secondItem="Arp-7W-hZw" secondAttribute="centerX" id="Wfg-ef-cEx"/>
+                                                    <constraint firstItem="wa9-br-nRY" firstAttribute="width" secondItem="Arp-7W-hZw" secondAttribute="width" multiplier="0.9" id="ljP-g2-1nI"/>
+                                                    <constraint firstItem="wa9-br-nRY" firstAttribute="centerY" secondItem="Arp-7W-hZw" secondAttribute="centerY" id="mGx-Jc-hQb"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GA3-jL-F1w" userLabel="VariableImageToolView">
+                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPW-oG-cgv" userLabel="ImageTool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-Jp-PdB" userLabel="ImageTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="pdA-Jp-PdB" firstAttribute="centerX" secondItem="sPW-oG-cgv" secondAttribute="centerX" id="GnX-wR-2i4"/>
+                                                    <constraint firstItem="pdA-Jp-PdB" firstAttribute="centerY" secondItem="sPW-oG-cgv" secondAttribute="centerY" id="NJJ-4j-EHT"/>
+                                                    <constraint firstItem="pdA-Jp-PdB" firstAttribute="height" secondItem="sPW-oG-cgv" secondAttribute="height" multiplier="0.9" id="NLh-an-Sqj"/>
+                                                    <constraint firstItem="pdA-Jp-PdB" firstAttribute="width" secondItem="sPW-oG-cgv" secondAttribute="width" multiplier="0.9" id="mXL-pb-mVW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjR-4E-lPt" userLabel="ImageTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q66-lr-XqX" userLabel="ImageTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Q66-lr-XqX" firstAttribute="centerY" secondItem="kjR-4E-lPt" secondAttribute="centerY" id="39n-aQ-y4F"/>
+                                                    <constraint firstAttribute="width" secondItem="kjR-4E-lPt" secondAttribute="height" multiplier="1:1" id="FcF-yz-JLZ"/>
+                                                    <constraint firstItem="Q66-lr-XqX" firstAttribute="centerX" secondItem="kjR-4E-lPt" secondAttribute="centerX" id="J00-ds-ztZ"/>
+                                                    <constraint firstItem="Q66-lr-XqX" firstAttribute="height" secondItem="kjR-4E-lPt" secondAttribute="height" multiplier="0.9" id="gvS-f8-teU"/>
+                                                    <constraint firstItem="Q66-lr-XqX" firstAttribute="width" secondItem="kjR-4E-lPt" secondAttribute="width" multiplier="0.9" id="laW-eL-WGQ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sx-z3-x9K" userLabel="ImageTool3View">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xib-Pf-NRC" userLabel="ImageTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="xib-Pf-NRC" firstAttribute="width" secondItem="8Sx-z3-x9K" secondAttribute="width" multiplier="0.9" id="4Pn-4V-ktE"/>
+                                                    <constraint firstItem="xib-Pf-NRC" firstAttribute="height" secondItem="8Sx-z3-x9K" secondAttribute="height" multiplier="0.9" id="ABj-s8-BHt"/>
+                                                    <constraint firstAttribute="width" secondItem="8Sx-z3-x9K" secondAttribute="height" multiplier="1:1" id="Fpc-dp-fUk"/>
+                                                    <constraint firstItem="xib-Pf-NRC" firstAttribute="centerX" secondItem="8Sx-z3-x9K" secondAttribute="centerX" id="FxA-gp-pgg"/>
+                                                    <constraint firstItem="xib-Pf-NRC" firstAttribute="centerY" secondItem="8Sx-z3-x9K" secondAttribute="centerY" id="h6A-oO-sID"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-Be-L9x" userLabel="ImageTool4View">
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-81-wqI" userLabel="ImageTool4Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5b6-Be-L9x" secondAttribute="height" multiplier="1:1" id="CRu-zE-gCX"/>
+                                                    <constraint firstItem="bG5-81-wqI" firstAttribute="height" secondItem="5b6-Be-L9x" secondAttribute="height" multiplier="0.9" id="UDL-Zp-fFA"/>
+                                                    <constraint firstItem="bG5-81-wqI" firstAttribute="centerX" secondItem="5b6-Be-L9x" secondAttribute="centerX" id="amd-Fo-hOG"/>
+                                                    <constraint firstItem="bG5-81-wqI" firstAttribute="centerY" secondItem="5b6-Be-L9x" secondAttribute="centerY" id="qzu-Cg-OBz"/>
+                                                    <constraint firstItem="bG5-81-wqI" firstAttribute="width" secondItem="5b6-Be-L9x" secondAttribute="width" multiplier="0.9" id="uRd-Pf-jro"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sPW-oG-cgv" firstAttribute="bottom" secondItem="GA3-jL-F1w" secondAttribute="bottom" id="j0n-gt-4Pb"/>
+                                            <constraint firstItem="sPW-oG-cgv" firstAttribute="leading" secondItem="GA3-jL-F1w" secondAttribute="leading" id="lHO-Gz-1AC"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="9qx-RQ-e94" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.332" id="2eF-Y0-Dq2"/>
+                                    <constraint firstAttribute="bottom" secondItem="GA3-jL-F1w" secondAttribute="bottom" id="5vU-2r-7NG"/>
+                                    <constraint firstItem="GA3-jL-F1w" firstAttribute="leading" secondItem="VXW-O5-jKq" secondAttribute="leading" id="C0L-p5-LqT"/>
+                                    <constraint firstAttribute="bottom" secondItem="9qx-RQ-e94" secondAttribute="bottom" id="CiL-sa-i1f"/>
+                                    <constraint firstAttribute="trailing" secondItem="9qx-RQ-e94" secondAttribute="trailing" id="F7N-az-zDF"/>
+                                    <constraint firstItem="GA3-jL-F1w" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.666" id="i2L-0W-Yyt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X17-8C-vP8" userLabel="LineToolBarView">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6P-0F-6d1" userLabel="FixLineToolView">
+                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3Z-MJ-Vsa" userLabel="LinePrintView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-eT-moD" userLabel="LinePrintButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="VYy-eT-moD" firstAttribute="centerY" secondItem="z3Z-MJ-Vsa" secondAttribute="centerY" id="C0X-13-iDB"/>
+                                                    <constraint firstItem="VYy-eT-moD" firstAttribute="height" secondItem="z3Z-MJ-Vsa" secondAttribute="height" multiplier="0.9" id="CuL-d8-SKh"/>
+                                                    <constraint firstAttribute="width" secondItem="z3Z-MJ-Vsa" secondAttribute="height" multiplier="1:1" id="JAL-kT-xOf"/>
+                                                    <constraint firstItem="VYy-eT-moD" firstAttribute="width" secondItem="z3Z-MJ-Vsa" secondAttribute="width" multiplier="0.9" id="QCY-oc-ypL"/>
+                                                    <constraint firstItem="VYy-eT-moD" firstAttribute="centerX" secondItem="z3Z-MJ-Vsa" secondAttribute="centerX" id="ruI-RQ-xG4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="796-YI-LGn" userLabel="LineSaveView">
+                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99C-zj-r5E" userLabel="LineSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="99C-zj-r5E" firstAttribute="width" secondItem="796-YI-LGn" secondAttribute="width" multiplier="0.9" id="gqv-ba-5rP"/>
+                                                    <constraint firstItem="99C-zj-r5E" firstAttribute="height" secondItem="796-YI-LGn" secondAttribute="height" multiplier="0.9" id="he8-Pc-BTm"/>
+                                                    <constraint firstItem="99C-zj-r5E" firstAttribute="centerX" secondItem="796-YI-LGn" secondAttribute="centerX" id="tME-hb-sgk"/>
+                                                    <constraint firstItem="99C-zj-r5E" firstAttribute="centerY" secondItem="796-YI-LGn" secondAttribute="centerY" id="wrb-RJ-9Xe"/>
+                                                    <constraint firstAttribute="width" secondItem="796-YI-LGn" secondAttribute="height" multiplier="1:1" id="yE9-oM-TKN"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ku-qa-BCk" userLabel="VariableLineToolView">
+                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bK-0b-TXU" userLabel="LineTool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-M0-d5l" userLabel="LineTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="s9O-M0-d5l" firstAttribute="centerX" secondItem="6bK-0b-TXU" secondAttribute="centerX" id="0Rx-NT-qk1"/>
+                                                    <constraint firstItem="s9O-M0-d5l" firstAttribute="centerY" secondItem="6bK-0b-TXU" secondAttribute="centerY" id="Em5-5A-T42"/>
+                                                    <constraint firstItem="s9O-M0-d5l" firstAttribute="width" secondItem="6bK-0b-TXU" secondAttribute="width" multiplier="0.9" id="F88-P9-hGq"/>
+                                                    <constraint firstItem="s9O-M0-d5l" firstAttribute="height" secondItem="6bK-0b-TXU" secondAttribute="height" multiplier="0.9" id="NIJ-bO-lwJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKt-a5-VFx" userLabel="LineTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTM-Tp-7O0" userLabel="LineTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="VTM-Tp-7O0" firstAttribute="centerX" secondItem="pKt-a5-VFx" secondAttribute="centerX" id="7CJ-4t-i2S"/>
+                                                    <constraint firstItem="VTM-Tp-7O0" firstAttribute="centerY" secondItem="pKt-a5-VFx" secondAttribute="centerY" id="KE1-VH-NYo"/>
+                                                    <constraint firstAttribute="width" secondItem="pKt-a5-VFx" secondAttribute="height" multiplier="1:1" id="KtP-pO-mB7"/>
+                                                    <constraint firstItem="VTM-Tp-7O0" firstAttribute="width" secondItem="pKt-a5-VFx" secondAttribute="width" multiplier="0.9" id="Rp1-JS-Cct"/>
+                                                    <constraint firstItem="VTM-Tp-7O0" firstAttribute="height" secondItem="pKt-a5-VFx" secondAttribute="height" multiplier="0.9" id="jET-d0-9eK"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lU-8O-v7F" userLabel="LineTool3View">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCJ-Rt-cvh" userLabel="LineTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="DCJ-Rt-cvh" firstAttribute="width" secondItem="3lU-8O-v7F" secondAttribute="width" multiplier="0.9" id="69z-tp-TuX"/>
+                                                    <constraint firstItem="DCJ-Rt-cvh" firstAttribute="centerY" secondItem="3lU-8O-v7F" secondAttribute="centerY" id="7rj-sQ-YxO"/>
+                                                    <constraint firstItem="DCJ-Rt-cvh" firstAttribute="height" secondItem="3lU-8O-v7F" secondAttribute="height" multiplier="0.9" id="95n-aD-C9c"/>
+                                                    <constraint firstItem="DCJ-Rt-cvh" firstAttribute="centerX" secondItem="3lU-8O-v7F" secondAttribute="centerX" id="a0Q-mZ-fpU"/>
+                                                    <constraint firstAttribute="width" secondItem="3lU-8O-v7F" secondAttribute="height" multiplier="1:1" id="thN-0J-FMd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfa-QG-9ZZ" userLabel="LineTool4View">
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTW-yZ-d79" userLabel="LineTool4Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="wTW-yZ-d79" firstAttribute="width" secondItem="zfa-QG-9ZZ" secondAttribute="width" multiplier="0.9" id="2pH-k9-rrd"/>
+                                                    <constraint firstItem="wTW-yZ-d79" firstAttribute="centerX" secondItem="zfa-QG-9ZZ" secondAttribute="centerX" id="RVX-sf-thD"/>
+                                                    <constraint firstItem="wTW-yZ-d79" firstAttribute="centerY" secondItem="zfa-QG-9ZZ" secondAttribute="centerY" id="SvZ-yz-4JO"/>
+                                                    <constraint firstAttribute="width" secondItem="zfa-QG-9ZZ" secondAttribute="height" multiplier="1:1" id="TrK-as-oda"/>
+                                                    <constraint firstItem="wTW-yZ-d79" firstAttribute="height" secondItem="zfa-QG-9ZZ" secondAttribute="height" multiplier="0.9" id="ubu-FL-Wf4"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6bK-0b-TXU" firstAttribute="bottom" secondItem="0ku-qa-BCk" secondAttribute="bottom" id="7fB-of-mXX"/>
+                                            <constraint firstItem="6bK-0b-TXU" firstAttribute="leading" secondItem="0ku-qa-BCk" secondAttribute="leading" id="Weu-xQ-2Mi"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="0ku-qa-BCk" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.666" id="3Be-Xj-RBH"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ku-qa-BCk" secondAttribute="bottom" id="WLd-WM-8S3"/>
+                                    <constraint firstItem="0ku-qa-BCk" firstAttribute="leading" secondItem="X17-8C-vP8" secondAttribute="leading" id="a3A-30-dpS"/>
+                                    <constraint firstAttribute="trailing" secondItem="o6P-0F-6d1" secondAttribute="trailing" id="hOr-ba-Lgr"/>
+                                    <constraint firstAttribute="bottom" secondItem="o6P-0F-6d1" secondAttribute="bottom" id="wrc-Sm-RdY"/>
+                                    <constraint firstItem="o6P-0F-6d1" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.332" id="yhI-Tg-IuJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Sn-bH-KOw" secondAttribute="trailing" id="1IW-Zv-GgE"/>
+                            <constraint firstItem="Fr6-Xi-01X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="31A-wt-nwI"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="9aM-0C-vKd"/>
+                            <constraint firstItem="X17-8C-vP8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gq1-3f-Uwj"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HZN-Ln-5qi"/>
+                            <constraint firstItem="VXW-O5-jKq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HlY-kU-aGH"/>
+                            <constraint firstItem="TVT-Fm-7xa" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="Jy7-Tn-Izf"/>
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KvF-oA-UDO"/>
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MQg-9y-CGE"/>
+                            <constraint firstItem="VXW-O5-jKq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ovf-do-fxl"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SqE-59-5Ww"/>
+                            <constraint firstItem="TVT-Fm-7xa" firstAttribute="height" secondItem="4eh-8Y-SB9" secondAttribute="height" id="WAf-f4-fwV"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="Fr6-Xi-01X" secondAttribute="height" id="Xiw-qU-NA3"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ZSd-An-W8Q"/>
                             <constraint firstItem="fH7-pY-5t9" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.166" id="ate-Gx-0GB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6wv-iP-lsp" secondAttribute="bottom" id="bZA-Ge-Nl2"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="X17-8C-vP8" secondAttribute="height" id="d2k-79-xdp"/>
+                            <constraint firstItem="Fr6-Xi-01X" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="gUK-Hk-Umj"/>
+                            <constraint firstItem="VXW-O5-jKq" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="hC7-KP-vg7"/>
+                            <constraint firstItem="TVT-Fm-7xa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iM0-os-JKE"/>
+                            <constraint firstItem="X17-8C-vP8" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="igu-Lz-L3e"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jQs-a6-Vc3"/>
+                            <constraint firstItem="TVT-Fm-7xa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="juZ-37-dKZ"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="VXW-O5-jKq" secondAttribute="height" id="mxn-NP-7kC"/>
                             <constraint firstItem="YUo-n8-6Wi" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.166" id="nle-kE-R5D"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="top" secondItem="fH7-pY-5t9" secondAttribute="bottom" id="pGW-K1-wQc"/>
+                            <constraint firstItem="Fr6-Xi-01X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tn1-am-4T7"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="fH7-pY-5t9" secondAttribute="height" id="uaE-ju-Q8H"/>
+                            <constraint firstItem="X17-8C-vP8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ubd-ez-ilL"/>
                             <constraint firstItem="fH7-pY-5t9" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ydR-Wt-fSE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
