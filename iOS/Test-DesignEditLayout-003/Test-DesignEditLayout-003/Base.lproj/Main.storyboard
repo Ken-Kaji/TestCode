@@ -40,21 +40,39 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-8Y-SB9" userLabel="MainToolBarView">
                                 <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baR-T2-Ilp" userLabel="FixMainToolView">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baR-T2-Ilp" userLabel="FixMainToolView">
                                         <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTN-Od-xZG" userLabel="MainPrintView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTN-Od-xZG" userLabel="MainPrintView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAs-ia-900">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="BAs-ia-900" firstAttribute="centerX" secondItem="mTN-Od-xZG" secondAttribute="centerX" id="OmT-9o-Y4T"/>
+                                                    <constraint firstItem="BAs-ia-900" firstAttribute="width" secondItem="mTN-Od-xZG" secondAttribute="width" multiplier="0.9" id="qGm-f0-V5m"/>
+                                                    <constraint firstItem="BAs-ia-900" firstAttribute="height" secondItem="mTN-Od-xZG" secondAttribute="height" multiplier="0.9" id="rZv-hx-i4S"/>
+                                                    <constraint firstItem="BAs-ia-900" firstAttribute="centerY" secondItem="mTN-Od-xZG" secondAttribute="centerY" id="vSm-kz-9vi"/>
                                                     <constraint firstAttribute="width" secondItem="mTN-Od-xZG" secondAttribute="height" multiplier="1:1" id="vbK-DK-CBQ"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-a2-yv6" userLabel="MainSaveView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-a2-yv6" userLabel="MainSaveView">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nLP-qy-Zz0">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="nLP-qy-Zz0" firstAttribute="centerX" secondItem="qi8-a2-yv6" secondAttribute="centerX" id="BM0-cM-Wmy"/>
+                                                    <constraint firstItem="nLP-qy-Zz0" firstAttribute="height" secondItem="qi8-a2-yv6" secondAttribute="height" multiplier="0.9" id="RvS-mg-yha"/>
                                                     <constraint firstAttribute="width" secondItem="qi8-a2-yv6" secondAttribute="height" multiplier="1:1" id="WyE-qp-sIJ"/>
+                                                    <constraint firstItem="nLP-qy-Zz0" firstAttribute="centerY" secondItem="qi8-a2-yv6" secondAttribute="centerY" id="auL-l0-Xce"/>
+                                                    <constraint firstItem="nLP-qy-Zz0" firstAttribute="width" secondItem="qi8-a2-yv6" secondAttribute="width" multiplier="0.9" id="cYq-4X-pef"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -160,6 +178,7 @@
                                 <constraints>
                                     <constraint firstItem="HpV-7a-UCK" firstAttribute="leading" secondItem="4eh-8Y-SB9" secondAttribute="leading" id="UYR-ep-dWk"/>
                                     <constraint firstItem="baR-T2-Ilp" firstAttribute="top" secondItem="4eh-8Y-SB9" secondAttribute="top" id="ZS2-RU-NMD"/>
+                                    <constraint firstItem="baR-T2-Ilp" firstAttribute="width" secondItem="4eh-8Y-SB9" secondAttribute="width" multiplier="0.334" id="a8a-lW-ffj"/>
                                     <constraint firstItem="HpV-7a-UCK" firstAttribute="top" secondItem="4eh-8Y-SB9" secondAttribute="top" id="i7o-Ng-Cea"/>
                                     <constraint firstItem="baR-T2-Ilp" firstAttribute="trailing" secondItem="4eh-8Y-SB9" secondAttribute="trailing" id="nh1-UX-xS3"/>
                                 </constraints>
