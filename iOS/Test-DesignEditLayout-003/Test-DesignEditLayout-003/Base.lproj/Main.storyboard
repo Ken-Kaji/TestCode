@@ -70,37 +70,82 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUo-n8-6Wi" userLabel="MainTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-tD-sVB">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="ewd-tD-sVB" firstAttribute="centerY" secondItem="YUo-n8-6Wi" secondAttribute="centerY" id="Wk4-75-K00"/>
+                                                    <constraint firstItem="ewd-tD-sVB" firstAttribute="centerX" secondItem="YUo-n8-6Wi" secondAttribute="centerX" id="Ycr-pK-gQU"/>
+                                                    <constraint firstItem="ewd-tD-sVB" firstAttribute="width" secondItem="YUo-n8-6Wi" secondAttribute="width" multiplier="0.9" id="bc6-8Y-jXL"/>
+                                                    <constraint firstItem="ewd-tD-sVB" firstAttribute="height" secondItem="YUo-n8-6Wi" secondAttribute="height" multiplier="0.9" id="eKk-N5-R28"/>
                                                     <constraint firstAttribute="width" secondItem="YUo-n8-6Wi" secondAttribute="height" multiplier="1:1" id="l55-qc-IBj"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-h2-5wa" userLabel="MainTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mes-2v-5wi">
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="mes-2v-5wi" firstAttribute="centerX" secondItem="oDE-h2-5wa" secondAttribute="centerX" id="D5k-lL-erd"/>
+                                                    <constraint firstItem="mes-2v-5wi" firstAttribute="height" secondItem="oDE-h2-5wa" secondAttribute="height" multiplier="0.9" id="DKC-ht-gUG"/>
                                                     <constraint firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="height" multiplier="1:1" id="S9T-Dt-eeA"/>
+                                                    <constraint firstItem="mes-2v-5wi" firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="width" multiplier="0.9" id="k68-CO-BRB"/>
+                                                    <constraint firstItem="mes-2v-5wi" firstAttribute="centerY" secondItem="oDE-h2-5wa" secondAttribute="centerY" id="kPN-cp-RFe"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-4T-TGF" userLabel="MainTool3View">
                                                 <rect key="frame" x="125.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Xg-lt-110">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="8Xg-lt-110" firstAttribute="width" secondItem="oOE-4T-TGF" secondAttribute="width" multiplier="0.9" id="8yf-cr-bjm"/>
                                                     <constraint firstAttribute="width" secondItem="oOE-4T-TGF" secondAttribute="height" multiplier="1:1" id="IeJ-kO-x3o"/>
+                                                    <constraint firstItem="8Xg-lt-110" firstAttribute="centerY" secondItem="oOE-4T-TGF" secondAttribute="centerY" id="MAb-2q-iI1"/>
+                                                    <constraint firstItem="8Xg-lt-110" firstAttribute="height" secondItem="oOE-4T-TGF" secondAttribute="height" multiplier="0.9" id="Qmd-5N-dQ5"/>
+                                                    <constraint firstItem="8Xg-lt-110" firstAttribute="centerX" secondItem="oOE-4T-TGF" secondAttribute="centerX" id="TsZ-lk-fHL"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b86-xC-piN" userLabel="MainTool4View">
                                                 <rect key="frame" x="188" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NQr-d5-rHL">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="NQr-d5-rHL" firstAttribute="width" secondItem="b86-xC-piN" secondAttribute="width" multiplier="0.9" id="55X-1w-h7D"/>
+                                                    <constraint firstItem="NQr-d5-rHL" firstAttribute="centerY" secondItem="b86-xC-piN" secondAttribute="centerY" id="Euc-9A-l3n"/>
+                                                    <constraint firstItem="NQr-d5-rHL" firstAttribute="height" secondItem="b86-xC-piN" secondAttribute="height" multiplier="0.9" id="Igr-rJ-9Zv"/>
+                                                    <constraint firstItem="NQr-d5-rHL" firstAttribute="centerX" secondItem="b86-xC-piN" secondAttribute="centerX" id="M3v-os-E39"/>
                                                     <constraint firstAttribute="width" secondItem="b86-xC-piN" secondAttribute="height" multiplier="1:1" id="Tq9-DA-cPB"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjO-Y0-Y38" userLabel="MainTool5View">
                                                 <rect key="frame" x="250.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g12-Q7-WQf">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="JjO-Y0-Y38" secondAttribute="height" multiplier="1:1" id="1P8-C2-cX2"/>
+                                                    <constraint firstItem="g12-Q7-WQf" firstAttribute="width" secondItem="JjO-Y0-Y38" secondAttribute="width" multiplier="0.9" id="4nb-1y-4Le"/>
+                                                    <constraint firstItem="g12-Q7-WQf" firstAttribute="centerX" secondItem="JjO-Y0-Y38" secondAttribute="centerX" id="gcd-V5-dyN"/>
+                                                    <constraint firstItem="g12-Q7-WQf" firstAttribute="height" secondItem="JjO-Y0-Y38" secondAttribute="height" multiplier="0.9" id="n2S-Uj-MFn"/>
+                                                    <constraint firstItem="g12-Q7-WQf" firstAttribute="centerY" secondItem="JjO-Y0-Y38" secondAttribute="centerY" id="ss0-Ql-Flf"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
