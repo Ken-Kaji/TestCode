@@ -46,7 +46,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTN-Od-xZG" userLabel="MainPrintView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lF-yYj">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lF-yYj" userLabel="MainPrintButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -63,7 +63,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-a2-yv6" userLabel="MainSaveView">
                                                 <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-Gs-8EY">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-Gs-8EY" userLabel="MainSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -82,7 +82,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpV-7a-UCK" userLabel="VariableMainToolView">
                                         <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUo-n8-6Wi" userLabel="Tool1View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUo-n8-6Wi" userLabel="MainTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-xL-AVP">
@@ -98,7 +98,7 @@
                                                     <constraint firstItem="yKn-xL-AVP" firstAttribute="height" secondItem="YUo-n8-6Wi" secondAttribute="height" multiplier="0.9" id="u2P-jN-LsZ"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-h2-5wa" userLabel="Tool2View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-h2-5wa" userLabel="MainTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-ao-R2Z">
@@ -115,7 +115,7 @@
                                                     <constraint firstItem="LNT-ao-R2Z" firstAttribute="centerY" secondItem="oDE-h2-5wa" secondAttribute="centerY" id="wuD-AN-k5p"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-4T-TGF" userLabel="Tool3View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-4T-TGF" userLabel="MainTool3View">
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKe-HE-aTh">
@@ -132,7 +132,7 @@
                                                     <constraint firstItem="uKe-HE-aTh" firstAttribute="centerY" secondItem="oOE-4T-TGF" secondAttribute="centerY" id="o22-Lu-VDU"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b86-xC-piN" userLabel="Tool4View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b86-xC-piN" userLabel="MainTool4View">
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyt-HW-5NJ">
