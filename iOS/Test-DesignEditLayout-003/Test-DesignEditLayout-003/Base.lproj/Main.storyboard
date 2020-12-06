@@ -45,15 +45,35 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTN-Od-xZG" userLabel="MainPrintView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lF-yYj">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="hyo-lF-yYj" firstAttribute="width" secondItem="mTN-Od-xZG" secondAttribute="width" multiplier="0.9" id="3U4-wV-olf"/>
+                                                    <constraint firstItem="hyo-lF-yYj" firstAttribute="height" secondItem="mTN-Od-xZG" secondAttribute="height" multiplier="0.9" id="AVI-lo-Myv"/>
+                                                    <constraint firstItem="hyo-lF-yYj" firstAttribute="centerY" secondItem="mTN-Od-xZG" secondAttribute="centerY" id="iBx-pD-fYi"/>
                                                     <constraint firstAttribute="width" secondItem="mTN-Od-xZG" secondAttribute="height" multiplier="1:1" id="vbK-DK-CBQ"/>
+                                                    <constraint firstItem="hyo-lF-yYj" firstAttribute="centerX" secondItem="mTN-Od-xZG" secondAttribute="centerX" id="w11-SN-NeP"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-a2-yv6" userLabel="MainSaveView">
                                                 <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-Gs-8EY">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="VFG-Gs-8EY" firstAttribute="width" secondItem="qi8-a2-yv6" secondAttribute="width" multiplier="0.9" id="5mf-1z-S0c"/>
+                                                    <constraint firstItem="VFG-Gs-8EY" firstAttribute="height" secondItem="qi8-a2-yv6" secondAttribute="height" multiplier="0.9" id="KBH-sJ-ro4"/>
+                                                    <constraint firstItem="VFG-Gs-8EY" firstAttribute="centerX" secondItem="qi8-a2-yv6" secondAttribute="centerX" id="NAq-3l-mBI"/>
+                                                    <constraint firstItem="VFG-Gs-8EY" firstAttribute="centerY" secondItem="qi8-a2-yv6" secondAttribute="centerY" id="VyO-Vh-pSS"/>
                                                     <constraint firstAttribute="width" secondItem="qi8-a2-yv6" secondAttribute="height" multiplier="1:1" id="WyE-qp-sIJ"/>
                                                 </constraints>
                                             </view>
@@ -64,27 +84,69 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUo-n8-6Wi" userLabel="Tool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-xL-AVP">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="yKn-xL-AVP" firstAttribute="width" secondItem="YUo-n8-6Wi" secondAttribute="width" multiplier="0.9" id="4gf-p0-Cem"/>
+                                                    <constraint firstItem="yKn-xL-AVP" firstAttribute="centerY" secondItem="YUo-n8-6Wi" secondAttribute="centerY" id="WC5-ql-w0g"/>
+                                                    <constraint firstItem="yKn-xL-AVP" firstAttribute="centerX" secondItem="YUo-n8-6Wi" secondAttribute="centerX" id="m8K-JW-dCN"/>
+                                                    <constraint firstItem="yKn-xL-AVP" firstAttribute="height" secondItem="YUo-n8-6Wi" secondAttribute="height" multiplier="0.9" id="u2P-jN-LsZ"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-h2-5wa" userLabel="Tool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-ao-R2Z">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="LNT-ao-R2Z" firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="width" multiplier="0.9" id="Hz4-Gm-uJ3"/>
                                                     <constraint firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="height" multiplier="1:1" id="S9T-Dt-eeA"/>
+                                                    <constraint firstItem="LNT-ao-R2Z" firstAttribute="height" secondItem="oDE-h2-5wa" secondAttribute="height" multiplier="0.9" id="WrZ-5H-HZf"/>
+                                                    <constraint firstItem="LNT-ao-R2Z" firstAttribute="centerX" secondItem="oDE-h2-5wa" secondAttribute="centerX" id="bc5-36-EKd"/>
+                                                    <constraint firstItem="LNT-ao-R2Z" firstAttribute="centerY" secondItem="oDE-h2-5wa" secondAttribute="centerY" id="wuD-AN-k5p"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-4T-TGF" userLabel="Tool3View">
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKe-HE-aTh">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="oOE-4T-TGF" secondAttribute="height" multiplier="1:1" id="IeJ-kO-x3o"/>
+                                                    <constraint firstItem="uKe-HE-aTh" firstAttribute="width" secondItem="oOE-4T-TGF" secondAttribute="width" multiplier="0.9" id="Lxn-FW-itN"/>
+                                                    <constraint firstItem="uKe-HE-aTh" firstAttribute="height" secondItem="oOE-4T-TGF" secondAttribute="height" multiplier="0.9" id="a2H-p8-Ofq"/>
+                                                    <constraint firstItem="uKe-HE-aTh" firstAttribute="centerX" secondItem="oOE-4T-TGF" secondAttribute="centerX" id="nma-E6-AMT"/>
+                                                    <constraint firstItem="uKe-HE-aTh" firstAttribute="centerY" secondItem="oOE-4T-TGF" secondAttribute="centerY" id="o22-Lu-VDU"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b86-xC-piN" userLabel="Tool4View">
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyt-HW-5NJ">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="Hyt-HW-5NJ" firstAttribute="width" secondItem="b86-xC-piN" secondAttribute="width" multiplier="0.9" id="FCM-7k-c7l"/>
                                                     <constraint firstAttribute="width" secondItem="b86-xC-piN" secondAttribute="height" multiplier="1:1" id="Tq9-DA-cPB"/>
+                                                    <constraint firstItem="Hyt-HW-5NJ" firstAttribute="height" secondItem="b86-xC-piN" secondAttribute="height" multiplier="0.9" id="Y2S-qJ-n7f"/>
+                                                    <constraint firstItem="Hyt-HW-5NJ" firstAttribute="centerY" secondItem="b86-xC-piN" secondAttribute="centerY" id="Zh0-C9-BPH"/>
+                                                    <constraint firstItem="Hyt-HW-5NJ" firstAttribute="centerX" secondItem="b86-xC-piN" secondAttribute="centerX" id="fUA-nt-yx1"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
