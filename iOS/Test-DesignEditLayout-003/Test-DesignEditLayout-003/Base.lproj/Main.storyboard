@@ -24,6 +24,20 @@
                                 <rect key="frame" x="0.0" y="542.5" width="375" height="62.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-yk-Gjd" userLabel="SliderView">
+                                <rect key="frame" x="0.0" y="542.5" width="375" height="62.5"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZDy-bO-tHS">
+                                        <rect key="frame" x="30" y="16" width="315" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZDy-bO-tHS" firstAttribute="leading" secondItem="3dq-yk-Gjd" secondAttribute="leading" constant="32" id="9Gs-In-GDc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZDy-bO-tHS" secondAttribute="trailing" constant="32" id="HdQ-1t-ccY"/>
+                                    <constraint firstItem="ZDy-bO-tHS" firstAttribute="centerY" secondItem="3dq-yk-Gjd" secondAttribute="centerY" id="ird-kq-WyB"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH7-pY-5t9" userLabel="IconCriteriaView">
                                 <rect key="frame" x="0.0" y="542.5" width="62.5" height="62.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -752,6 +766,8 @@
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KvF-oA-UDO"/>
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MQg-9y-CGE"/>
                             <constraint firstItem="VXW-O5-jKq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ovf-do-fxl"/>
+                            <constraint firstItem="3dq-yk-Gjd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rjr-yi-4Hp"/>
+                            <constraint firstItem="3dq-yk-Gjd" firstAttribute="bottom" secondItem="4eh-8Y-SB9" secondAttribute="top" id="Sd1-Sl-0mi"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SqE-59-5Ww"/>
                             <constraint firstItem="dZ8-hS-37m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W4I-bf-vnh"/>
                             <constraint firstItem="TVT-Fm-7xa" firstAttribute="height" secondItem="4eh-8Y-SB9" secondAttribute="height" id="WAf-f4-fwV"/>
@@ -764,6 +780,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6wv-iP-lsp" secondAttribute="bottom" id="bZA-Ge-Nl2"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="X17-8C-vP8" secondAttribute="height" id="d2k-79-xdp"/>
                             <constraint firstItem="dZ8-hS-37m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="d2t-m3-FW0"/>
+                            <constraint firstItem="3dq-yk-Gjd" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ffQ-z1-ciy"/>
                             <constraint firstItem="vEM-OX-NFc" firstAttribute="bottom" secondItem="4eh-8Y-SB9" secondAttribute="top" id="gCZ-LJ-oSR"/>
                             <constraint firstItem="Fr6-Xi-01X" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="gUK-Hk-Umj"/>
                             <constraint firstItem="VXW-O5-jKq" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="hC7-KP-vg7"/>
@@ -780,6 +797,7 @@
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="fH7-pY-5t9" secondAttribute="height" id="uaE-ju-Q8H"/>
                             <constraint firstItem="X17-8C-vP8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ubd-ez-ilL"/>
                             <constraint firstItem="9uP-jV-eEl" firstAttribute="bottom" secondItem="4eh-8Y-SB9" secondAttribute="top" id="vO4-O9-4wf"/>
+                            <constraint firstItem="fH7-pY-5t9" firstAttribute="height" secondItem="3dq-yk-Gjd" secondAttribute="height" id="w6U-Kh-tHC"/>
                             <constraint firstItem="fH7-pY-5t9" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ydR-Wt-fSE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
