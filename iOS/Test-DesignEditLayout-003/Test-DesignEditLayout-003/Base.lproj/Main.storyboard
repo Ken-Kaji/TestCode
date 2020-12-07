@@ -558,27 +558,10 @@
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6P-0F-6d1" userLabel="FixLineToolView">
-                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
+                                        <rect key="frame" x="313" y="0.0" width="62" height="62"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3Z-MJ-Vsa" userLabel="LinePrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-eT-moD" userLabel="LinePrintButton">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
-                                                        <state key="normal" title="Button"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="VYy-eT-moD" firstAttribute="centerY" secondItem="z3Z-MJ-Vsa" secondAttribute="centerY" id="C0X-13-iDB"/>
-                                                    <constraint firstItem="VYy-eT-moD" firstAttribute="height" secondItem="z3Z-MJ-Vsa" secondAttribute="height" multiplier="0.9" id="CuL-d8-SKh"/>
-                                                    <constraint firstAttribute="width" secondItem="z3Z-MJ-Vsa" secondAttribute="height" multiplier="1:1" id="JAL-kT-xOf"/>
-                                                    <constraint firstItem="VYy-eT-moD" firstAttribute="width" secondItem="z3Z-MJ-Vsa" secondAttribute="width" multiplier="0.9" id="QCY-oc-ypL"/>
-                                                    <constraint firstItem="VYy-eT-moD" firstAttribute="centerX" secondItem="z3Z-MJ-Vsa" secondAttribute="centerX" id="ruI-RQ-xG4"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="796-YI-LGn" userLabel="LineSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99C-zj-r5E" userLabel="LineSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
@@ -597,13 +580,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ku-qa-BCk" userLabel="VariableLineToolView">
-                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="313" height="62.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bK-0b-TXU" userLabel="LineTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-M0-d5l" userLabel="LineTool1Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="s9O-M0-d5l" secondAttribute="height" multiplier="1:1" id="Ptx-r7-pYW"/>
+                                                        </constraints>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -619,7 +605,7 @@
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTM-Tp-7O0" userLabel="LineTool2Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -636,7 +622,7 @@
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCJ-Rt-cvh" userLabel="LineTool3Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -653,7 +639,7 @@
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTW-yZ-d79" userLabel="LineTool4Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -666,6 +652,25 @@
                                                     <constraint firstItem="wTW-yZ-d79" firstAttribute="height" secondItem="zfa-QG-9ZZ" secondAttribute="height" multiplier="0.9" id="ubu-FL-Wf4"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-RP-kOe" userLabel="LineTool5View">
+                                                <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-lQ-alN" userLabel="LineTool5Button">
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="pFe-lQ-alN" secondAttribute="height" multiplier="1:1" id="azb-mE-8R3"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="pFe-lQ-alN" firstAttribute="height" secondItem="4aD-RP-kOe" secondAttribute="height" multiplier="0.9" id="PNh-Ux-wjA"/>
+                                                    <constraint firstItem="pFe-lQ-alN" firstAttribute="centerX" secondItem="4aD-RP-kOe" secondAttribute="centerX" id="Zcx-Me-1nh"/>
+                                                    <constraint firstItem="pFe-lQ-alN" firstAttribute="centerY" secondItem="4aD-RP-kOe" secondAttribute="centerY" id="km3-Az-6yv"/>
+                                                    <constraint firstItem="pFe-lQ-alN" firstAttribute="width" secondItem="4aD-RP-kOe" secondAttribute="width" multiplier="0.9" id="t75-iA-FxB"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="6bK-0b-TXU" firstAttribute="bottom" secondItem="0ku-qa-BCk" secondAttribute="bottom" id="7fB-of-mXX"/>
@@ -675,12 +680,12 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="0ku-qa-BCk" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.666" id="3Be-Xj-RBH"/>
+                                    <constraint firstItem="0ku-qa-BCk" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.834" id="3Be-Xj-RBH"/>
                                     <constraint firstAttribute="bottom" secondItem="0ku-qa-BCk" secondAttribute="bottom" id="WLd-WM-8S3"/>
                                     <constraint firstItem="0ku-qa-BCk" firstAttribute="leading" secondItem="X17-8C-vP8" secondAttribute="leading" id="a3A-30-dpS"/>
                                     <constraint firstAttribute="trailing" secondItem="o6P-0F-6d1" secondAttribute="trailing" id="hOr-ba-Lgr"/>
                                     <constraint firstAttribute="bottom" secondItem="o6P-0F-6d1" secondAttribute="bottom" id="wrc-Sm-RdY"/>
-                                    <constraint firstItem="o6P-0F-6d1" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.332" id="yhI-Tg-IuJ"/>
+                                    <constraint firstItem="o6P-0F-6d1" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.166" id="yhI-Tg-IuJ"/>
                                 </constraints>
                             </view>
                         </subviews>
