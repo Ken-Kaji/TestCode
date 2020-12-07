@@ -429,27 +429,10 @@
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qx-RQ-e94" userLabel="FixImageToolView">
-                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
+                                        <rect key="frame" x="313" y="0.0" width="62" height="62"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qig-li-JHA" userLabel="ImagePrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-CT-Owy" userLabel="ImagePrintButton">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
-                                                        <state key="normal" title="Button"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="4Mh-CT-Owy" firstAttribute="centerX" secondItem="Qig-li-JHA" secondAttribute="centerX" id="3aQ-Et-VZJ"/>
-                                                    <constraint firstItem="4Mh-CT-Owy" firstAttribute="height" secondItem="Qig-li-JHA" secondAttribute="height" multiplier="0.9" id="9er-ln-lyB"/>
-                                                    <constraint firstItem="4Mh-CT-Owy" firstAttribute="width" secondItem="Qig-li-JHA" secondAttribute="width" multiplier="0.9" id="Rlv-M8-lOQ"/>
-                                                    <constraint firstAttribute="width" secondItem="Qig-li-JHA" secondAttribute="height" multiplier="1:1" id="qoE-y4-MwE"/>
-                                                    <constraint firstItem="4Mh-CT-Owy" firstAttribute="centerY" secondItem="Qig-li-JHA" secondAttribute="centerY" id="uZE-gD-bQ6"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arp-7W-hZw" userLabel="ImageSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-br-nRY" userLabel="ImageSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
@@ -468,13 +451,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GA3-jL-F1w" userLabel="VariableImageToolView">
-                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="313" height="62.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPW-oG-cgv" userLabel="ImageTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-Jp-PdB" userLabel="ImageTool1Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -483,6 +466,7 @@
                                                     <constraint firstItem="pdA-Jp-PdB" firstAttribute="centerX" secondItem="sPW-oG-cgv" secondAttribute="centerX" id="GnX-wR-2i4"/>
                                                     <constraint firstItem="pdA-Jp-PdB" firstAttribute="centerY" secondItem="sPW-oG-cgv" secondAttribute="centerY" id="NJJ-4j-EHT"/>
                                                     <constraint firstItem="pdA-Jp-PdB" firstAttribute="height" secondItem="sPW-oG-cgv" secondAttribute="height" multiplier="0.9" id="NLh-an-Sqj"/>
+                                                    <constraint firstAttribute="width" secondItem="sPW-oG-cgv" secondAttribute="height" multiplier="1:1" id="fCK-bB-sWo"/>
                                                     <constraint firstItem="pdA-Jp-PdB" firstAttribute="width" secondItem="sPW-oG-cgv" secondAttribute="width" multiplier="0.9" id="mXL-pb-mVW"/>
                                                 </constraints>
                                             </view>
@@ -490,7 +474,7 @@
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q66-lr-XqX" userLabel="ImageTool2Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -507,7 +491,7 @@
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xib-Pf-NRC" userLabel="ImageTool3Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -524,7 +508,7 @@
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-81-wqI" userLabel="ImageTool4Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -537,6 +521,22 @@
                                                     <constraint firstItem="bG5-81-wqI" firstAttribute="width" secondItem="5b6-Be-L9x" secondAttribute="width" multiplier="0.9" id="uRd-Pf-jro"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ee-DM-56z" userLabel="ImageTool5View">
+                                                <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-2Q-Xzq" userLabel="ImageTool5Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="mHJ-2Q-Xzq" firstAttribute="width" secondItem="9Ee-DM-56z" secondAttribute="width" multiplier="0.9" id="23d-1V-4CR"/>
+                                                    <constraint firstItem="mHJ-2Q-Xzq" firstAttribute="height" secondItem="9Ee-DM-56z" secondAttribute="height" multiplier="0.9" id="YYt-rP-pvJ"/>
+                                                    <constraint firstItem="mHJ-2Q-Xzq" firstAttribute="centerY" secondItem="9Ee-DM-56z" secondAttribute="centerY" id="hw4-9g-1KI"/>
+                                                    <constraint firstItem="mHJ-2Q-Xzq" firstAttribute="centerX" secondItem="9Ee-DM-56z" secondAttribute="centerX" id="nbt-PK-OmG"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="sPW-oG-cgv" firstAttribute="bottom" secondItem="GA3-jL-F1w" secondAttribute="bottom" id="j0n-gt-4Pb"/>
@@ -546,12 +546,12 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="9qx-RQ-e94" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.332" id="2eF-Y0-Dq2"/>
-                                    <constraint firstAttribute="bottom" secondItem="GA3-jL-F1w" secondAttribute="bottom" id="5vU-2r-7NG"/>
+                                    <constraint firstItem="9qx-RQ-e94" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.166" id="2eF-Y0-Dq2"/>
+                                    <constraint firstItem="GA3-jL-F1w" firstAttribute="bottom" secondItem="VXW-O5-jKq" secondAttribute="bottom" id="5vU-2r-7NG"/>
                                     <constraint firstItem="GA3-jL-F1w" firstAttribute="leading" secondItem="VXW-O5-jKq" secondAttribute="leading" id="C0L-p5-LqT"/>
-                                    <constraint firstAttribute="bottom" secondItem="9qx-RQ-e94" secondAttribute="bottom" id="CiL-sa-i1f"/>
-                                    <constraint firstAttribute="trailing" secondItem="9qx-RQ-e94" secondAttribute="trailing" id="F7N-az-zDF"/>
-                                    <constraint firstItem="GA3-jL-F1w" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.666" id="i2L-0W-Yyt"/>
+                                    <constraint firstItem="9qx-RQ-e94" firstAttribute="bottom" secondItem="VXW-O5-jKq" secondAttribute="bottom" id="CiL-sa-i1f"/>
+                                    <constraint firstItem="9qx-RQ-e94" firstAttribute="trailing" secondItem="VXW-O5-jKq" secondAttribute="trailing" id="F7N-az-zDF"/>
+                                    <constraint firstItem="GA3-jL-F1w" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.834" id="i2L-0W-Yyt"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X17-8C-vP8" userLabel="LineToolBarView">
