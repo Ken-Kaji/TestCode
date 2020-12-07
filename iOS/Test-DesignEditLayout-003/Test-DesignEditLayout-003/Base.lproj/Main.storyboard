@@ -170,27 +170,10 @@
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n30-Nl-HMF" userLabel="FixShapeToolView">
-                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
+                                        <rect key="frame" x="313" y="0.0" width="62" height="62"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xF6-ZM-HCc" userLabel="ShapePrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw9-8f-vdR" userLabel="ShapePrintButton">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
-                                                        <state key="normal" title="Button"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="xF6-ZM-HCc" secondAttribute="height" multiplier="1:1" id="SwC-UT-sA0"/>
-                                                    <constraint firstItem="fw9-8f-vdR" firstAttribute="width" secondItem="xF6-ZM-HCc" secondAttribute="width" multiplier="0.9" id="Uzr-Dc-ID8"/>
-                                                    <constraint firstItem="fw9-8f-vdR" firstAttribute="centerX" secondItem="xF6-ZM-HCc" secondAttribute="centerX" id="YyV-9f-vC7"/>
-                                                    <constraint firstItem="fw9-8f-vdR" firstAttribute="height" secondItem="xF6-ZM-HCc" secondAttribute="height" multiplier="0.9" id="ah6-H6-HfE"/>
-                                                    <constraint firstItem="fw9-8f-vdR" firstAttribute="centerY" secondItem="xF6-ZM-HCc" secondAttribute="centerY" id="qEt-xD-nyx"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q77-Yb-tZL" userLabel="ShapeSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-Hd-Rbe" userLabel="ShapeSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
@@ -209,13 +192,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-Lw-dVK" userLabel="VariableShapeToolView">
-                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="313" height="62.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyM-8b-IKJ" userLabel="ShapeTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-H4-ElQ" userLabel="ShapeTool1Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -225,13 +208,14 @@
                                                     <constraint firstItem="bbi-H4-ElQ" firstAttribute="height" secondItem="vyM-8b-IKJ" secondAttribute="height" multiplier="0.9" id="L1K-cB-EH5"/>
                                                     <constraint firstItem="bbi-H4-ElQ" firstAttribute="centerY" secondItem="vyM-8b-IKJ" secondAttribute="centerY" id="VX3-id-Hb2"/>
                                                     <constraint firstItem="bbi-H4-ElQ" firstAttribute="width" secondItem="vyM-8b-IKJ" secondAttribute="width" multiplier="0.9" id="gcy-F5-7bR"/>
+                                                    <constraint firstAttribute="width" secondItem="vyM-8b-IKJ" secondAttribute="height" multiplier="1:1" id="h2k-LR-Vjg"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbt-Qe-WHU" userLabel="ShapeTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-KQ-LpS" userLabel="ShapeTool2Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -248,7 +232,7 @@
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-tH-clQ" userLabel="ShapeTool3Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -265,7 +249,7 @@
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-d0-5El" userLabel="ShapeTool4Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -278,6 +262,23 @@
                                                     <constraint firstItem="bQ2-d0-5El" firstAttribute="width" secondItem="uTB-Qj-Vnv" secondAttribute="width" multiplier="0.9" id="Y8P-8P-2Zz"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGX-my-OUk" userLabel="ShapeTool5View">
+                                                <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-FB-kEv" userLabel="ShapeTool4Button">
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="wL8-FB-kEv" firstAttribute="width" secondItem="gGX-my-OUk" secondAttribute="width" multiplier="0.9" id="7yM-CV-F3q"/>
+                                                    <constraint firstItem="wL8-FB-kEv" firstAttribute="height" secondItem="gGX-my-OUk" secondAttribute="height" multiplier="0.9" id="Ol7-yV-UFm"/>
+                                                    <constraint firstItem="wL8-FB-kEv" firstAttribute="centerX" secondItem="gGX-my-OUk" secondAttribute="centerX" id="WEJ-wV-FVs"/>
+                                                    <constraint firstAttribute="width" secondItem="gGX-my-OUk" secondAttribute="height" multiplier="1:1" id="iIs-1g-kL2"/>
+                                                    <constraint firstItem="wL8-FB-kEv" firstAttribute="centerY" secondItem="gGX-my-OUk" secondAttribute="centerY" id="kVn-Mg-PNl"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="vyM-8b-IKJ" firstAttribute="leading" secondItem="oB1-Lw-dVK" secondAttribute="leading" id="RbO-ww-rhs"/>
@@ -287,12 +288,12 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="oB1-Lw-dVK" firstAttribute="width" secondItem="TVT-Fm-7xa" secondAttribute="width" multiplier="0.666" id="2Qe-18-yWI"/>
-                                    <constraint firstAttribute="bottom" secondItem="n30-Nl-HMF" secondAttribute="bottom" id="7ci-LS-Sff"/>
-                                    <constraint firstItem="n30-Nl-HMF" firstAttribute="width" secondItem="TVT-Fm-7xa" secondAttribute="width" multiplier="0.332" id="Cub-iM-7HL"/>
+                                    <constraint firstItem="oB1-Lw-dVK" firstAttribute="width" secondItem="TVT-Fm-7xa" secondAttribute="width" multiplier="0.834" id="2Qe-18-yWI"/>
+                                    <constraint firstItem="n30-Nl-HMF" firstAttribute="bottom" secondItem="TVT-Fm-7xa" secondAttribute="bottom" id="7ci-LS-Sff"/>
+                                    <constraint firstItem="n30-Nl-HMF" firstAttribute="width" secondItem="TVT-Fm-7xa" secondAttribute="width" multiplier="0.166" id="Cub-iM-7HL"/>
                                     <constraint firstItem="oB1-Lw-dVK" firstAttribute="leading" secondItem="TVT-Fm-7xa" secondAttribute="leading" id="Ig0-aT-keq"/>
-                                    <constraint firstAttribute="bottom" secondItem="oB1-Lw-dVK" secondAttribute="bottom" id="WXk-ME-gpa"/>
-                                    <constraint firstAttribute="trailing" secondItem="n30-Nl-HMF" secondAttribute="trailing" id="YOH-ba-Liz"/>
+                                    <constraint firstItem="oB1-Lw-dVK" firstAttribute="bottom" secondItem="TVT-Fm-7xa" secondAttribute="bottom" id="WXk-ME-gpa"/>
+                                    <constraint firstItem="n30-Nl-HMF" firstAttribute="trailing" secondItem="TVT-Fm-7xa" secondAttribute="trailing" id="YOH-ba-Liz"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-Xi-01X" userLabel="TextToolBarView">
