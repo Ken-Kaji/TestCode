@@ -688,12 +688,53 @@
                                     <constraint firstItem="o6P-0F-6d1" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.166" id="yhI-Tg-IuJ"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ8-hS-37m" userLabel="InputTextView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89P-Aj-VAJ">
+                                        <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hB7-IU-hRW">
+                                                <rect key="frame" x="8" y="81" width="359" height="44"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb7-jd-uIP" userLabel="TextOkButton">
+                                                <rect key="frame" x="321" y="43" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtP-j2-JAr" userLabel="TextCancelButton">
+                                                <rect key="frame" x="267" y="43" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Cb7-jd-uIP" firstAttribute="leading" secondItem="EtP-j2-JAr" secondAttribute="trailing" constant="8" id="7Li-if-ah6"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cb7-jd-uIP" secondAttribute="trailing" constant="8" id="KGC-Hr-1nR"/>
+                                            <constraint firstAttribute="bottom" secondItem="hB7-IU-hRW" secondAttribute="bottom" constant="8" id="Lg1-dn-8eu"/>
+                                            <constraint firstAttribute="trailing" secondItem="hB7-IU-hRW" secondAttribute="trailing" constant="8" id="omD-sm-O8U"/>
+                                            <constraint firstItem="hB7-IU-hRW" firstAttribute="top" secondItem="EtP-j2-JAr" secondAttribute="bottom" constant="8" id="s9G-f6-OO8"/>
+                                            <constraint firstItem="hB7-IU-hRW" firstAttribute="leading" secondItem="89P-Aj-VAJ" secondAttribute="leading" constant="8" id="trp-UE-JxU"/>
+                                            <constraint firstItem="hB7-IU-hRW" firstAttribute="top" secondItem="Cb7-jd-uIP" secondAttribute="bottom" constant="8" id="xXR-6S-PRi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="89P-Aj-VAJ" firstAttribute="height" secondItem="dZ8-hS-37m" secondAttribute="height" multiplier="0.2" id="8MG-XF-uqQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="89P-Aj-VAJ" secondAttribute="trailing" id="dBc-WW-9G5"/>
+                                    <constraint firstItem="89P-Aj-VAJ" firstAttribute="leading" secondItem="dZ8-hS-37m" secondAttribute="leading" id="ppQ-IH-P7q"/>
+                                    <constraint firstAttribute="bottom" secondItem="89P-Aj-VAJ" secondAttribute="bottom" id="rQw-Yg-g91"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Sn-bH-KOw" secondAttribute="trailing" id="1IW-Zv-GgE"/>
                             <constraint firstItem="Fr6-Xi-01X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="31A-wt-nwI"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="9aM-0C-vKd"/>
+                            <constraint firstItem="dZ8-hS-37m" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ALb-OR-Tdq"/>
                             <constraint firstItem="X17-8C-vP8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gq1-3f-Uwj"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HZN-Ln-5qi"/>
                             <constraint firstItem="VXW-O5-jKq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HlY-kU-aGH"/>
@@ -702,12 +743,15 @@
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MQg-9y-CGE"/>
                             <constraint firstItem="VXW-O5-jKq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ovf-do-fxl"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SqE-59-5Ww"/>
+                            <constraint firstItem="dZ8-hS-37m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W4I-bf-vnh"/>
                             <constraint firstItem="TVT-Fm-7xa" firstAttribute="height" secondItem="4eh-8Y-SB9" secondAttribute="height" id="WAf-f4-fwV"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="Fr6-Xi-01X" secondAttribute="height" id="Xiw-qU-NA3"/>
+                            <constraint firstItem="dZ8-hS-37m" firstAttribute="top" secondItem="4Sn-bH-KOw" secondAttribute="bottom" id="ZQB-Fn-f0T"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ZSd-An-W8Q"/>
                             <constraint firstItem="fH7-pY-5t9" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.166" id="ate-Gx-0GB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6wv-iP-lsp" secondAttribute="bottom" id="bZA-Ge-Nl2"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="X17-8C-vP8" secondAttribute="height" id="d2k-79-xdp"/>
+                            <constraint firstItem="dZ8-hS-37m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="d2t-m3-FW0"/>
                             <constraint firstItem="Fr6-Xi-01X" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="gUK-Hk-Umj"/>
                             <constraint firstItem="VXW-O5-jKq" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="hC7-KP-vg7"/>
                             <constraint firstItem="TVT-Fm-7xa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iM0-os-JKE"/>
