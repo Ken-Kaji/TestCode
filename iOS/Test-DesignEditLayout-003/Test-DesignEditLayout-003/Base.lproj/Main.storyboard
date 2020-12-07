@@ -300,27 +300,10 @@
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjf-FU-GbV" userLabel="FixTextToolView">
-                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
+                                        <rect key="frame" x="313" y="0.0" width="62" height="62"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ox-qA-zTC" userLabel="TextPrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpH-4C-TUL" userLabel="TextPrintButton">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
-                                                        <state key="normal" title="Button"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="4Ox-qA-zTC" secondAttribute="height" multiplier="1:1" id="6zR-FK-b4m"/>
-                                                    <constraint firstItem="WpH-4C-TUL" firstAttribute="centerY" secondItem="4Ox-qA-zTC" secondAttribute="centerY" id="hdY-iA-Yti"/>
-                                                    <constraint firstItem="WpH-4C-TUL" firstAttribute="height" secondItem="4Ox-qA-zTC" secondAttribute="height" multiplier="0.9" id="p0F-yr-x6w"/>
-                                                    <constraint firstItem="WpH-4C-TUL" firstAttribute="width" secondItem="4Ox-qA-zTC" secondAttribute="width" multiplier="0.9" id="u9D-qk-CFG"/>
-                                                    <constraint firstItem="WpH-4C-TUL" firstAttribute="centerX" secondItem="4Ox-qA-zTC" secondAttribute="centerX" id="vS1-je-405"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8x9-Eh-gxI" userLabel="TextSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-nf-vkY" userLabel="TextSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
@@ -339,19 +322,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKv-Fk-oKz" userLabel="VariableTextToolView">
-                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="313" height="62.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-GD-Zo0" userLabel="TextTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fp-pj-TqJ" userLabel="ShapeTool1Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fp-pj-TqJ" userLabel="TextTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstItem="9Fp-pj-TqJ" firstAttribute="centerY" secondItem="ZUQ-GD-Zo0" secondAttribute="centerY" id="9vS-EO-PcA"/>
+                                                    <constraint firstAttribute="width" secondItem="ZUQ-GD-Zo0" secondAttribute="height" multiplier="1:1" id="bIP-yb-6OK"/>
                                                     <constraint firstItem="9Fp-pj-TqJ" firstAttribute="height" secondItem="ZUQ-GD-Zo0" secondAttribute="height" multiplier="0.9" id="mqq-DZ-5pb"/>
                                                     <constraint firstItem="9Fp-pj-TqJ" firstAttribute="width" secondItem="ZUQ-GD-Zo0" secondAttribute="width" multiplier="0.9" id="sjY-e9-QFL"/>
                                                     <constraint firstItem="9Fp-pj-TqJ" firstAttribute="centerX" secondItem="ZUQ-GD-Zo0" secondAttribute="centerX" id="wB3-2c-lNZ"/>
@@ -360,8 +344,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsa-El-OAo" userLabel="TextTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-yK-Ysy" userLabel="ShapeTool2Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-yK-Ysy" userLabel="TextTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -377,8 +361,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lD-Sh-MF3" userLabel="TextTool3View">
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-8J-wI0" userLabel="ShapeTool3Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-8J-wI0" userLabel="TextTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -394,8 +378,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llM-uU-SIr" userLabel="TextTool4View">
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-23-nbK" userLabel="ShapeTool4Button">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-23-nbK" userLabel="TextTool4Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -408,6 +392,22 @@
                                                     <constraint firstItem="Ynx-23-nbK" firstAttribute="centerY" secondItem="llM-uU-SIr" secondAttribute="centerY" id="j8b-w2-hwH"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-vl-IB0" userLabel="TextTool5View">
+                                                <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-vh-0MA" userLabel="TextTool5Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="BYB-vh-0MA" firstAttribute="width" secondItem="SPm-vl-IB0" secondAttribute="width" multiplier="0.9" id="DCQ-Px-lUD"/>
+                                                    <constraint firstItem="BYB-vh-0MA" firstAttribute="height" secondItem="SPm-vl-IB0" secondAttribute="height" multiplier="0.9" id="Rky-bd-nNd"/>
+                                                    <constraint firstItem="BYB-vh-0MA" firstAttribute="centerX" secondItem="SPm-vl-IB0" secondAttribute="centerX" id="XeC-KB-POC"/>
+                                                    <constraint firstItem="BYB-vh-0MA" firstAttribute="centerY" secondItem="SPm-vl-IB0" secondAttribute="centerY" id="geO-bX-dLq"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="ZUQ-GD-Zo0" firstAttribute="leading" secondItem="qKv-Fk-oKz" secondAttribute="leading" id="6sv-XH-oMD"/>
@@ -417,12 +417,12 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="Yjf-FU-GbV" firstAttribute="width" secondItem="Fr6-Xi-01X" secondAttribute="width" multiplier="0.332" id="64b-60-blY"/>
-                                    <constraint firstItem="qKv-Fk-oKz" firstAttribute="width" secondItem="Fr6-Xi-01X" secondAttribute="width" multiplier="0.666" id="AMd-XV-M7K"/>
-                                    <constraint firstAttribute="bottom" secondItem="qKv-Fk-oKz" secondAttribute="bottom" id="T6M-rX-iKi"/>
-                                    <constraint firstAttribute="bottom" secondItem="Yjf-FU-GbV" secondAttribute="bottom" id="ULG-4X-J2v"/>
+                                    <constraint firstItem="Yjf-FU-GbV" firstAttribute="width" secondItem="Fr6-Xi-01X" secondAttribute="width" multiplier="0.166" id="64b-60-blY"/>
+                                    <constraint firstItem="qKv-Fk-oKz" firstAttribute="width" secondItem="Fr6-Xi-01X" secondAttribute="width" multiplier="0.834" id="AMd-XV-M7K"/>
+                                    <constraint firstItem="qKv-Fk-oKz" firstAttribute="bottom" secondItem="Fr6-Xi-01X" secondAttribute="bottom" id="T6M-rX-iKi"/>
+                                    <constraint firstItem="Yjf-FU-GbV" firstAttribute="bottom" secondItem="Fr6-Xi-01X" secondAttribute="bottom" id="ULG-4X-J2v"/>
                                     <constraint firstItem="qKv-Fk-oKz" firstAttribute="leading" secondItem="Fr6-Xi-01X" secondAttribute="leading" id="gZI-tS-Rdy"/>
-                                    <constraint firstAttribute="trailing" secondItem="Yjf-FU-GbV" secondAttribute="trailing" id="kPL-go-aGP"/>
+                                    <constraint firstItem="Yjf-FU-GbV" firstAttribute="trailing" secondItem="Fr6-Xi-01X" secondAttribute="trailing" id="kPL-go-aGP"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXW-O5-jKq" userLabel="ImageToolBarView">
