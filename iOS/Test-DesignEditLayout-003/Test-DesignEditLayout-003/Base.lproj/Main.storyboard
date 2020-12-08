@@ -188,7 +188,7 @@
                                     <constraint firstAttribute="bottom" secondItem="baR-T2-Ilp" secondAttribute="bottom" id="pmX-PF-VAr"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-Fm-7xa" userLabel="ShapeToolBarView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-Fm-7xa" userLabel="ShapeToolBarView">
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n30-Nl-HMF" userLabel="FixShapeToolView">
@@ -318,7 +318,7 @@
                                     <constraint firstItem="n30-Nl-HMF" firstAttribute="trailing" secondItem="TVT-Fm-7xa" secondAttribute="trailing" id="YOH-ba-Liz"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-Xi-01X" userLabel="TextToolBarView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-Xi-01X" userLabel="TextToolBarView">
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjf-FU-GbV" userLabel="FixTextToolView">
@@ -447,7 +447,7 @@
                                     <constraint firstItem="Yjf-FU-GbV" firstAttribute="trailing" secondItem="Fr6-Xi-01X" secondAttribute="trailing" id="kPL-go-aGP"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXW-O5-jKq" userLabel="ImageToolBarView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXW-O5-jKq" userLabel="ImageToolBarView">
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qx-RQ-e94" userLabel="FixImageToolView">
@@ -576,7 +576,7 @@
                                     <constraint firstItem="GA3-jL-F1w" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.834" id="i2L-0W-Yyt"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X17-8C-vP8" userLabel="LineToolBarView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X17-8C-vP8" userLabel="LineToolBarView">
                                 <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6P-0F-6d1" userLabel="FixLineToolView">
