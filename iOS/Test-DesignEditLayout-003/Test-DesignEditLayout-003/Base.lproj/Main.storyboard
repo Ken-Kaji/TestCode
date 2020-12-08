@@ -71,6 +71,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lF-yYj" userLabel="MainPrintButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk7-Jy-VyR"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -88,6 +91,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-Gs-8EY" userLabel="MainSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QN7-Dm-Dsd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -197,6 +203,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-Hd-Rbe" userLabel="ShapeSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9O-KV-GjT"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -219,6 +228,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-H4-ElQ" userLabel="ShapeTool1Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ORJ-VH-wFi"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -236,6 +248,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-KQ-LpS" userLabel="ShapeTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qal-Zc-ajX"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -253,6 +268,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-tH-clQ" userLabel="ShapeTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8p-SQ-nPU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -270,6 +288,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-d0-5El" userLabel="ShapeTool4Button">
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GH-h5-fgF"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -287,6 +308,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-FB-kEv" userLabel="ShapeTool5Button">
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGM-xb-uL6"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -327,6 +351,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-nf-vkY" userLabel="TextSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZE-m8-MyO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -349,6 +376,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fp-pj-TqJ" userLabel="TextTool1Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypX-s9-fAx"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -366,6 +396,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-yK-Ysy" userLabel="TextTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1W-du-Lbm"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -383,6 +416,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-8J-wI0" userLabel="TextTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxk-tY-9Oi"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -400,6 +436,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-23-nbK" userLabel="TextTool4Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NM7-rh-jMS"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -417,6 +456,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-vh-0MA" userLabel="TextTool5Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="glY-Mz-Tob"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -456,6 +498,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-br-nRY" userLabel="ImageSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TF3-od-Tjd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -478,6 +523,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-Jp-PdB" userLabel="ImageTool1Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMv-q3-KNd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -495,6 +543,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q66-lr-XqX" userLabel="ImageTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMN-03-e3z"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -512,6 +563,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xib-Pf-NRC" userLabel="ImageTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibm-Di-6aR"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -529,6 +583,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-81-wqI" userLabel="ImageTool4Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Oq-Ub-JSW"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -546,6 +603,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-2Q-Xzq" userLabel="ImageTool5Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQO-6Q-Ocl"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -585,6 +645,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99C-zj-r5E" userLabel="LineSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHh-3u-efC"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -610,6 +673,9 @@
                                                             <constraint firstAttribute="width" secondItem="s9O-M0-d5l" secondAttribute="height" multiplier="1:1" id="Ptx-r7-pYW"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQw-Jv-CRj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -626,6 +692,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTM-Tp-7O0" userLabel="LineTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdY-bV-gQL"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -643,6 +712,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCJ-Rt-cvh" userLabel="LineTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdB-hM-FQJ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -660,6 +732,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTW-yZ-d79" userLabel="LineTool4Button">
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roW-M2-t41"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -680,6 +755,9 @@
                                                             <constraint firstAttribute="width" secondItem="pFe-lQ-alN" secondAttribute="height" multiplier="1:1" id="azb-mE-8R3"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQf-jd-xix"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

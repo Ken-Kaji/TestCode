@@ -30,6 +30,8 @@ class ViewController: UIViewController {
 
     }
 
-
+    @IBAction func tappedButton(_ sender: Any) {
+    }
+    
 }
 
