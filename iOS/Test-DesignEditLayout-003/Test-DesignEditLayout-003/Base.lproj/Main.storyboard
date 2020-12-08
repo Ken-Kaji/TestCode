@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="542.5" width="375" height="62.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-yk-Gjd" userLabel="SliderView">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-yk-Gjd" userLabel="SliderView">
                                 <rect key="frame" x="0.0" y="542.5" width="375" height="62.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZDy-bO-tHS">
@@ -68,7 +68,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTN-Od-xZG" userLabel="MainPrintView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lF-yYj" userLabel="MainPrintButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lF-yYj" userLabel="MainPrintButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -85,7 +85,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-a2-yv6" userLabel="MainSaveView">
                                                 <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-Gs-8EY" userLabel="MainSaveButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-Gs-8EY" userLabel="MainSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -107,9 +107,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUo-n8-6Wi" userLabel="MainTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-xL-AVP" userLabel="MainTool1Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-xL-AVP" userLabel="MainTool1Button">
                                                         <rect key="frame" x="3" y="3" width="56" height="56.5"/>
-                                                        <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -123,12 +122,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-h2-5wa" userLabel="MainTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-ao-R2Z" userLabel="MainTool2Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-ao-R2Z" userLabel="MainTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56" height="56.5"/>
-                                                        <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstItem="LNT-ao-R2Z" firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="width" multiplier="0.9" id="Hz4-Gm-uJ3"/>
                                                     <constraint firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="height" multiplier="1:1" id="S9T-Dt-eeA"/>
@@ -140,7 +137,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-4T-TGF" userLabel="MainTool3View">
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKe-HE-aTh" userLabel="MainTool3Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKe-HE-aTh" userLabel="MainTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -157,7 +154,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b86-xC-piN" userLabel="MainTool4View">
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyt-HW-5NJ" userLabel="MainTool4Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyt-HW-5NJ" userLabel="MainTool4Button">
                                                         <rect key="frame" x="3" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -197,7 +194,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q77-Yb-tZL" userLabel="ShapeSaveView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-Hd-Rbe" userLabel="ShapeSaveButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-Hd-Rbe" userLabel="ShapeSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -219,7 +216,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyM-8b-IKJ" userLabel="ShapeTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-H4-ElQ" userLabel="ShapeTool1Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-H4-ElQ" userLabel="ShapeTool1Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -236,7 +233,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbt-Qe-WHU" userLabel="ShapeTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-KQ-LpS" userLabel="ShapeTool2Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-KQ-LpS" userLabel="ShapeTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -253,7 +250,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNP-vR-qgu" userLabel="ShapeTool3View">
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-tH-clQ" userLabel="ShapeTool3Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-tH-clQ" userLabel="ShapeTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -270,7 +267,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTB-Qj-Vnv" userLabel="ShapeTool4View">
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-d0-5El" userLabel="ShapeTool4Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-d0-5El" userLabel="ShapeTool4Button">
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -287,7 +284,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGX-my-OUk" userLabel="ShapeTool5View">
                                                 <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-FB-kEv" userLabel="ShapeTool4Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-FB-kEv" userLabel="ShapeTool5Button">
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -327,7 +324,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8x9-Eh-gxI" userLabel="TextSaveView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-nf-vkY" userLabel="TextSaveButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-nf-vkY" userLabel="TextSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -349,7 +346,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-GD-Zo0" userLabel="TextTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fp-pj-TqJ" userLabel="TextTool1Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fp-pj-TqJ" userLabel="TextTool1Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -366,7 +363,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsa-El-OAo" userLabel="TextTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-yK-Ysy" userLabel="TextTool2Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-yK-Ysy" userLabel="TextTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -383,7 +380,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lD-Sh-MF3" userLabel="TextTool3View">
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-8J-wI0" userLabel="TextTool3Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-8J-wI0" userLabel="TextTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -400,7 +397,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llM-uU-SIr" userLabel="TextTool4View">
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-23-nbK" userLabel="TextTool4Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-23-nbK" userLabel="TextTool4Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -417,7 +414,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-vl-IB0" userLabel="TextTool5View">
                                                 <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-vh-0MA" userLabel="TextTool5Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-vh-0MA" userLabel="TextTool5Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -456,7 +453,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arp-7W-hZw" userLabel="ImageSaveView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-br-nRY" userLabel="ImageSaveButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-br-nRY" userLabel="ImageSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -478,7 +475,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPW-oG-cgv" userLabel="ImageTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-Jp-PdB" userLabel="ImageTool1Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-Jp-PdB" userLabel="ImageTool1Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -495,7 +492,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjR-4E-lPt" userLabel="ImageTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q66-lr-XqX" userLabel="ImageTool2Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q66-lr-XqX" userLabel="ImageTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -512,7 +509,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sx-z3-x9K" userLabel="ImageTool3View">
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xib-Pf-NRC" userLabel="ImageTool3Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xib-Pf-NRC" userLabel="ImageTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -529,7 +526,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-Be-L9x" userLabel="ImageTool4View">
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-81-wqI" userLabel="ImageTool4Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-81-wqI" userLabel="ImageTool4Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -546,7 +543,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ee-DM-56z" userLabel="ImageTool5View">
                                                 <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-2Q-Xzq" userLabel="ImageTool5Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-2Q-Xzq" userLabel="ImageTool5Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -585,7 +582,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="796-YI-LGn" userLabel="LineSaveView">
                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99C-zj-r5E" userLabel="LineSaveButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99C-zj-r5E" userLabel="LineSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -607,7 +604,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bK-0b-TXU" userLabel="LineTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-M0-d5l" userLabel="LineTool1Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-M0-d5l" userLabel="LineTool1Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="s9O-M0-d5l" secondAttribute="height" multiplier="1:1" id="Ptx-r7-pYW"/>
@@ -626,7 +623,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKt-a5-VFx" userLabel="LineTool2View">
                                                 <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTM-Tp-7O0" userLabel="LineTool2Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTM-Tp-7O0" userLabel="LineTool2Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -643,7 +640,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lU-8O-v7F" userLabel="LineTool3View">
                                                 <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCJ-Rt-cvh" userLabel="LineTool3Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCJ-Rt-cvh" userLabel="LineTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -660,7 +657,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfa-QG-9ZZ" userLabel="LineTool4View">
                                                 <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTW-yZ-d79" userLabel="LineTool4Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTW-yZ-d79" userLabel="LineTool4Button">
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
@@ -677,7 +674,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-RP-kOe" userLabel="LineTool5View">
                                                 <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-lQ-alN" userLabel="LineTool5Button">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-lQ-alN" userLabel="LineTool5Button">
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="pFe-lQ-alN" secondAttribute="height" multiplier="1:1" id="azb-mE-8R3"/>
@@ -802,6 +799,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="MainTool1Button" destination="yKn-xL-AVP" id="fhY-F2-qWA"/>
+                        <outlet property="MainTool2Button" destination="LNT-ao-R2Z" id="kZK-rk-PLH"/>
+                        <outlet property="MainTool3Button" destination="uKe-HE-aTh" id="TDy-Sh-GQG"/>
+                        <outlet property="MainTool4Button" destination="Hyt-HW-5NJ" id="mBe-nt-tsT"/>
+                        <outlet property="MainToolBarView" destination="4eh-8Y-SB9" id="qLR-8z-Zvj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
