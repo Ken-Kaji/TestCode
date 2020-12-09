@@ -71,9 +71,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lF-yYj" userLabel="MainPrintButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
-                                                        <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gk7-Jy-VyR"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -91,9 +88,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-Gs-8EY" userLabel="MainSaveButton">
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
-                                                        <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QN7-Dm-Dsd"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -204,7 +198,7 @@
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9O-KV-GjT"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9O-KV-GjT"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -229,7 +223,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ORJ-VH-wFi"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ORJ-VH-wFi"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -249,7 +243,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qal-Zc-ajX"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qal-Zc-ajX"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -269,7 +263,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8p-SQ-nPU"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8p-SQ-nPU"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -289,7 +283,7 @@
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GH-h5-fgF"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GH-h5-fgF"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -309,7 +303,7 @@
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGM-xb-uL6"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGM-xb-uL6"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -352,7 +346,7 @@
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZE-m8-MyO"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZE-m8-MyO"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -377,7 +371,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypX-s9-fAx"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypX-s9-fAx"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -397,7 +391,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1W-du-Lbm"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1W-du-Lbm"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -417,7 +411,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxk-tY-9Oi"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxk-tY-9Oi"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -437,7 +431,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NM7-rh-jMS"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NM7-rh-jMS"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -457,7 +451,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="glY-Mz-Tob"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="glY-Mz-Tob"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -499,7 +493,7 @@
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TF3-od-Tjd"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TF3-od-Tjd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -524,7 +518,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMv-q3-KNd"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMv-q3-KNd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -544,7 +538,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMN-03-e3z"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMN-03-e3z"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -564,7 +558,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibm-Di-6aR"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibm-Di-6aR"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -584,7 +578,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Oq-Ub-JSW"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Oq-Ub-JSW"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -604,7 +598,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQO-6Q-Ocl"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQO-6Q-Ocl"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -646,7 +640,7 @@
                                                         <rect key="frame" x="3" y="3" width="56" height="56"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHh-3u-efC"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHh-3u-efC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -674,7 +668,7 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQw-Jv-CRj"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQw-Jv-CRj"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -693,7 +687,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdY-bV-gQL"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdY-bV-gQL"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -713,7 +707,7 @@
                                                         <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdB-hM-FQJ"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdB-hM-FQJ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -733,7 +727,7 @@
                                                         <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roW-M2-t41"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roW-M2-t41"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -756,7 +750,7 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQf-jd-xix"/>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQf-jd-xix"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -878,11 +872,37 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="MainTool1Button" destination="yKn-xL-AVP" id="fhY-F2-qWA"/>
-                        <outlet property="MainTool2Button" destination="LNT-ao-R2Z" id="kZK-rk-PLH"/>
-                        <outlet property="MainTool3Button" destination="uKe-HE-aTh" id="TDy-Sh-GQG"/>
-                        <outlet property="MainTool4Button" destination="Hyt-HW-5NJ" id="mBe-nt-tsT"/>
-                        <outlet property="MainToolBarView" destination="4eh-8Y-SB9" id="qLR-8z-Zvj"/>
+                        <outlet property="imageTool1Button" destination="pdA-Jp-PdB" id="hru-Kv-YGx"/>
+                        <outlet property="imageTool2Button" destination="Q66-lr-XqX" id="ty0-iO-VN5"/>
+                        <outlet property="imageTool3Button" destination="xib-Pf-NRC" id="xfw-E0-c4C"/>
+                        <outlet property="imageTool4Button" destination="bG5-81-wqI" id="J1n-cf-Ddq"/>
+                        <outlet property="imageTool5Button" destination="mHJ-2Q-Xzq" id="DGd-CN-76f"/>
+                        <outlet property="imageToolBar" destination="VXW-O5-jKq" id="YR2-7t-fi1"/>
+                        <outlet property="lineTool1Button" destination="s9O-M0-d5l" id="a9B-Ef-mRw"/>
+                        <outlet property="lineTool2Button" destination="VTM-Tp-7O0" id="C4K-j1-DII"/>
+                        <outlet property="lineTool3Button" destination="DCJ-Rt-cvh" id="zLX-3O-9Cl"/>
+                        <outlet property="lineTool4Button" destination="wTW-yZ-d79" id="yw0-Yt-ia2"/>
+                        <outlet property="lineTool5Button" destination="pFe-lQ-alN" id="UYX-qC-1tm"/>
+                        <outlet property="lineToolBar" destination="X17-8C-vP8" id="kwE-bX-TEp"/>
+                        <outlet property="mainTool1Button" destination="yKn-xL-AVP" id="fhY-F2-qWA"/>
+                        <outlet property="mainTool2Button" destination="LNT-ao-R2Z" id="kZK-rk-PLH"/>
+                        <outlet property="mainTool3Button" destination="uKe-HE-aTh" id="TDy-Sh-GQG"/>
+                        <outlet property="mainTool4Button" destination="Hyt-HW-5NJ" id="mBe-nt-tsT"/>
+                        <outlet property="mainToolBar" destination="4eh-8Y-SB9" id="GWS-1g-R1G"/>
+                        <outlet property="printButton" destination="hyo-lF-yYj" id="mT4-xJ-5lK"/>
+                        <outlet property="saveButton" destination="VFG-Gs-8EY" id="pVN-Qa-Lfz"/>
+                        <outlet property="shapeTool1Button" destination="bbi-H4-ElQ" id="Yv6-qM-to0"/>
+                        <outlet property="shapeTool2Button" destination="HoI-KQ-LpS" id="NjS-d6-aBu"/>
+                        <outlet property="shapeTool3Button" destination="Pqa-tH-clQ" id="ckH-wb-DxT"/>
+                        <outlet property="shapeTool4Button" destination="bQ2-d0-5El" id="HOZ-1g-2Fg"/>
+                        <outlet property="shapeTool5Button" destination="wL8-FB-kEv" id="ug6-6b-40I"/>
+                        <outlet property="shapeToolBar" destination="TVT-Fm-7xa" id="f65-Al-J6S"/>
+                        <outlet property="textTool1Button" destination="9Fp-pj-TqJ" id="jLR-VF-q0l"/>
+                        <outlet property="textTool2Button" destination="Ewk-yK-Ysy" id="ysS-bC-ZUs"/>
+                        <outlet property="textTool3Button" destination="WRq-8J-wI0" id="xLC-lY-4k1"/>
+                        <outlet property="textTool4Button" destination="Ynx-23-nbK" id="UXD-Iy-8Nv"/>
+                        <outlet property="textTool5Button" destination="BYB-vh-0MA" id="Pfm-nf-r8b"/>
+                        <outlet property="textToolBar" destination="Fr6-Xi-01X" id="q9d-8a-hZs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
