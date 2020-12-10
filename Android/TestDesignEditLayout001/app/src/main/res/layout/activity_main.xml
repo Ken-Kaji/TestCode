@@ -11,17 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="100"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:weightSum="100">
 
-        <View
-            android:id="@+id/view"
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="10" />
+            android:layout_weight="80"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,41 +27,47 @@
             android:orientation="horizontal"
             android:weightSum="6">
 
-            <View
-                android:id="@+id/view01"
+            <Button
+                android:id="@+id/button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view02"
+            <Button
+                android:id="@+id/button2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view03"
+            <Button
+                android:id="@+id/button3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view04"
+            <Button
+                android:id="@+id/button4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view05"
+            <Button
+                android:id="@+id/button5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view06"
+            <Button
+                android:id="@+id/button6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
         </LinearLayout>
 
         <LinearLayout
@@ -74,41 +77,47 @@
             android:orientation="horizontal"
             android:weightSum="6">
 
-            <View
-                android:id="@+id/view11"
+            <Button
+                android:id="@+id/button7"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view12"
+            <Button
+                android:id="@+id/button8"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view13"
+            <Button
+                android:id="@+id/button9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view14"
+            <Button
+                android:id="@+id/button10"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view15"
+            <Button
+                android:id="@+id/button11"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
 
-            <View
-                android:id="@+id/view16"
+            <Button
+                android:id="@+id/button12"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
