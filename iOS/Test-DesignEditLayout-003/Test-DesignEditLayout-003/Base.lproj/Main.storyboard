@@ -16,11 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MqR-Ft-GsC" userLabel="IconCriteriaView">
-                                <rect key="frame" x="0.0" y="604.5" width="62.5" height="62.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEM-OX-NFc" userLabel="FontListView">
+                                <rect key="frame" x="0.0" y="542.5" width="375" height="62.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uP-jV-eEl" userLabel="ColorListView">
+                                <rect key="frame" x="0.0" y="542.5" width="375" height="62.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-yk-Gjd" userLabel="SliderView">
+                                <rect key="frame" x="0.0" y="542.5" width="375" height="62.5"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZDy-bO-tHS">
+                                        <rect key="frame" x="30" y="16" width="315" height="31"/>
+                                    </slider>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="MqR-Ft-GsC" secondAttribute="height" multiplier="1:1" id="ztc-Ll-Nsb"/>
+                                    <constraint firstItem="ZDy-bO-tHS" firstAttribute="leading" secondItem="3dq-yk-Gjd" secondAttribute="leading" constant="32" id="9Gs-In-GDc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZDy-bO-tHS" secondAttribute="trailing" constant="32" id="HdQ-1t-ccY"/>
+                                    <constraint firstItem="ZDy-bO-tHS" firstAttribute="centerY" secondItem="3dq-yk-Gjd" secondAttribute="centerY" id="ird-kq-WyB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH7-pY-5t9" userLabel="IconCriteriaView">
+                                <rect key="frame" x="0.0" y="542.5" width="62.5" height="62.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fH7-pY-5t9" secondAttribute="height" multiplier="1:1" id="vdR-Fw-d6J"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wv-iP-lsp" userLabel="VerticalCriteriaView">
@@ -38,473 +60,850 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-8Y-SB9" userLabel="MainToolBarView">
-                                <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baR-T2-Ilp" userLabel="FixMainToolView">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="62"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTN-Od-xZG" userLabel="MainPrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAs-ia-900">
-                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
-                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-lF-yYj" userLabel="MainPrintButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="BAs-ia-900" firstAttribute="centerX" secondItem="mTN-Od-xZG" secondAttribute="centerX" id="OmT-9o-Y4T"/>
-                                                    <constraint firstItem="BAs-ia-900" firstAttribute="width" secondItem="mTN-Od-xZG" secondAttribute="width" multiplier="0.9" id="qGm-f0-V5m"/>
-                                                    <constraint firstItem="BAs-ia-900" firstAttribute="height" secondItem="mTN-Od-xZG" secondAttribute="height" multiplier="0.9" id="rZv-hx-i4S"/>
-                                                    <constraint firstItem="BAs-ia-900" firstAttribute="centerY" secondItem="mTN-Od-xZG" secondAttribute="centerY" id="vSm-kz-9vi"/>
+                                                    <constraint firstItem="hyo-lF-yYj" firstAttribute="width" secondItem="mTN-Od-xZG" secondAttribute="width" multiplier="0.9" id="3U4-wV-olf"/>
+                                                    <constraint firstItem="hyo-lF-yYj" firstAttribute="height" secondItem="mTN-Od-xZG" secondAttribute="height" multiplier="0.9" id="AVI-lo-Myv"/>
+                                                    <constraint firstItem="hyo-lF-yYj" firstAttribute="centerY" secondItem="mTN-Od-xZG" secondAttribute="centerY" id="iBx-pD-fYi"/>
                                                     <constraint firstAttribute="width" secondItem="mTN-Od-xZG" secondAttribute="height" multiplier="1:1" id="vbK-DK-CBQ"/>
+                                                    <constraint firstItem="hyo-lF-yYj" firstAttribute="centerX" secondItem="mTN-Od-xZG" secondAttribute="centerX" id="w11-SN-NeP"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-a2-yv6" userLabel="MainSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <rect key="frame" x="62.5" y="0.0" width="62" height="62"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nLP-qy-Zz0">
-                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
-                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-Gs-8EY" userLabel="MainSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="nLP-qy-Zz0" firstAttribute="centerX" secondItem="qi8-a2-yv6" secondAttribute="centerX" id="BM0-cM-Wmy"/>
-                                                    <constraint firstItem="nLP-qy-Zz0" firstAttribute="height" secondItem="qi8-a2-yv6" secondAttribute="height" multiplier="0.9" id="RvS-mg-yha"/>
+                                                    <constraint firstItem="VFG-Gs-8EY" firstAttribute="width" secondItem="qi8-a2-yv6" secondAttribute="width" multiplier="0.9" id="5mf-1z-S0c"/>
+                                                    <constraint firstItem="VFG-Gs-8EY" firstAttribute="height" secondItem="qi8-a2-yv6" secondAttribute="height" multiplier="0.9" id="KBH-sJ-ro4"/>
+                                                    <constraint firstItem="VFG-Gs-8EY" firstAttribute="centerX" secondItem="qi8-a2-yv6" secondAttribute="centerX" id="NAq-3l-mBI"/>
+                                                    <constraint firstItem="VFG-Gs-8EY" firstAttribute="centerY" secondItem="qi8-a2-yv6" secondAttribute="centerY" id="VyO-Vh-pSS"/>
                                                     <constraint firstAttribute="width" secondItem="qi8-a2-yv6" secondAttribute="height" multiplier="1:1" id="WyE-qp-sIJ"/>
-                                                    <constraint firstItem="nLP-qy-Zz0" firstAttribute="centerY" secondItem="qi8-a2-yv6" secondAttribute="centerY" id="auL-l0-Xce"/>
-                                                    <constraint firstItem="nLP-qy-Zz0" firstAttribute="width" secondItem="qi8-a2-yv6" secondAttribute="width" multiplier="0.9" id="cYq-4X-pef"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="qi8-a2-yv6" firstAttribute="top" secondItem="baR-T2-Ilp" secondAttribute="top" id="1qz-N6-aKi"/>
-                                            <constraint firstItem="qi8-a2-yv6" firstAttribute="leading" secondItem="mTN-Od-xZG" secondAttribute="trailing" id="ENR-nh-CLu"/>
-                                            <constraint firstItem="mTN-Od-xZG" firstAttribute="top" secondItem="baR-T2-Ilp" secondAttribute="top" id="KsA-pk-1pN"/>
-                                            <constraint firstItem="mTN-Od-xZG" firstAttribute="leading" secondItem="baR-T2-Ilp" secondAttribute="leading" id="ZQF-yc-BJT"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpV-7a-UCK" userLabel="VariableMainToolView">
-                                        <rect key="frame" x="0.0" y="0.0" width="313" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="250" height="62.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUo-n8-6Wi" userLabel="MainTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-tD-sVB">
-                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
-                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-xL-AVP" userLabel="MainTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="ewd-tD-sVB" firstAttribute="centerY" secondItem="YUo-n8-6Wi" secondAttribute="centerY" id="Wk4-75-K00"/>
-                                                    <constraint firstItem="ewd-tD-sVB" firstAttribute="centerX" secondItem="YUo-n8-6Wi" secondAttribute="centerX" id="Ycr-pK-gQU"/>
-                                                    <constraint firstItem="ewd-tD-sVB" firstAttribute="width" secondItem="YUo-n8-6Wi" secondAttribute="width" multiplier="0.9" id="bc6-8Y-jXL"/>
-                                                    <constraint firstItem="ewd-tD-sVB" firstAttribute="height" secondItem="YUo-n8-6Wi" secondAttribute="height" multiplier="0.9" id="eKk-N5-R28"/>
-                                                    <constraint firstAttribute="width" secondItem="YUo-n8-6Wi" secondAttribute="height" multiplier="1:1" id="l55-qc-IBj"/>
+                                                    <constraint firstItem="yKn-xL-AVP" firstAttribute="width" secondItem="YUo-n8-6Wi" secondAttribute="width" multiplier="0.9" id="4gf-p0-Cem"/>
+                                                    <constraint firstItem="yKn-xL-AVP" firstAttribute="centerY" secondItem="YUo-n8-6Wi" secondAttribute="centerY" id="WC5-ql-w0g"/>
+                                                    <constraint firstItem="yKn-xL-AVP" firstAttribute="centerX" secondItem="YUo-n8-6Wi" secondAttribute="centerX" id="m8K-JW-dCN"/>
+                                                    <constraint firstItem="yKn-xL-AVP" firstAttribute="height" secondItem="YUo-n8-6Wi" secondAttribute="height" multiplier="0.9" id="u2P-jN-LsZ"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-h2-5wa" userLabel="MainTool2View">
-                                                <rect key="frame" x="62.5" y="0.0" width="63" height="62.5"/>
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mes-2v-5wi">
-                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
-                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-ao-R2Z" userLabel="MainTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                    </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="mes-2v-5wi" firstAttribute="centerX" secondItem="oDE-h2-5wa" secondAttribute="centerX" id="D5k-lL-erd"/>
-                                                    <constraint firstItem="mes-2v-5wi" firstAttribute="height" secondItem="oDE-h2-5wa" secondAttribute="height" multiplier="0.9" id="DKC-ht-gUG"/>
+                                                    <constraint firstItem="LNT-ao-R2Z" firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="width" multiplier="0.9" id="Hz4-Gm-uJ3"/>
                                                     <constraint firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="height" multiplier="1:1" id="S9T-Dt-eeA"/>
-                                                    <constraint firstItem="mes-2v-5wi" firstAttribute="width" secondItem="oDE-h2-5wa" secondAttribute="width" multiplier="0.9" id="k68-CO-BRB"/>
-                                                    <constraint firstItem="mes-2v-5wi" firstAttribute="centerY" secondItem="oDE-h2-5wa" secondAttribute="centerY" id="kPN-cp-RFe"/>
+                                                    <constraint firstItem="LNT-ao-R2Z" firstAttribute="height" secondItem="oDE-h2-5wa" secondAttribute="height" multiplier="0.9" id="WrZ-5H-HZf"/>
+                                                    <constraint firstItem="LNT-ao-R2Z" firstAttribute="centerX" secondItem="oDE-h2-5wa" secondAttribute="centerX" id="bc5-36-EKd"/>
+                                                    <constraint firstItem="LNT-ao-R2Z" firstAttribute="centerY" secondItem="oDE-h2-5wa" secondAttribute="centerY" id="wuD-AN-k5p"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-4T-TGF" userLabel="MainTool3View">
-                                                <rect key="frame" x="125.5" y="0.0" width="62.5" height="62.5"/>
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Xg-lt-110">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKe-HE-aTh" userLabel="MainTool3Button">
                                                         <rect key="frame" x="3" y="3" width="56" height="56.5"/>
-                                                    </imageView>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="8Xg-lt-110" firstAttribute="width" secondItem="oOE-4T-TGF" secondAttribute="width" multiplier="0.9" id="8yf-cr-bjm"/>
                                                     <constraint firstAttribute="width" secondItem="oOE-4T-TGF" secondAttribute="height" multiplier="1:1" id="IeJ-kO-x3o"/>
-                                                    <constraint firstItem="8Xg-lt-110" firstAttribute="centerY" secondItem="oOE-4T-TGF" secondAttribute="centerY" id="MAb-2q-iI1"/>
-                                                    <constraint firstItem="8Xg-lt-110" firstAttribute="height" secondItem="oOE-4T-TGF" secondAttribute="height" multiplier="0.9" id="Qmd-5N-dQ5"/>
-                                                    <constraint firstItem="8Xg-lt-110" firstAttribute="centerX" secondItem="oOE-4T-TGF" secondAttribute="centerX" id="TsZ-lk-fHL"/>
+                                                    <constraint firstItem="uKe-HE-aTh" firstAttribute="width" secondItem="oOE-4T-TGF" secondAttribute="width" multiplier="0.9" id="Lxn-FW-itN"/>
+                                                    <constraint firstItem="uKe-HE-aTh" firstAttribute="height" secondItem="oOE-4T-TGF" secondAttribute="height" multiplier="0.9" id="a2H-p8-Ofq"/>
+                                                    <constraint firstItem="uKe-HE-aTh" firstAttribute="centerX" secondItem="oOE-4T-TGF" secondAttribute="centerX" id="nma-E6-AMT"/>
+                                                    <constraint firstItem="uKe-HE-aTh" firstAttribute="centerY" secondItem="oOE-4T-TGF" secondAttribute="centerY" id="o22-Lu-VDU"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b86-xC-piN" userLabel="MainTool4View">
-                                                <rect key="frame" x="188" y="0.0" width="62.5" height="62.5"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NQr-d5-rHL">
-                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
-                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyt-HW-5NJ" userLabel="MainTool4Button">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="NQr-d5-rHL" firstAttribute="width" secondItem="b86-xC-piN" secondAttribute="width" multiplier="0.9" id="55X-1w-h7D"/>
-                                                    <constraint firstItem="NQr-d5-rHL" firstAttribute="centerY" secondItem="b86-xC-piN" secondAttribute="centerY" id="Euc-9A-l3n"/>
-                                                    <constraint firstItem="NQr-d5-rHL" firstAttribute="height" secondItem="b86-xC-piN" secondAttribute="height" multiplier="0.9" id="Igr-rJ-9Zv"/>
-                                                    <constraint firstItem="NQr-d5-rHL" firstAttribute="centerX" secondItem="b86-xC-piN" secondAttribute="centerX" id="M3v-os-E39"/>
+                                                    <constraint firstItem="Hyt-HW-5NJ" firstAttribute="width" secondItem="b86-xC-piN" secondAttribute="width" multiplier="0.9" id="FCM-7k-c7l"/>
                                                     <constraint firstAttribute="width" secondItem="b86-xC-piN" secondAttribute="height" multiplier="1:1" id="Tq9-DA-cPB"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjO-Y0-Y38" userLabel="MainTool5View">
-                                                <rect key="frame" x="250.5" y="0.0" width="62.5" height="62.5"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g12-Q7-WQf">
-                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="JjO-Y0-Y38" secondAttribute="height" multiplier="1:1" id="1P8-C2-cX2"/>
-                                                    <constraint firstItem="g12-Q7-WQf" firstAttribute="width" secondItem="JjO-Y0-Y38" secondAttribute="width" multiplier="0.9" id="4nb-1y-4Le"/>
-                                                    <constraint firstItem="g12-Q7-WQf" firstAttribute="centerX" secondItem="JjO-Y0-Y38" secondAttribute="centerX" id="gcd-V5-dyN"/>
-                                                    <constraint firstItem="g12-Q7-WQf" firstAttribute="height" secondItem="JjO-Y0-Y38" secondAttribute="height" multiplier="0.9" id="n2S-Uj-MFn"/>
-                                                    <constraint firstItem="g12-Q7-WQf" firstAttribute="centerY" secondItem="JjO-Y0-Y38" secondAttribute="centerY" id="ss0-Ql-Flf"/>
+                                                    <constraint firstItem="Hyt-HW-5NJ" firstAttribute="height" secondItem="b86-xC-piN" secondAttribute="height" multiplier="0.9" id="Y2S-qJ-n7f"/>
+                                                    <constraint firstItem="Hyt-HW-5NJ" firstAttribute="centerY" secondItem="b86-xC-piN" secondAttribute="centerY" id="Zh0-C9-BPH"/>
+                                                    <constraint firstItem="Hyt-HW-5NJ" firstAttribute="centerX" secondItem="b86-xC-piN" secondAttribute="centerX" id="fUA-nt-yx1"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="YUo-n8-6Wi" firstAttribute="bottom" secondItem="HpV-7a-UCK" secondAttribute="bottom" id="CEo-VY-ckX"/>
-                                            <constraint firstItem="YUo-n8-6Wi" firstAttribute="top" secondItem="HpV-7a-UCK" secondAttribute="top" id="RJY-pJ-kp4"/>
                                             <constraint firstItem="YUo-n8-6Wi" firstAttribute="leading" secondItem="HpV-7a-UCK" secondAttribute="leading" id="krt-HM-U65"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="HpV-7a-UCK" firstAttribute="leading" secondItem="4eh-8Y-SB9" secondAttribute="leading" id="UYR-ep-dWk"/>
-                                    <constraint firstItem="baR-T2-Ilp" firstAttribute="top" secondItem="4eh-8Y-SB9" secondAttribute="top" id="ZS2-RU-NMD"/>
-                                    <constraint firstItem="baR-T2-Ilp" firstAttribute="width" secondItem="4eh-8Y-SB9" secondAttribute="width" multiplier="0.334" id="a8a-lW-ffj"/>
-                                    <constraint firstItem="HpV-7a-UCK" firstAttribute="top" secondItem="4eh-8Y-SB9" secondAttribute="top" id="i7o-Ng-Cea"/>
-                                    <constraint firstItem="baR-T2-Ilp" firstAttribute="trailing" secondItem="4eh-8Y-SB9" secondAttribute="trailing" id="nh1-UX-xS3"/>
+                                    <constraint firstAttribute="bottom" secondItem="HpV-7a-UCK" secondAttribute="bottom" id="2yy-fJ-Rgh"/>
+                                    <constraint firstItem="HpV-7a-UCK" firstAttribute="width" secondItem="4eh-8Y-SB9" secondAttribute="width" multiplier="0.666" id="B0Z-em-J3u"/>
+                                    <constraint firstItem="baR-T2-Ilp" firstAttribute="width" secondItem="4eh-8Y-SB9" secondAttribute="width" multiplier="0.332" id="Jc2-te-WVX"/>
+                                    <constraint firstItem="HpV-7a-UCK" firstAttribute="leading" secondItem="4eh-8Y-SB9" secondAttribute="leading" id="X3h-qn-H1C"/>
+                                    <constraint firstAttribute="trailing" secondItem="baR-T2-Ilp" secondAttribute="trailing" id="l3O-0e-UGb"/>
+                                    <constraint firstAttribute="bottom" secondItem="baR-T2-Ilp" secondAttribute="bottom" id="pmX-PF-VAr"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsg-26-1bD" userLabel="LineToolBarView">
-                                <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-Fm-7xa" userLabel="ShapeToolBarView">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MM-hi-hfc" userLabel="Fix LineToolView">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n30-Nl-HMF" userLabel="FixShapeToolView">
+                                        <rect key="frame" x="313" y="0.0" width="62" height="62"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPY-g2-mLj" userLabel="LinePrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q77-Yb-tZL" userLabel="ShapeSaveView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-Hd-Rbe" userLabel="ShapeSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9O-KV-GjT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="CPY-g2-mLj" secondAttribute="height" multiplier="1:1" id="2Yu-qj-Ark"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-pb-qCq" userLabel="LineSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="pMt-pb-qCq" secondAttribute="height" multiplier="1:1" id="HWG-Da-TKX"/>
+                                                    <constraint firstItem="IAN-Hd-Rbe" firstAttribute="centerY" secondItem="q77-Yb-tZL" secondAttribute="centerY" id="7mu-wq-zN5"/>
+                                                    <constraint firstItem="IAN-Hd-Rbe" firstAttribute="width" secondItem="q77-Yb-tZL" secondAttribute="width" multiplier="0.9" id="8Wk-oR-fdk"/>
+                                                    <constraint firstItem="IAN-Hd-Rbe" firstAttribute="height" secondItem="q77-Yb-tZL" secondAttribute="height" multiplier="0.9" id="Eig-eE-nka"/>
+                                                    <constraint firstAttribute="width" secondItem="q77-Yb-tZL" secondAttribute="height" multiplier="1:1" id="P9u-NO-y2q"/>
+                                                    <constraint firstItem="IAN-Hd-Rbe" firstAttribute="centerX" secondItem="q77-Yb-tZL" secondAttribute="centerX" id="n24-jk-op2"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUY-eo-ZVV" userLabel="VariableLineToolView">
-                                        <rect key="frame" x="0.0" y="0.0" width="313" height="62.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-Lw-dVK" userLabel="VariableShapeToolView">
+                                        <rect key="frame" x="0.0" y="-0.5" width="313" height="62.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzG-l1-xAH" userLabel="LineTool1View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyM-8b-IKJ" userLabel="ShapeTool1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-H4-ElQ" userLabel="ShapeTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ORJ-VH-wFi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="pzG-l1-xAH" secondAttribute="height" multiplier="1:1" id="8Wq-kl-Em5"/>
+                                                    <constraint firstItem="bbi-H4-ElQ" firstAttribute="centerX" secondItem="vyM-8b-IKJ" secondAttribute="centerX" id="1W4-63-skN"/>
+                                                    <constraint firstItem="bbi-H4-ElQ" firstAttribute="height" secondItem="vyM-8b-IKJ" secondAttribute="height" multiplier="0.9" id="L1K-cB-EH5"/>
+                                                    <constraint firstItem="bbi-H4-ElQ" firstAttribute="centerY" secondItem="vyM-8b-IKJ" secondAttribute="centerY" id="VX3-id-Hb2"/>
+                                                    <constraint firstItem="bbi-H4-ElQ" firstAttribute="width" secondItem="vyM-8b-IKJ" secondAttribute="width" multiplier="0.9" id="gcy-F5-7bR"/>
+                                                    <constraint firstAttribute="width" secondItem="vyM-8b-IKJ" secondAttribute="height" multiplier="1:1" id="h2k-LR-Vjg"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hpq-xr-Uvl" userLabel="LineTool2View">
-                                                <rect key="frame" x="62.5" y="0.0" width="63" height="62.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbt-Qe-WHU" userLabel="ShapeTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-KQ-LpS" userLabel="ShapeTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qal-Zc-ajX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Hpq-xr-Uvl" secondAttribute="height" multiplier="1:1" id="i39-Bg-4DE"/>
+                                                    <constraint firstItem="HoI-KQ-LpS" firstAttribute="centerX" secondItem="Jbt-Qe-WHU" secondAttribute="centerX" id="NXF-2q-gjC"/>
+                                                    <constraint firstItem="HoI-KQ-LpS" firstAttribute="centerY" secondItem="Jbt-Qe-WHU" secondAttribute="centerY" id="Rc4-re-8mo"/>
+                                                    <constraint firstItem="HoI-KQ-LpS" firstAttribute="height" secondItem="Jbt-Qe-WHU" secondAttribute="height" multiplier="0.9" id="d0S-Rw-GBW"/>
+                                                    <constraint firstAttribute="width" secondItem="Jbt-Qe-WHU" secondAttribute="height" multiplier="1:1" id="ruM-Qx-U3s"/>
+                                                    <constraint firstItem="HoI-KQ-LpS" firstAttribute="width" secondItem="Jbt-Qe-WHU" secondAttribute="width" multiplier="0.9" id="xMw-PN-tVd"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VT8-le-lsk" userLabel="LineTool3View">
-                                                <rect key="frame" x="125.5" y="0.0" width="62.5" height="62.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNP-vR-qgu" userLabel="ShapeTool3View">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-tH-clQ" userLabel="ShapeTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8p-SQ-nPU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="VT8-le-lsk" secondAttribute="height" multiplier="1:1" id="Sdr-c5-9if"/>
+                                                    <constraint firstItem="Pqa-tH-clQ" firstAttribute="height" secondItem="DNP-vR-qgu" secondAttribute="height" multiplier="0.9" id="BmS-WE-C59"/>
+                                                    <constraint firstItem="Pqa-tH-clQ" firstAttribute="centerX" secondItem="DNP-vR-qgu" secondAttribute="centerX" id="LJI-5N-fAk"/>
+                                                    <constraint firstItem="Pqa-tH-clQ" firstAttribute="width" secondItem="DNP-vR-qgu" secondAttribute="width" multiplier="0.9" id="aeo-Vc-dNz"/>
+                                                    <constraint firstAttribute="width" secondItem="DNP-vR-qgu" secondAttribute="height" multiplier="1:1" id="dce-E1-XLA"/>
+                                                    <constraint firstItem="Pqa-tH-clQ" firstAttribute="centerY" secondItem="DNP-vR-qgu" secondAttribute="centerY" id="o0H-P0-GsL"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNe-VU-zrJ" userLabel="LineTool4View">
-                                                <rect key="frame" x="188" y="0.0" width="62.5" height="62.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTB-Qj-Vnv" userLabel="ShapeTool4View">
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-d0-5El" userLabel="ShapeTool4Button">
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GH-h5-fgF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="dNe-VU-zrJ" secondAttribute="height" multiplier="1:1" id="UXy-tJ-f6i"/>
+                                                    <constraint firstItem="bQ2-d0-5El" firstAttribute="height" secondItem="uTB-Qj-Vnv" secondAttribute="height" multiplier="0.9" id="0Ez-Tk-J7h"/>
+                                                    <constraint firstItem="bQ2-d0-5El" firstAttribute="centerY" secondItem="uTB-Qj-Vnv" secondAttribute="centerY" id="6AH-jy-Ztc"/>
+                                                    <constraint firstAttribute="width" secondItem="uTB-Qj-Vnv" secondAttribute="height" multiplier="1:1" id="6eC-WF-jHv"/>
+                                                    <constraint firstItem="bQ2-d0-5El" firstAttribute="centerX" secondItem="uTB-Qj-Vnv" secondAttribute="centerX" id="I9E-ev-FEq"/>
+                                                    <constraint firstItem="bQ2-d0-5El" firstAttribute="width" secondItem="uTB-Qj-Vnv" secondAttribute="width" multiplier="0.9" id="Y8P-8P-2Zz"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf1-lt-WFB" userLabel="LineTool5View">
-                                                <rect key="frame" x="250.5" y="0.0" width="62.5" height="62.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGX-my-OUk" userLabel="ShapeTool5View">
+                                                <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-FB-kEv" userLabel="ShapeTool5Button">
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGM-xb-uL6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Hf1-lt-WFB" secondAttribute="height" multiplier="1:1" id="e6V-O7-2x1"/>
+                                                    <constraint firstItem="wL8-FB-kEv" firstAttribute="width" secondItem="gGX-my-OUk" secondAttribute="width" multiplier="0.9" id="7yM-CV-F3q"/>
+                                                    <constraint firstItem="wL8-FB-kEv" firstAttribute="height" secondItem="gGX-my-OUk" secondAttribute="height" multiplier="0.9" id="Ol7-yV-UFm"/>
+                                                    <constraint firstItem="wL8-FB-kEv" firstAttribute="centerX" secondItem="gGX-my-OUk" secondAttribute="centerX" id="WEJ-wV-FVs"/>
+                                                    <constraint firstAttribute="width" secondItem="gGX-my-OUk" secondAttribute="height" multiplier="1:1" id="iIs-1g-kL2"/>
+                                                    <constraint firstItem="wL8-FB-kEv" firstAttribute="centerY" secondItem="gGX-my-OUk" secondAttribute="centerY" id="kVn-Mg-PNl"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="pzG-l1-xAH" firstAttribute="top" secondItem="aUY-eo-ZVV" secondAttribute="top" id="ECm-lt-uPj"/>
-                                            <constraint firstItem="pzG-l1-xAH" firstAttribute="leading" secondItem="aUY-eo-ZVV" secondAttribute="leading" id="g98-Dy-LSL"/>
-                                            <constraint firstItem="pzG-l1-xAH" firstAttribute="leading" secondItem="aUY-eo-ZVV" secondAttribute="leading" id="pck-XQ-53G"/>
-                                            <constraint firstItem="pzG-l1-xAH" firstAttribute="bottom" secondItem="aUY-eo-ZVV" secondAttribute="bottom" id="w6h-th-vvF"/>
+                                            <constraint firstItem="vyM-8b-IKJ" firstAttribute="leading" secondItem="oB1-Lw-dVK" secondAttribute="leading" id="RbO-ww-rhs"/>
+                                            <constraint firstItem="vyM-8b-IKJ" firstAttribute="bottom" secondItem="oB1-Lw-dVK" secondAttribute="bottom" id="V3b-DJ-7hz"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="7MM-hi-hfc" firstAttribute="top" secondItem="fsg-26-1bD" secondAttribute="top" id="BWO-B7-wZp"/>
-                                    <constraint firstItem="aUY-eo-ZVV" firstAttribute="top" secondItem="fsg-26-1bD" secondAttribute="top" id="Nek-ky-a2V"/>
-                                    <constraint firstItem="aUY-eo-ZVV" firstAttribute="bottom" secondItem="fsg-26-1bD" secondAttribute="bottom" id="TMr-ds-t7s"/>
-                                    <constraint firstItem="7MM-hi-hfc" firstAttribute="bottom" secondItem="fsg-26-1bD" secondAttribute="bottom" id="ipG-NO-lBI"/>
-                                    <constraint firstItem="aUY-eo-ZVV" firstAttribute="leading" secondItem="fsg-26-1bD" secondAttribute="leading" id="o6r-mU-kSF"/>
-                                    <constraint firstAttribute="trailing" secondItem="7MM-hi-hfc" secondAttribute="trailing" id="xpP-Jq-auI"/>
+                                    <constraint firstItem="oB1-Lw-dVK" firstAttribute="width" secondItem="TVT-Fm-7xa" secondAttribute="width" multiplier="0.834" id="2Qe-18-yWI"/>
+                                    <constraint firstItem="n30-Nl-HMF" firstAttribute="bottom" secondItem="TVT-Fm-7xa" secondAttribute="bottom" id="7ci-LS-Sff"/>
+                                    <constraint firstItem="n30-Nl-HMF" firstAttribute="width" secondItem="TVT-Fm-7xa" secondAttribute="width" multiplier="0.166" id="Cub-iM-7HL"/>
+                                    <constraint firstItem="oB1-Lw-dVK" firstAttribute="leading" secondItem="TVT-Fm-7xa" secondAttribute="leading" id="Ig0-aT-keq"/>
+                                    <constraint firstItem="oB1-Lw-dVK" firstAttribute="bottom" secondItem="TVT-Fm-7xa" secondAttribute="bottom" id="WXk-ME-gpa"/>
+                                    <constraint firstItem="n30-Nl-HMF" firstAttribute="trailing" secondItem="TVT-Fm-7xa" secondAttribute="trailing" id="YOH-ba-Liz"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fB-O0-1Jv" userLabel="ImageToolBarView">
-                                <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr6-Xi-01X" userLabel="TextToolBarView">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drg-nU-nY3" userLabel="FixImageToolView">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjf-FU-GbV" userLabel="FixTextToolView">
+                                        <rect key="frame" x="313" y="0.0" width="62" height="62"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cad-lO-7MP" userLabel="ImagePrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8x9-Eh-gxI" userLabel="TextSaveView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-nf-vkY" userLabel="TextSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZE-m8-MyO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="cad-lO-7MP" secondAttribute="height" multiplier="1:1" id="JfF-TJ-8W9"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U63-yK-xh9" userLabel="ImageSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="U63-yK-xh9" secondAttribute="height" multiplier="1:1" id="A69-LJ-2mY"/>
+                                                    <constraint firstItem="oYY-nf-vkY" firstAttribute="centerX" secondItem="8x9-Eh-gxI" secondAttribute="centerX" id="Biq-GH-e6m"/>
+                                                    <constraint firstItem="oYY-nf-vkY" firstAttribute="width" secondItem="8x9-Eh-gxI" secondAttribute="width" multiplier="0.9" id="Tfg-1I-4ei"/>
+                                                    <constraint firstAttribute="width" secondItem="8x9-Eh-gxI" secondAttribute="height" multiplier="1:1" id="anE-qL-bGf"/>
+                                                    <constraint firstItem="oYY-nf-vkY" firstAttribute="centerY" secondItem="8x9-Eh-gxI" secondAttribute="centerY" id="eSd-GT-mbd"/>
+                                                    <constraint firstItem="oYY-nf-vkY" firstAttribute="height" secondItem="8x9-Eh-gxI" secondAttribute="height" multiplier="0.9" id="ziF-kl-NZX"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bgm-Pn-0Db" userLabel="VariableImageToolView">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKv-Fk-oKz" userLabel="VariableTextToolView">
+                                        <rect key="frame" x="0.0" y="-0.5" width="313" height="62.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAV-Do-qQ6" userLabel="ImageTool1View">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-GD-Zo0" userLabel="TextTool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fp-pj-TqJ" userLabel="TextTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypX-s9-fAx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="iAV-Do-qQ6" secondAttribute="height" multiplier="1:1" id="jnR-7w-J5u"/>
+                                                    <constraint firstItem="9Fp-pj-TqJ" firstAttribute="centerY" secondItem="ZUQ-GD-Zo0" secondAttribute="centerY" id="9vS-EO-PcA"/>
+                                                    <constraint firstAttribute="width" secondItem="ZUQ-GD-Zo0" secondAttribute="height" multiplier="1:1" id="bIP-yb-6OK"/>
+                                                    <constraint firstItem="9Fp-pj-TqJ" firstAttribute="height" secondItem="ZUQ-GD-Zo0" secondAttribute="height" multiplier="0.9" id="mqq-DZ-5pb"/>
+                                                    <constraint firstItem="9Fp-pj-TqJ" firstAttribute="width" secondItem="ZUQ-GD-Zo0" secondAttribute="width" multiplier="0.9" id="sjY-e9-QFL"/>
+                                                    <constraint firstItem="9Fp-pj-TqJ" firstAttribute="centerX" secondItem="ZUQ-GD-Zo0" secondAttribute="centerX" id="wB3-2c-lNZ"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-N5-OFE" userLabel="ImageTool2View">
-                                                <rect key="frame" x="63" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsa-El-OAo" userLabel="TextTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-yK-Ysy" userLabel="TextTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1W-du-Lbm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="DcM-N5-OFE" secondAttribute="height" multiplier="1:1" id="CuJ-A2-I3H"/>
+                                                    <constraint firstItem="Ewk-yK-Ysy" firstAttribute="width" secondItem="tsa-El-OAo" secondAttribute="width" multiplier="0.9" id="YaL-mG-3Yv"/>
+                                                    <constraint firstAttribute="width" secondItem="tsa-El-OAo" secondAttribute="height" multiplier="1:1" id="fyi-PR-m7L"/>
+                                                    <constraint firstItem="Ewk-yK-Ysy" firstAttribute="height" secondItem="tsa-El-OAo" secondAttribute="height" multiplier="0.9" id="oFE-Cx-ntr"/>
+                                                    <constraint firstItem="Ewk-yK-Ysy" firstAttribute="centerY" secondItem="tsa-El-OAo" secondAttribute="centerY" id="v5w-gx-h2G"/>
+                                                    <constraint firstItem="Ewk-yK-Ysy" firstAttribute="centerX" secondItem="tsa-El-OAo" secondAttribute="centerX" id="xjU-VA-QoC"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVV-jN-oY4" userLabel="ImageTool3View">
-                                                <rect key="frame" x="126" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lD-Sh-MF3" userLabel="TextTool3View">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-8J-wI0" userLabel="TextTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxk-tY-9Oi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="bVV-jN-oY4" secondAttribute="height" multiplier="1:1" id="bzg-cH-3AZ"/>
+                                                    <constraint firstItem="WRq-8J-wI0" firstAttribute="width" secondItem="1lD-Sh-MF3" secondAttribute="width" multiplier="0.9" id="27A-RA-SUu"/>
+                                                    <constraint firstItem="WRq-8J-wI0" firstAttribute="height" secondItem="1lD-Sh-MF3" secondAttribute="height" multiplier="0.9" id="Jtv-04-ozq"/>
+                                                    <constraint firstItem="WRq-8J-wI0" firstAttribute="centerX" secondItem="1lD-Sh-MF3" secondAttribute="centerX" id="aOX-Fe-J0R"/>
+                                                    <constraint firstItem="WRq-8J-wI0" firstAttribute="centerY" secondItem="1lD-Sh-MF3" secondAttribute="centerY" id="bjG-eU-lO3"/>
+                                                    <constraint firstAttribute="width" secondItem="1lD-Sh-MF3" secondAttribute="height" multiplier="1:1" id="vtU-JD-2fk"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Grx-B7-LsB" userLabel="ImageTool4View">
-                                                <rect key="frame" x="189" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llM-uU-SIr" userLabel="TextTool4View">
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-23-nbK" userLabel="TextTool4Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NM7-rh-jMS"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Grx-B7-LsB" secondAttribute="height" multiplier="1:1" id="HPg-D3-NZg"/>
+                                                    <constraint firstItem="Ynx-23-nbK" firstAttribute="width" secondItem="llM-uU-SIr" secondAttribute="width" multiplier="0.9" id="3Dj-Ae-7wq"/>
+                                                    <constraint firstItem="Ynx-23-nbK" firstAttribute="centerX" secondItem="llM-uU-SIr" secondAttribute="centerX" id="5z6-Pr-Da1"/>
+                                                    <constraint firstAttribute="width" secondItem="llM-uU-SIr" secondAttribute="height" multiplier="1:1" id="QlK-kC-npt"/>
+                                                    <constraint firstItem="Ynx-23-nbK" firstAttribute="height" secondItem="llM-uU-SIr" secondAttribute="height" multiplier="0.9" id="UqY-hl-M4E"/>
+                                                    <constraint firstItem="Ynx-23-nbK" firstAttribute="centerY" secondItem="llM-uU-SIr" secondAttribute="centerY" id="j8b-w2-hwH"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RvA-Cz-hVr" userLabel="ImageTool5View">
-                                                <rect key="frame" x="252" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-vl-IB0" userLabel="TextTool5View">
+                                                <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYB-vh-0MA" userLabel="TextTool5Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="glY-Mz-Tob"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="RvA-Cz-hVr" secondAttribute="height" multiplier="1:1" id="biO-fK-jT0"/>
+                                                    <constraint firstItem="BYB-vh-0MA" firstAttribute="width" secondItem="SPm-vl-IB0" secondAttribute="width" multiplier="0.9" id="DCQ-Px-lUD"/>
+                                                    <constraint firstItem="BYB-vh-0MA" firstAttribute="height" secondItem="SPm-vl-IB0" secondAttribute="height" multiplier="0.9" id="Rky-bd-nNd"/>
+                                                    <constraint firstItem="BYB-vh-0MA" firstAttribute="centerX" secondItem="SPm-vl-IB0" secondAttribute="centerX" id="XeC-KB-POC"/>
+                                                    <constraint firstItem="BYB-vh-0MA" firstAttribute="centerY" secondItem="SPm-vl-IB0" secondAttribute="centerY" id="geO-bX-dLq"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="iAV-Do-qQ6" firstAttribute="leading" secondItem="bgm-Pn-0Db" secondAttribute="leading" id="YxB-6i-7ns"/>
-                                            <constraint firstItem="iAV-Do-qQ6" firstAttribute="bottom" secondItem="bgm-Pn-0Db" secondAttribute="bottom" id="qAx-3K-7oq"/>
+                                            <constraint firstItem="ZUQ-GD-Zo0" firstAttribute="leading" secondItem="qKv-Fk-oKz" secondAttribute="leading" id="6sv-XH-oMD"/>
+                                            <constraint firstItem="ZUQ-GD-Zo0" firstAttribute="bottom" secondItem="qKv-Fk-oKz" secondAttribute="bottom" id="IO1-6k-nkT"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Yjf-FU-GbV" firstAttribute="width" secondItem="Fr6-Xi-01X" secondAttribute="width" multiplier="0.166" id="64b-60-blY"/>
+                                    <constraint firstItem="qKv-Fk-oKz" firstAttribute="width" secondItem="Fr6-Xi-01X" secondAttribute="width" multiplier="0.834" id="AMd-XV-M7K"/>
+                                    <constraint firstItem="qKv-Fk-oKz" firstAttribute="bottom" secondItem="Fr6-Xi-01X" secondAttribute="bottom" id="T6M-rX-iKi"/>
+                                    <constraint firstItem="Yjf-FU-GbV" firstAttribute="bottom" secondItem="Fr6-Xi-01X" secondAttribute="bottom" id="ULG-4X-J2v"/>
+                                    <constraint firstItem="qKv-Fk-oKz" firstAttribute="leading" secondItem="Fr6-Xi-01X" secondAttribute="leading" id="gZI-tS-Rdy"/>
+                                    <constraint firstItem="Yjf-FU-GbV" firstAttribute="trailing" secondItem="Fr6-Xi-01X" secondAttribute="trailing" id="kPL-go-aGP"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orH-82-bzD" userLabel="TextToolBarView">
-                                <rect key="frame" x="0.0" y="604.5" width="375" height="0.0"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXW-O5-jKq" userLabel="ImageToolBarView">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHp-Ei-LKp" userLabel="FixTextToolView">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qx-RQ-e94" userLabel="FixImageToolView">
+                                        <rect key="frame" x="313" y="0.0" width="62" height="62"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-a3-nx1" userLabel="TextPrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arp-7W-hZw" userLabel="ImageSaveView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-br-nRY" userLabel="ImageSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TF3-od-Tjd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="vQh-a3-nx1" secondAttribute="height" multiplier="1:1" id="xe7-0i-HpM"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGJ-gG-bFG" userLabel="TextSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="JGJ-gG-bFG" secondAttribute="height" multiplier="1:1" id="KlC-Iy-Knf"/>
+                                                    <constraint firstItem="wa9-br-nRY" firstAttribute="height" secondItem="Arp-7W-hZw" secondAttribute="height" multiplier="0.9" id="1xi-MP-Rdt"/>
+                                                    <constraint firstAttribute="width" secondItem="Arp-7W-hZw" secondAttribute="height" multiplier="1:1" id="2ao-28-R3M"/>
+                                                    <constraint firstItem="wa9-br-nRY" firstAttribute="centerX" secondItem="Arp-7W-hZw" secondAttribute="centerX" id="Wfg-ef-cEx"/>
+                                                    <constraint firstItem="wa9-br-nRY" firstAttribute="width" secondItem="Arp-7W-hZw" secondAttribute="width" multiplier="0.9" id="ljP-g2-1nI"/>
+                                                    <constraint firstItem="wa9-br-nRY" firstAttribute="centerY" secondItem="Arp-7W-hZw" secondAttribute="centerY" id="mGx-Jc-hQb"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YfK-PA-ivC" userLabel="VariableTextToolView">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GA3-jL-F1w" userLabel="VariableImageToolView">
+                                        <rect key="frame" x="0.0" y="-0.5" width="313" height="62.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGB-Ju-xL9" userLabel="TextTool1View">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPW-oG-cgv" userLabel="ImageTool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-Jp-PdB" userLabel="ImageTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMv-q3-KNd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="SGB-Ju-xL9" secondAttribute="height" multiplier="1:1" id="Sh9-FM-BdF"/>
+                                                    <constraint firstItem="pdA-Jp-PdB" firstAttribute="centerX" secondItem="sPW-oG-cgv" secondAttribute="centerX" id="GnX-wR-2i4"/>
+                                                    <constraint firstItem="pdA-Jp-PdB" firstAttribute="centerY" secondItem="sPW-oG-cgv" secondAttribute="centerY" id="NJJ-4j-EHT"/>
+                                                    <constraint firstItem="pdA-Jp-PdB" firstAttribute="height" secondItem="sPW-oG-cgv" secondAttribute="height" multiplier="0.9" id="NLh-an-Sqj"/>
+                                                    <constraint firstAttribute="width" secondItem="sPW-oG-cgv" secondAttribute="height" multiplier="1:1" id="fCK-bB-sWo"/>
+                                                    <constraint firstItem="pdA-Jp-PdB" firstAttribute="width" secondItem="sPW-oG-cgv" secondAttribute="width" multiplier="0.9" id="mXL-pb-mVW"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RpG-DC-L32" userLabel="TextTool2View">
-                                                <rect key="frame" x="63" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjR-4E-lPt" userLabel="ImageTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q66-lr-XqX" userLabel="ImageTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMN-03-e3z"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="RpG-DC-L32" secondAttribute="height" multiplier="1:1" id="BCi-yA-xqZ"/>
+                                                    <constraint firstItem="Q66-lr-XqX" firstAttribute="centerY" secondItem="kjR-4E-lPt" secondAttribute="centerY" id="39n-aQ-y4F"/>
+                                                    <constraint firstAttribute="width" secondItem="kjR-4E-lPt" secondAttribute="height" multiplier="1:1" id="FcF-yz-JLZ"/>
+                                                    <constraint firstItem="Q66-lr-XqX" firstAttribute="centerX" secondItem="kjR-4E-lPt" secondAttribute="centerX" id="J00-ds-ztZ"/>
+                                                    <constraint firstItem="Q66-lr-XqX" firstAttribute="height" secondItem="kjR-4E-lPt" secondAttribute="height" multiplier="0.9" id="gvS-f8-teU"/>
+                                                    <constraint firstItem="Q66-lr-XqX" firstAttribute="width" secondItem="kjR-4E-lPt" secondAttribute="width" multiplier="0.9" id="laW-eL-WGQ"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oi1-2M-m4r" userLabel="TextTool3View">
-                                                <rect key="frame" x="126" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sx-z3-x9K" userLabel="ImageTool3View">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xib-Pf-NRC" userLabel="ImageTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibm-Di-6aR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="oi1-2M-m4r" secondAttribute="height" multiplier="1:1" id="t3s-yg-26C"/>
+                                                    <constraint firstItem="xib-Pf-NRC" firstAttribute="width" secondItem="8Sx-z3-x9K" secondAttribute="width" multiplier="0.9" id="4Pn-4V-ktE"/>
+                                                    <constraint firstItem="xib-Pf-NRC" firstAttribute="height" secondItem="8Sx-z3-x9K" secondAttribute="height" multiplier="0.9" id="ABj-s8-BHt"/>
+                                                    <constraint firstAttribute="width" secondItem="8Sx-z3-x9K" secondAttribute="height" multiplier="1:1" id="Fpc-dp-fUk"/>
+                                                    <constraint firstItem="xib-Pf-NRC" firstAttribute="centerX" secondItem="8Sx-z3-x9K" secondAttribute="centerX" id="FxA-gp-pgg"/>
+                                                    <constraint firstItem="xib-Pf-NRC" firstAttribute="centerY" secondItem="8Sx-z3-x9K" secondAttribute="centerY" id="h6A-oO-sID"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-HX-fcm" userLabel="TextTool4View">
-                                                <rect key="frame" x="189" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-Be-L9x" userLabel="ImageTool4View">
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-81-wqI" userLabel="ImageTool4Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Oq-Ub-JSW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="6hT-HX-fcm" secondAttribute="height" multiplier="1:1" id="tnz-aD-aRv"/>
+                                                    <constraint firstAttribute="width" secondItem="5b6-Be-L9x" secondAttribute="height" multiplier="1:1" id="CRu-zE-gCX"/>
+                                                    <constraint firstItem="bG5-81-wqI" firstAttribute="height" secondItem="5b6-Be-L9x" secondAttribute="height" multiplier="0.9" id="UDL-Zp-fFA"/>
+                                                    <constraint firstItem="bG5-81-wqI" firstAttribute="centerX" secondItem="5b6-Be-L9x" secondAttribute="centerX" id="amd-Fo-hOG"/>
+                                                    <constraint firstItem="bG5-81-wqI" firstAttribute="centerY" secondItem="5b6-Be-L9x" secondAttribute="centerY" id="qzu-Cg-OBz"/>
+                                                    <constraint firstItem="bG5-81-wqI" firstAttribute="width" secondItem="5b6-Be-L9x" secondAttribute="width" multiplier="0.9" id="uRd-Pf-jro"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPo-bR-PZw" userLabel="TextTool5View">
-                                                <rect key="frame" x="252" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ee-DM-56z" userLabel="ImageTool5View">
+                                                <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-2Q-Xzq" userLabel="ImageTool5Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQO-6Q-Ocl"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="ZPo-bR-PZw" secondAttribute="height" multiplier="1:1" id="dlz-lg-iBd"/>
+                                                    <constraint firstItem="mHJ-2Q-Xzq" firstAttribute="width" secondItem="9Ee-DM-56z" secondAttribute="width" multiplier="0.9" id="23d-1V-4CR"/>
+                                                    <constraint firstItem="mHJ-2Q-Xzq" firstAttribute="height" secondItem="9Ee-DM-56z" secondAttribute="height" multiplier="0.9" id="YYt-rP-pvJ"/>
+                                                    <constraint firstItem="mHJ-2Q-Xzq" firstAttribute="centerY" secondItem="9Ee-DM-56z" secondAttribute="centerY" id="hw4-9g-1KI"/>
+                                                    <constraint firstItem="mHJ-2Q-Xzq" firstAttribute="centerX" secondItem="9Ee-DM-56z" secondAttribute="centerX" id="nbt-PK-OmG"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="SGB-Ju-xL9" firstAttribute="leading" secondItem="YfK-PA-ivC" secondAttribute="leading" id="6RP-cF-J7g"/>
-                                            <constraint firstItem="SGB-Ju-xL9" firstAttribute="bottom" secondItem="YfK-PA-ivC" secondAttribute="bottom" id="dJY-ta-7EL"/>
+                                            <constraint firstItem="sPW-oG-cgv" firstAttribute="bottom" secondItem="GA3-jL-F1w" secondAttribute="bottom" id="j0n-gt-4Pb"/>
+                                            <constraint firstItem="sPW-oG-cgv" firstAttribute="leading" secondItem="GA3-jL-F1w" secondAttribute="leading" id="lHO-Gz-1AC"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="9qx-RQ-e94" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.166" id="2eF-Y0-Dq2"/>
+                                    <constraint firstItem="GA3-jL-F1w" firstAttribute="bottom" secondItem="VXW-O5-jKq" secondAttribute="bottom" id="5vU-2r-7NG"/>
+                                    <constraint firstItem="GA3-jL-F1w" firstAttribute="leading" secondItem="VXW-O5-jKq" secondAttribute="leading" id="C0L-p5-LqT"/>
+                                    <constraint firstItem="9qx-RQ-e94" firstAttribute="bottom" secondItem="VXW-O5-jKq" secondAttribute="bottom" id="CiL-sa-i1f"/>
+                                    <constraint firstItem="9qx-RQ-e94" firstAttribute="trailing" secondItem="VXW-O5-jKq" secondAttribute="trailing" id="F7N-az-zDF"/>
+                                    <constraint firstItem="GA3-jL-F1w" firstAttribute="width" secondItem="VXW-O5-jKq" secondAttribute="width" multiplier="0.834" id="i2L-0W-Yyt"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvy-NH-Uy5" userLabel="ShapeToolBarView">
-                                <rect key="frame" x="0.0" y="604.5" width="375" height="62.5"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X17-8C-vP8" userLabel="LineToolBarView">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihz-YO-Ktt" userLabel="FixShapeToolView">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="62.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6P-0F-6d1" userLabel="FixLineToolView">
+                                        <rect key="frame" x="313" y="0.0" width="62" height="62"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xqB-X3-Jec" userLabel="ShapePrintView">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="796-YI-LGn" userLabel="LineSaveView">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99C-zj-r5E" userLabel="LineSaveButton">
+                                                        <rect key="frame" x="3" y="3" width="56" height="56"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHh-3u-efC"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="xqB-X3-Jec" secondAttribute="height" multiplier="1:1" id="tI3-SL-qFK"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qwf-fY-hRE" userLabel="ShapeSaveView">
-                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Qwf-fY-hRE" secondAttribute="height" multiplier="1:1" id="Rmt-PK-2GP"/>
+                                                    <constraint firstItem="99C-zj-r5E" firstAttribute="width" secondItem="796-YI-LGn" secondAttribute="width" multiplier="0.9" id="gqv-ba-5rP"/>
+                                                    <constraint firstItem="99C-zj-r5E" firstAttribute="height" secondItem="796-YI-LGn" secondAttribute="height" multiplier="0.9" id="he8-Pc-BTm"/>
+                                                    <constraint firstItem="99C-zj-r5E" firstAttribute="centerX" secondItem="796-YI-LGn" secondAttribute="centerX" id="tME-hb-sgk"/>
+                                                    <constraint firstItem="99C-zj-r5E" firstAttribute="centerY" secondItem="796-YI-LGn" secondAttribute="centerY" id="wrb-RJ-9Xe"/>
+                                                    <constraint firstAttribute="width" secondItem="796-YI-LGn" secondAttribute="height" multiplier="1:1" id="yE9-oM-TKN"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxa-eN-Xuc" userLabel="VariableShapeToolView">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="63"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ku-qa-BCk" userLabel="VariableLineToolView">
+                                        <rect key="frame" x="0.0" y="-0.5" width="313" height="62.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJJ-kh-L4O" userLabel="ShapeTool1View">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bK-0b-TXU" userLabel="LineTool1View">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9O-M0-d5l" userLabel="LineTool1Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="s9O-M0-d5l" secondAttribute="height" multiplier="1:1" id="Ptx-r7-pYW"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQw-Jv-CRj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="fJJ-kh-L4O" secondAttribute="height" multiplier="1:1" id="IkE-Vg-8NG"/>
+                                                    <constraint firstItem="s9O-M0-d5l" firstAttribute="centerX" secondItem="6bK-0b-TXU" secondAttribute="centerX" id="0Rx-NT-qk1"/>
+                                                    <constraint firstItem="s9O-M0-d5l" firstAttribute="centerY" secondItem="6bK-0b-TXU" secondAttribute="centerY" id="Em5-5A-T42"/>
+                                                    <constraint firstItem="s9O-M0-d5l" firstAttribute="width" secondItem="6bK-0b-TXU" secondAttribute="width" multiplier="0.9" id="F88-P9-hGq"/>
+                                                    <constraint firstItem="s9O-M0-d5l" firstAttribute="height" secondItem="6bK-0b-TXU" secondAttribute="height" multiplier="0.9" id="NIJ-bO-lwJ"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPN-gO-5tq" userLabel="ShapeTool2View">
-                                                <rect key="frame" x="63" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKt-a5-VFx" userLabel="LineTool2View">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTM-Tp-7O0" userLabel="LineTool2Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdY-bV-gQL"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="fPN-gO-5tq" secondAttribute="height" multiplier="1:1" id="6b1-RC-yuI"/>
+                                                    <constraint firstItem="VTM-Tp-7O0" firstAttribute="centerX" secondItem="pKt-a5-VFx" secondAttribute="centerX" id="7CJ-4t-i2S"/>
+                                                    <constraint firstItem="VTM-Tp-7O0" firstAttribute="centerY" secondItem="pKt-a5-VFx" secondAttribute="centerY" id="KE1-VH-NYo"/>
+                                                    <constraint firstAttribute="width" secondItem="pKt-a5-VFx" secondAttribute="height" multiplier="1:1" id="KtP-pO-mB7"/>
+                                                    <constraint firstItem="VTM-Tp-7O0" firstAttribute="width" secondItem="pKt-a5-VFx" secondAttribute="width" multiplier="0.9" id="Rp1-JS-Cct"/>
+                                                    <constraint firstItem="VTM-Tp-7O0" firstAttribute="height" secondItem="pKt-a5-VFx" secondAttribute="height" multiplier="0.9" id="jET-d0-9eK"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-Ol-mmG" userLabel="ShapeTool3View">
-                                                <rect key="frame" x="126" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lU-8O-v7F" userLabel="LineTool3View">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCJ-Rt-cvh" userLabel="LineTool3Button">
+                                                        <rect key="frame" x="3" y="3" width="56.5" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdB-hM-FQJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="fmP-Ol-mmG" secondAttribute="height" multiplier="1:1" id="TIN-Tk-jkn"/>
+                                                    <constraint firstItem="DCJ-Rt-cvh" firstAttribute="width" secondItem="3lU-8O-v7F" secondAttribute="width" multiplier="0.9" id="69z-tp-TuX"/>
+                                                    <constraint firstItem="DCJ-Rt-cvh" firstAttribute="centerY" secondItem="3lU-8O-v7F" secondAttribute="centerY" id="7rj-sQ-YxO"/>
+                                                    <constraint firstItem="DCJ-Rt-cvh" firstAttribute="height" secondItem="3lU-8O-v7F" secondAttribute="height" multiplier="0.9" id="95n-aD-C9c"/>
+                                                    <constraint firstItem="DCJ-Rt-cvh" firstAttribute="centerX" secondItem="3lU-8O-v7F" secondAttribute="centerX" id="a0Q-mZ-fpU"/>
+                                                    <constraint firstAttribute="width" secondItem="3lU-8O-v7F" secondAttribute="height" multiplier="1:1" id="thN-0J-FMd"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JdG-OD-e2E" userLabel="ShapeTool4View">
-                                                <rect key="frame" x="189" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfa-QG-9ZZ" userLabel="LineTool4View">
+                                                <rect key="frame" x="187.5" y="0.0" width="62.5" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTW-yZ-d79" userLabel="LineTool4Button">
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roW-M2-t41"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="JdG-OD-e2E" secondAttribute="height" multiplier="1:1" id="DFG-bd-zKb"/>
+                                                    <constraint firstItem="wTW-yZ-d79" firstAttribute="width" secondItem="zfa-QG-9ZZ" secondAttribute="width" multiplier="0.9" id="2pH-k9-rrd"/>
+                                                    <constraint firstItem="wTW-yZ-d79" firstAttribute="centerX" secondItem="zfa-QG-9ZZ" secondAttribute="centerX" id="RVX-sf-thD"/>
+                                                    <constraint firstItem="wTW-yZ-d79" firstAttribute="centerY" secondItem="zfa-QG-9ZZ" secondAttribute="centerY" id="SvZ-yz-4JO"/>
+                                                    <constraint firstAttribute="width" secondItem="zfa-QG-9ZZ" secondAttribute="height" multiplier="1:1" id="TrK-as-oda"/>
+                                                    <constraint firstItem="wTW-yZ-d79" firstAttribute="height" secondItem="zfa-QG-9ZZ" secondAttribute="height" multiplier="0.9" id="ubu-FL-Wf4"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mb9-Nn-Gsl" userLabel="ShapeTool5View">
-                                                <rect key="frame" x="252" y="0.0" width="63" height="63"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-RP-kOe" userLabel="LineTool5View">
+                                                <rect key="frame" x="250" y="0.0" width="63" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-lQ-alN" userLabel="LineTool5Button">
+                                                        <rect key="frame" x="3.5" y="3" width="56" height="56.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="pFe-lQ-alN" secondAttribute="height" multiplier="1:1" id="azb-mE-8R3"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="tappedToolBarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQf-jd-xix"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Mb9-Nn-Gsl" secondAttribute="height" multiplier="1:1" id="0oJ-FZ-CRc"/>
+                                                    <constraint firstItem="pFe-lQ-alN" firstAttribute="height" secondItem="4aD-RP-kOe" secondAttribute="height" multiplier="0.9" id="PNh-Ux-wjA"/>
+                                                    <constraint firstItem="pFe-lQ-alN" firstAttribute="centerX" secondItem="4aD-RP-kOe" secondAttribute="centerX" id="Zcx-Me-1nh"/>
+                                                    <constraint firstItem="pFe-lQ-alN" firstAttribute="centerY" secondItem="4aD-RP-kOe" secondAttribute="centerY" id="km3-Az-6yv"/>
+                                                    <constraint firstItem="pFe-lQ-alN" firstAttribute="width" secondItem="4aD-RP-kOe" secondAttribute="width" multiplier="0.9" id="t75-iA-FxB"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="fJJ-kh-L4O" firstAttribute="leading" secondItem="uxa-eN-Xuc" secondAttribute="leading" id="io1-a5-pZK"/>
-                                            <constraint firstItem="fJJ-kh-L4O" firstAttribute="bottom" secondItem="uxa-eN-Xuc" secondAttribute="bottom" id="ixp-dc-DYL"/>
+                                            <constraint firstItem="6bK-0b-TXU" firstAttribute="bottom" secondItem="0ku-qa-BCk" secondAttribute="bottom" id="7fB-of-mXX"/>
+                                            <constraint firstItem="6bK-0b-TXU" firstAttribute="leading" secondItem="0ku-qa-BCk" secondAttribute="leading" id="Weu-xQ-2Mi"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="0ku-qa-BCk" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.834" id="3Be-Xj-RBH"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ku-qa-BCk" secondAttribute="bottom" id="WLd-WM-8S3"/>
+                                    <constraint firstItem="0ku-qa-BCk" firstAttribute="leading" secondItem="X17-8C-vP8" secondAttribute="leading" id="a3A-30-dpS"/>
+                                    <constraint firstAttribute="trailing" secondItem="o6P-0F-6d1" secondAttribute="trailing" id="hOr-ba-Lgr"/>
+                                    <constraint firstAttribute="bottom" secondItem="o6P-0F-6d1" secondAttribute="bottom" id="wrc-Sm-RdY"/>
+                                    <constraint firstItem="o6P-0F-6d1" firstAttribute="width" secondItem="X17-8C-vP8" secondAttribute="width" multiplier="0.166" id="yhI-Tg-IuJ"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ8-hS-37m" userLabel="InputTextView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89P-Aj-VAJ">
+                                        <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hB7-IU-hRW">
+                                                <rect key="frame" x="8" y="81" width="359" height="44"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb7-jd-uIP" userLabel="TextOkButton">
+                                                <rect key="frame" x="321" y="43" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtP-j2-JAr" userLabel="TextCancelButton">
+                                                <rect key="frame" x="267" y="43" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Cb7-jd-uIP" firstAttribute="leading" secondItem="EtP-j2-JAr" secondAttribute="trailing" constant="8" id="7Li-if-ah6"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cb7-jd-uIP" secondAttribute="trailing" constant="8" id="KGC-Hr-1nR"/>
+                                            <constraint firstAttribute="bottom" secondItem="hB7-IU-hRW" secondAttribute="bottom" constant="8" id="Lg1-dn-8eu"/>
+                                            <constraint firstAttribute="trailing" secondItem="hB7-IU-hRW" secondAttribute="trailing" constant="8" id="omD-sm-O8U"/>
+                                            <constraint firstItem="hB7-IU-hRW" firstAttribute="top" secondItem="EtP-j2-JAr" secondAttribute="bottom" constant="8" id="s9G-f6-OO8"/>
+                                            <constraint firstItem="hB7-IU-hRW" firstAttribute="leading" secondItem="89P-Aj-VAJ" secondAttribute="leading" constant="8" id="trp-UE-JxU"/>
+                                            <constraint firstItem="hB7-IU-hRW" firstAttribute="top" secondItem="Cb7-jd-uIP" secondAttribute="bottom" constant="8" id="xXR-6S-PRi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="89P-Aj-VAJ" firstAttribute="height" secondItem="dZ8-hS-37m" secondAttribute="height" multiplier="0.2" id="8MG-XF-uqQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="89P-Aj-VAJ" secondAttribute="trailing" id="dBc-WW-9G5"/>
+                                    <constraint firstItem="89P-Aj-VAJ" firstAttribute="leading" secondItem="dZ8-hS-37m" secondAttribute="leading" id="ppQ-IH-P7q"/>
+                                    <constraint firstAttribute="bottom" secondItem="89P-Aj-VAJ" secondAttribute="bottom" id="rQw-Yg-g91"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Sn-bH-KOw" secondAttribute="trailing" id="1IW-Zv-GgE"/>
-                            <constraint firstItem="Pvy-NH-Uy5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1hr-Ce-hi1"/>
-                            <constraint firstItem="Pvy-NH-Uy5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1jl-oE-MXf"/>
-                            <constraint firstItem="2fB-O0-1Jv" firstAttribute="top" secondItem="orH-82-bzD" secondAttribute="top" id="2hg-Qs-xyw"/>
-                            <constraint firstItem="orH-82-bzD" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="4pb-kK-B94"/>
+                            <constraint firstItem="Fr6-Xi-01X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="31A-wt-nwI"/>
+                            <constraint firstItem="vEM-OX-NFc" firstAttribute="height" secondItem="fH7-pY-5t9" secondAttribute="height" id="4Z5-no-VyF"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="9aM-0C-vKd"/>
+                            <constraint firstItem="dZ8-hS-37m" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ALb-OR-Tdq"/>
+                            <constraint firstItem="9uP-jV-eEl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B0p-Jy-Z2P"/>
+                            <constraint firstItem="X17-8C-vP8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gq1-3f-Uwj"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HZN-Ln-5qi"/>
+                            <constraint firstItem="VXW-O5-jKq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HlY-kU-aGH"/>
+                            <constraint firstItem="TVT-Fm-7xa" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="Jy7-Tn-Izf"/>
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KvF-oA-UDO"/>
                             <constraint firstItem="6wv-iP-lsp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MQg-9y-CGE"/>
-                            <constraint firstItem="orH-82-bzD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nbd-ed-SQ5"/>
-                            <constraint firstItem="Pvy-NH-Uy5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Owg-Ui-7vy"/>
-                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="top" secondItem="orH-82-bzD" secondAttribute="bottom" id="QQ5-jZ-gWf"/>
+                            <constraint firstItem="VXW-O5-jKq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ovf-do-fxl"/>
+                            <constraint firstItem="3dq-yk-Gjd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rjr-yi-4Hp"/>
+                            <constraint firstItem="3dq-yk-Gjd" firstAttribute="bottom" secondItem="4eh-8Y-SB9" secondAttribute="top" id="Sd1-Sl-0mi"/>
                             <constraint firstItem="4Sn-bH-KOw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SqE-59-5Ww"/>
-                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="V2D-Md-QIh"/>
+                            <constraint firstItem="dZ8-hS-37m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W4I-bf-vnh"/>
+                            <constraint firstItem="TVT-Fm-7xa" firstAttribute="height" secondItem="4eh-8Y-SB9" secondAttribute="height" id="WAf-f4-fwV"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="Fr6-Xi-01X" secondAttribute="height" id="Xiw-qU-NA3"/>
+                            <constraint firstItem="dZ8-hS-37m" firstAttribute="top" secondItem="4Sn-bH-KOw" secondAttribute="bottom" id="ZQB-Fn-f0T"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ZSd-An-W8Q"/>
-                            <constraint firstItem="2fB-O0-1Jv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bN8-ru-gJv"/>
+                            <constraint firstItem="9uP-jV-eEl" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ZoT-Qj-07O"/>
+                            <constraint firstItem="fH7-pY-5t9" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.166" id="ate-Gx-0GB"/>
+                            <constraint firstItem="fH7-pY-5t9" firstAttribute="height" secondItem="9uP-jV-eEl" secondAttribute="height" id="bRu-Gz-Ief"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6wv-iP-lsp" secondAttribute="bottom" id="bZA-Ge-Nl2"/>
-                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.167" id="bva-R6-ivp"/>
-                            <constraint firstItem="fsg-26-1bD" firstAttribute="top" secondItem="MqR-Ft-GsC" secondAttribute="top" id="bz1-8Q-SZA"/>
-                            <constraint firstItem="2fB-O0-1Jv" firstAttribute="bottom" secondItem="MqR-Ft-GsC" secondAttribute="bottom" id="dca-lF-RUH"/>
-                            <constraint firstItem="fsg-26-1bD" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="eDn-2G-qqr"/>
-                            <constraint firstItem="MqR-Ft-GsC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="egs-PK-r2n"/>
-                            <constraint firstItem="fsg-26-1bD" firstAttribute="bottom" secondItem="MqR-Ft-GsC" secondAttribute="bottom" id="ey4-fW-a2Z"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="X17-8C-vP8" secondAttribute="height" id="d2k-79-xdp"/>
+                            <constraint firstItem="dZ8-hS-37m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="d2t-m3-FW0"/>
+                            <constraint firstItem="3dq-yk-Gjd" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ffQ-z1-ciy"/>
+                            <constraint firstItem="vEM-OX-NFc" firstAttribute="bottom" secondItem="4eh-8Y-SB9" secondAttribute="top" id="gCZ-LJ-oSR"/>
+                            <constraint firstItem="Fr6-Xi-01X" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="gUK-Hk-Umj"/>
+                            <constraint firstItem="VXW-O5-jKq" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="hC7-KP-vg7"/>
+                            <constraint firstItem="TVT-Fm-7xa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iM0-os-JKE"/>
+                            <constraint firstItem="X17-8C-vP8" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="igu-Lz-L3e"/>
                             <constraint firstItem="4eh-8Y-SB9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jQs-a6-Vc3"/>
-                            <constraint firstItem="fsg-26-1bD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kNm-iC-mkO"/>
-                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="top" secondItem="MqR-Ft-GsC" secondAttribute="top" id="lRc-qa-xTW"/>
-                            <constraint firstItem="YUo-n8-6Wi" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.167" id="nle-kE-R5D"/>
-                            <constraint firstItem="2fB-O0-1Jv" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="leading" id="oJW-7T-GSs"/>
-                            <constraint firstItem="Pvy-NH-Uy5" firstAttribute="top" secondItem="4eh-8Y-SB9" secondAttribute="top" id="t7Z-7D-3QU"/>
-                            <constraint firstItem="orH-82-bzD" firstAttribute="top" secondItem="MqR-Ft-GsC" secondAttribute="top" id="zff-aw-nU7"/>
+                            <constraint firstItem="TVT-Fm-7xa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="juZ-37-dKZ"/>
+                            <constraint firstItem="vEM-OX-NFc" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="kdf-Xz-wtl"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="VXW-O5-jKq" secondAttribute="height" id="mxn-NP-7kC"/>
+                            <constraint firstItem="YUo-n8-6Wi" firstAttribute="width" secondItem="4Sn-bH-KOw" secondAttribute="width" multiplier="0.166" id="nle-kE-R5D"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="top" secondItem="fH7-pY-5t9" secondAttribute="bottom" id="pGW-K1-wQc"/>
+                            <constraint firstItem="vEM-OX-NFc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="te1-Qu-ISE"/>
+                            <constraint firstItem="Fr6-Xi-01X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tn1-am-4T7"/>
+                            <constraint firstItem="4eh-8Y-SB9" firstAttribute="height" secondItem="fH7-pY-5t9" secondAttribute="height" id="uaE-ju-Q8H"/>
+                            <constraint firstItem="X17-8C-vP8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ubd-ez-ilL"/>
+                            <constraint firstItem="9uP-jV-eEl" firstAttribute="bottom" secondItem="4eh-8Y-SB9" secondAttribute="top" id="vO4-O9-4wf"/>
+                            <constraint firstItem="fH7-pY-5t9" firstAttribute="height" secondItem="3dq-yk-Gjd" secondAttribute="height" id="w6U-Kh-tHC"/>
+                            <constraint firstItem="fH7-pY-5t9" firstAttribute="leading" secondItem="6wv-iP-lsp" secondAttribute="trailing" id="ydR-Wt-fSE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageTool1Button" destination="pdA-Jp-PdB" id="hru-Kv-YGx"/>
+                        <outlet property="imageTool2Button" destination="Q66-lr-XqX" id="ty0-iO-VN5"/>
+                        <outlet property="imageTool3Button" destination="xib-Pf-NRC" id="xfw-E0-c4C"/>
+                        <outlet property="imageTool4Button" destination="bG5-81-wqI" id="J1n-cf-Ddq"/>
+                        <outlet property="imageTool5Button" destination="mHJ-2Q-Xzq" id="DGd-CN-76f"/>
+                        <outlet property="imageToolBar" destination="VXW-O5-jKq" id="YR2-7t-fi1"/>
+                        <outlet property="lineTool1Button" destination="s9O-M0-d5l" id="a9B-Ef-mRw"/>
+                        <outlet property="lineTool2Button" destination="VTM-Tp-7O0" id="C4K-j1-DII"/>
+                        <outlet property="lineTool3Button" destination="DCJ-Rt-cvh" id="zLX-3O-9Cl"/>
+                        <outlet property="lineTool4Button" destination="wTW-yZ-d79" id="yw0-Yt-ia2"/>
+                        <outlet property="lineTool5Button" destination="pFe-lQ-alN" id="UYX-qC-1tm"/>
+                        <outlet property="lineToolBar" destination="X17-8C-vP8" id="kwE-bX-TEp"/>
+                        <outlet property="mainTool1Button" destination="yKn-xL-AVP" id="fhY-F2-qWA"/>
+                        <outlet property="mainTool2Button" destination="LNT-ao-R2Z" id="kZK-rk-PLH"/>
+                        <outlet property="mainTool3Button" destination="uKe-HE-aTh" id="TDy-Sh-GQG"/>
+                        <outlet property="mainTool4Button" destination="Hyt-HW-5NJ" id="mBe-nt-tsT"/>
+                        <outlet property="mainToolBar" destination="4eh-8Y-SB9" id="GWS-1g-R1G"/>
+                        <outlet property="printButton" destination="hyo-lF-yYj" id="mT4-xJ-5lK"/>
+                        <outlet property="saveButton" destination="VFG-Gs-8EY" id="pVN-Qa-Lfz"/>
+                        <outlet property="shapeTool1Button" destination="bbi-H4-ElQ" id="Yv6-qM-to0"/>
+                        <outlet property="shapeTool2Button" destination="HoI-KQ-LpS" id="NjS-d6-aBu"/>
+                        <outlet property="shapeTool3Button" destination="Pqa-tH-clQ" id="ckH-wb-DxT"/>
+                        <outlet property="shapeTool4Button" destination="bQ2-d0-5El" id="HOZ-1g-2Fg"/>
+                        <outlet property="shapeTool5Button" destination="wL8-FB-kEv" id="ug6-6b-40I"/>
+                        <outlet property="shapeToolBar" destination="TVT-Fm-7xa" id="f65-Al-J6S"/>
+                        <outlet property="textTool1Button" destination="9Fp-pj-TqJ" id="jLR-VF-q0l"/>
+                        <outlet property="textTool2Button" destination="Ewk-yK-Ysy" id="ysS-bC-ZUs"/>
+                        <outlet property="textTool3Button" destination="WRq-8J-wI0" id="xLC-lY-4k1"/>
+                        <outlet property="textTool4Button" destination="Ynx-23-nbK" id="UXD-Iy-8Nv"/>
+                        <outlet property="textTool5Button" destination="BYB-vh-0MA" id="Pfm-nf-r8b"/>
+                        <outlet property="textToolBar" destination="Fr6-Xi-01X" id="q9d-8a-hZs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
