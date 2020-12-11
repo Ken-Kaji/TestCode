@@ -28,13 +28,15 @@ class DrawerViewController: UIViewController {
     let cellReuseIdentifier = "DrawerViewCell"
     @IBOutlet weak var mTableView: UITableView!
     let selectionType: CellSelectionType = .grayOut
-    
+/*
     let menu:[DrawerMenu] = [
         DrawerMenu(enable: true, text:  "Menu1", image:"number3_1.png"),
         DrawerMenu(enable: false, text: "Menu2", image:"number3_2.png"),
         DrawerMenu(enable: true, text:  "Menu3", image:"number3_3.png"),
     ]
-
+*/
+    var menu: [DrawerMenu] = []
+    
     /// 有効なメニューの数を返す
     private func getCountOfMenu() -> Int {
         var retval = 0
@@ -84,6 +86,10 @@ class DrawerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("<DrawerViewController::viewDidLoad/>")
+        print("  self=\(self)")
+        print("  self.presentedViewController=\(self.presentedViewController)")
+        print("  self.presentingViewController=\(self.presentingViewController)")
+
         mTableView.register(UINib(nibName:"DrawerCell", bundle: nil), forCellReuseIdentifier:cellReuseIdentifier)
     }
     

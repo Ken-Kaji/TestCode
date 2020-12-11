@@ -23,12 +23,20 @@ class DrawerNavigationController: UINavigationController {
 /// どうやって表示するか
 extension DrawerNavigationController:  UIViewControllerTransitioningDelegate {
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        print("<DrawerNavigationController::presentationController/>")
+        print("<DrawerNavigationController::presentationController>")
+        print("  presented=\(presented)")
+        print("  presenting=\(presenting)")
+        print("  source=\(source)")
+        print("</DrawerNavigationController::presentationController>")
         return DrawerMenuPresentationController(presentedViewController: presented, presenting: presenting)
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         print("<DrawerNavigationController::animationController(forPresented)>")
+        print("  presented=\(presented)")
+        print("  presenting=\(presenting)")
+        print("  source=\(source)")
+        print("</DrawerNavigationController::animationController(forPresented)>")
         return DrawerMenuTransition(type: .present)
     }
     

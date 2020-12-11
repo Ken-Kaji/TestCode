@@ -26,6 +26,7 @@ class DrawerMenuPresentationController: UIPresentationController {
         coverBackgroundTapGesture = UITapGestureRecognizer(target: self, action: #selector(coverBackgroundDidTap))
         coverBackgroundView.addGestureRecognizer(coverBackgroundTapGesture)
         
+        print("  presentingViewController=\(presentingViewController)")
         let transitionCoordinator = presentingViewController.transitionCoordinator
         transitionCoordinator?.animate(alongsideTransition: { [weak self] context in
             self?.coverBackgroundView.alpha = 0.7
