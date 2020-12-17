@@ -47,11 +47,12 @@ class DrawerMenuTransition: NSObject, UIViewControllerAnimatedTransitioning {
         print("<DrawerMenuTransition::startPresentTransition/>")
         let timing = CubicTimingParametersCreator.createParameters(timingType: .quartOut)
         let animatorNotNil = UIViewPropertyAnimator(duration: transitionDuration(using: context), timingParameters: timing)
-        
+
+        // This block shows Tableview
         let containerView = context.containerView
         guard let toView = context.view(forKey: .to) else { return }
         containerView.addSubview(toView)
-        
+
         let originalToViewTrans = toView.transform
         var newToViewTrans = originalToViewTrans
         newToViewTrans = newToViewTrans.translatedBy(x: containerView.bounds.width, y: 0)
@@ -68,6 +69,7 @@ class DrawerMenuTransition: NSObject, UIViewControllerAnimatedTransitioning {
             context.completeTransition(!context.transitionWasCancelled)
         }
         animator = animatorNotNil
+        // Need below line to implement "tap gray area and close"
         animatorNotNil.startAnimation()
     }
     

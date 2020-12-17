@@ -19,7 +19,7 @@
 		D52622DE22D0A09300550A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52622DD22D0A09300550A82 /* Assets.xcassets */; };
 		D52622E122D0A09300550A82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D52622DF22D0A09300550A82 /* LaunchScreen.storyboard */; };
 		D52622ED22D0A0E500550A82 /* CubicTimingParametersCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52622E822D0A0E500550A82 /* CubicTimingParametersCreator.swift */; };
-		D52622EE22D0A0E500550A82 /* DrawerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D52622E922D0A0E500550A82 /* DrawerViewController.storyboard */; };
+		D52622EE22D0A0E500550A82 /* Drawer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D52622E922D0A0E500550A82 /* Drawer.storyboard */; };
 		D52622EF22D0A0E500550A82 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52622EA22D0A0E500550A82 /* DrawerViewController.swift */; };
 		D52622F022D0A0E500550A82 /* DrawerMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52622EB22D0A0E500550A82 /* DrawerMenuPresentationController.swift */; };
 		D52622F122D0A0E500550A82 /* DrawerMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52622EC22D0A0E500550A82 /* DrawerMenuTransition.swift */; };
@@ -41,7 +41,7 @@
 		D52622E022D0A09300550A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D52622E222D0A09300550A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52622E822D0A0E500550A82 /* CubicTimingParametersCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicTimingParametersCreator.swift; sourceTree = "<group>"; };
-		D52622E922D0A0E500550A82 /* DrawerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DrawerViewController.storyboard; sourceTree = "<group>"; };
+		D52622E922D0A0E500550A82 /* Drawer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Drawer.storyboard; sourceTree = "<group>"; };
 		D52622EA22D0A0E500550A82 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		D52622EB22D0A0E500550A82 /* DrawerMenuPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMenuPresentationController.swift; sourceTree = "<group>"; };
 		D52622EC22D0A0E500550A82 /* DrawerMenuTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMenuTransition.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				D52622EB22D0A0E500550A82 /* DrawerMenuPresentationController.swift */,
 				D52622EC22D0A0E500550A82 /* DrawerMenuTransition.swift */,
 				D52622F222D0A15900550A82 /* DrawerNavigationController.swift */,
-				D52622E922D0A0E500550A82 /* DrawerViewController.storyboard */,
+				D52622E922D0A0E500550A82 /* Drawer.storyboard */,
 				D52622EA22D0A0E500550A82 /* DrawerViewController.swift */,
 				722138F625770E6300A18E70 /* DrawerCell.swift */,
 				722138F725770E6300A18E70 /* DrawerCell.xib */,
@@ -158,7 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52622EE22D0A0E500550A82 /* DrawerViewController.storyboard in Resources */,
+				D52622EE22D0A0E500550A82 /* Drawer.storyboard in Resources */,
 				722138F325770DE500A18E70 /* number3_1.png in Resources */,
 				D52622E122D0A09300550A82 /* LaunchScreen.storyboard in Resources */,
 				722138F425770DE500A18E70 /* number3_2.png in Resources */,

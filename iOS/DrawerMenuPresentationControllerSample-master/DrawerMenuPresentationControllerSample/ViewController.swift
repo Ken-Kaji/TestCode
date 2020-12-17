@@ -61,10 +61,14 @@ class ViewController: UIViewController {
 
     @IBAction func didTapShowMenuButton() {
         print("<ViewController::didTapShowMenuButton/>")
-        let storyboad = UIStoryboard(name: "DrawerViewController", bundle: nil)
-        let settingsNavi = storyboad.instantiateInitialViewController() as! UINavigationController
+        let storyboad = UIStoryboard(name: "Drawer", bundle: nil)
+        let settingsNavi = storyboad.instantiateInitialViewController() as! DrawerNavigationController
+        let topViewController = settingsNavi.topViewController as! DrawerViewController
         // 表示開始はモーダルと同じく present
-//        settingsNavi.menu = menu
+        
+        //set value to TableView on DrawerViewController
+        topViewController.menu = self.menu
+
         present(settingsNavi, animated: true, completion: nil)
     }
 
