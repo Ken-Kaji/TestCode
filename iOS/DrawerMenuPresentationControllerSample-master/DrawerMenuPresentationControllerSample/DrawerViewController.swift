@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct DrawerMenu {
+struct DrawerMenu {
     var enable: Bool    //有効/無効フラグ
     var text: String    //メニューに表示するテキスト
     var image: String   //画像リソース名
@@ -28,7 +28,13 @@ class DrawerViewController: UIViewController {
     let cellReuseIdentifier = "DrawerViewCell"
     @IBOutlet weak var mTableView: UITableView!
     let selectionType: CellSelectionType = .grayOut
-
+/*
+    let menu:[DrawerMenu] = [
+        DrawerMenu(enable: true, text:  "Menu1", image:"number3_1.png"),
+        DrawerMenu(enable: false, text: "Menu2", image:"number3_2.png"),
+        DrawerMenu(enable: true, text:  "Menu3", image:"number3_3.png"),
+    ]
+*/
     var menu: [DrawerMenu] = []
     
     /// 有効なメニューの数を返す

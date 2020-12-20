@@ -9,8 +9,7 @@
 import UIKit
 
 class DrawerNavigationController: UINavigationController {
-//    var menu: [DrawerMenu] = []
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -18,10 +17,6 @@ class DrawerNavigationController: UINavigationController {
         /// 表示のされかたをセット
         modalPresentationStyle = .custom
         transitioningDelegate = self
-//
-//        // set contents to TableView
-//        let drawerContentsViewController = self.children[0] as! DrawerViewController
-//        drawerContentsViewController.menu = self.menu
     }
 }
 
